@@ -1,113 +1,69 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, OnRender
-===
+Assignment 1 - Alex Li 
 
-*DUE: Friday, August29, 2025 by 11:59 PM*
+In this README document, we have the breakdowns of the technical achievements and design achievments. In addition, the link to the website deployment is at the bottom of this README document. For any questions, please email me at: ajli@wpi.edu 
 
-First assignment! You will deploy the starting Web site that you will use this term to [OnRender](http://www.onrender.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and OnRender, as well as experiment some with HTML/CSS/JS. If you already know these, great! 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. Don't just get your website up and done, as
-you'll need skills with these tools throughout the rest of the course.
-
-These instructions may be modified over time for purposes of clarification or to provide additional options. The requirements will NOT change. You can see any updates by looking at the commit history of this document in GitHub.
-
-Assignment details
----
-
-This assignment requires that your website is both contained in a GitHub repository and hosted in OnRender. There are a few ways to do this:
-
-1. Fork this repo and clone it to your computer, make changes locally on your computer, push the repo onto GitHub, and then import your GitHub repo into OnRender.
-2. Fork this repo and then import it directly to OnRender, use the OnRender editor to make changes, and then export your repo from OnRender back to GitHub.
-3. Same as #1, but instead of importing from Github to OnRender you just upload the files (or copy/paste) them directly to OnRender.
-
-### Clone to computer, push to Github, import to OnRender (recommended)
-
-1. Fork the starting assignment code in GitHub. This repo contains the following:
-    * The server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure OnRender
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2025) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Python
-        * Unit testing
-		* Refactoring code
-3. Complete some technical and/or design achievements (see below).
-4. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory and then going to `localhost:3000` in your browser.
-5. Modify the README file according to the specification below.
-6. Commit and push all your changes to GitHub. 
-7. Deploy your project to OnRender. You can do this by [importing the repo from GitHub](https://render.com/docs/github).
-    * You will need to create an OnRender account first.
-    * Under "Publish Directory", you can just put "./" (without the quotation marks).
-8. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-9. Create and submit a Pull Request to the original repo. This helps us find your project.
-	* Ignore any messages about conflicts. You do not need to resolve them.
-	* Make the title of your pull request "Pull Request for NAME" (ex. "Pull Request for Joshua Cuneo")
-
-### Note about alternative hosting
-Our use of OnRender in this class is there as a convenience for you. However, if you are already familiar with hosting through other services--or if you would like to self-host--that's perfectly fine so long as the website in question meets all of the assignment requirements. Note that we will not be able to help you if you run into issues on other hosting platforms, and you will be responsible for making sure the website stays up and running for the duration of the term. For A1, you will also still need to create a pull request with your name and your website's URL.
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-The name scheme should be `a1-yourFirstAndLastName`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future assignments.
-
-Rubric
----
-For the Technical and Design achievements, make sure you thoroughly describe in your README what you did why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM. Remember that the success of Achievements hinges on how well you describe them in your README. Well formatted text, images, and concise and clear descriptions are helpful. You must include a Technical Achievements and Design Achievements section, even if none are attempted.
-
-Note that if you want to load resources besides your index.html file (images, an CSS file, a JS file) you'll need to modify server.js to point to these. For now it's easiest to just hardcode paths to the resources, but we'll look at ways to optimize this shortly.
-
-*Basic Requirements*
-
-(10 points each)
-
-1. Assignment has proper naming scheme
-2. Files forked from original repo
-3. `index.html` properly rendered
-4. `index.html` page properly edited
-5. All changes pushed to GitHub
-6. Project deployed to OnRender (or other hosting option)
-7. Pull Request submitted to original repo
-
-*Technical Achievements*
-1. (5 points) Style your page using CSS. Each style rule you apply will get you 1 point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (5 points) Experiment with other *semantic* HTML tags (links, images, tables, header, footer, etc.). Each extra tag you use will get you 1 point for a maximum of 5 points. Be sure to describe the tags you use in your README.
-
-*Design Achievements*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website.
-
-**NOTE:** There are additional color pallette and font options listed on Canvas under Modules -> Resources -> Color Pallettes and Fonts. You are welcome to use one of those instead. If you know of and would like to use any other resources that are not included, feel free to contact the instructor.
-
-Resources
----
-
-If you need refreshers for JavaScript/HTML/CSS or Git/GitHub, check out the resources posted on Canvas under Modules -> Resources.
-
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
-
-Joshua Cuneo
-http://a1-joshuacuneo.onrender.com
-
-This project shows ...
+-------------------------------------------------
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+
+1. (5 points)
+The following CSS rules were applied to enhance the webpage:
+  1. **Body Styling**:
+     - Font: The body uses the 'Roboto' font from Google Fonts, with Arial and sans-serif as fallbacks.
+     - Background: A light beige color `#f7f5f2` is applied for a clean and modern look.
+     - Margin and Padding: Both are set to `0` to remove default spacing.
+
+  2. **Header**:
+     - Background: A vibrant blue color `#2796E5` is used for the header.
+     - Text Color: White text (`#fff`) ensures readability.
+     - Padding: Adds vertical spacing for a balanced layout.
+     - Box Shadow: A subtle shadow effect for depth.
+
+  3. **Navigation Bar**:
+     - Background: A soft green color `#92E5B3` is applied.
+     - Links: Text is styled with a bold blue color `#2796E5`, and hover effects change the background to blue with white text.
+
+  4. **Main Content**:
+     - Background: White background for sections, with rounded corners and a shadow for a card-like appearance.
+     - Padding: Adds spacing inside the content for readability.
+
+  5. **Table**:
+     - Borders: Light gray borders for cells.
+     - Header Background: A bright yellow color `#E5E419` is used for table headers.
+     - Alternating Rows: Even rows have a light greenish background for better readability.
+
+  6. **Aside**:
+     - Highlighted with a green background `#92E5B3` and rounded corners for emphasis.
+
+Overall I found that breaking up the styling into these various components like body, header, and main content helped streamline the design easier. Also having this dedicated css document for the style helps make the code more organized, showing effectivness of encapsulation. Challenges I faced when making the css styles is forgetting the proper syntax, but a quick google search helped lots. 
+
+
+2. (5 points) 
+This animation is a simple fade into the main content of the webpage when loading at the first time. I did it inline in the HTML document. I have found the javascript has potential to liven up the website design, by having stuff like this animation.
+
+
+3. (5 points) 
+
+For semantic html tags I used: 
+<img>: Used to add an image to the page. I added an image of WPI to spice up the page, make it more interesting than just a wall of text. 
+
+<article>: Used to wrap the "About Me" content. This allows me to divide the big HTML document into sections, more specicially having "About Me" as its own seperate thing in a way, streamlines the code. 
+
+<aside>: Added a fun fact about you. This is a little 'sidebar' if you will, to add something more interesting than academics, by saying stuff like sports. Adding this tag allows me to differentiate between the core knowledge I want the reader to see, the more important stuff, from the less important stuff, like me training for a 1/2 marathon. 
+
+<details>: Again, helps differeniate between different knowledge, so thats nice. 
+
+<summary>: Acts as a clickable summary for the <details> section.  Used to provide additional information about your courses. Adding this details tag allows for a built-in dropdown, to show more hidden detail. Useful for if you have lots of information, and don't want to overwelm the user, so having the option of hiding some stuff is useful. 
+
+-------------------------------------------------
 
 ## Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+1. (10 points) 
+The color palate I chose is 3 colors. Green, Blue, and Yellow. The hardest part of making this color palate is figuring out how to use the software of adobe. I found myself fiddling with it for a good 10 minutes before figuring how to remove colors from the palate, and how to select colors. Integrating into the website, however, was not much of a challenge since I was simply able to assign a color to a a component, and as such it worked out fine. 
+
+2. (5 points) 
+The font I chose from google fonts is Roboto. I just simply referenced the embed code in the head of my html document. 
+
+## Website Deployment: 
+Alex Li
+https://a1-alexli.onrender.com/
