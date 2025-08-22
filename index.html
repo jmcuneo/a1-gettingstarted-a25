@@ -4,67 +4,85 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
 
-    <style type = "text/css">
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      h1 {
-        color: #790505;
-      }
-      p {
-        margin-bottom: 1em;
-      }
-      li {
-        margin-bottom: 0.5em;
-      }
-    </style>
-    <script >
-    alert("to get JS credit ");
+    <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <script>
+    //JS animation: fade in main content
+    window.onload = function() {
+      document.querySelector('main').style.opacity = 0;
+      setTimeout(function() {
+        document.querySelector('main').style.transition = 'opacity 1.2s';
+        document.querySelector('main').style.opacity = 1;
+      }, 200);
+    }
     </script>
   </head>
   <body>
-    <h1>Information about Alex Li</h1>
-    <p>
-      Hi, I'm Alex Li, part of the class of 2026 at WPI. 
-    </p>
-    <p>
-      I am majoring in Computer Science and minoring in data science
-    </p>
-    <p>
-      Previous classes I have taken include:
-      <li>CS 1101</li>
-      <li>CS 2102</li>
-      <li>CS 2303</li>
-      <li>CS 2223</li>
-      <li>CS 2022</li>
-      <li>CS 3516</li>
-      <li>CS 3043</li>
-      <li>CS 3013</li>
-      <li>CS 3431</li>
-      <li>CS 3133</li>
-      <li>CS 3041</li>
-      <li>CS 4341</li>
-      <li>CS 4731</li>
-      More to come !
-    </p>
-
-    <h2>Experience with the following technologies and methods:</h2>
-    <p>
-      HTML - Some
-      <br>
-      CSS - Some
-      <br>
-      Java - A lot 
-      <br>
-      JavaScript - Some
-      <br>
-      Python - Some
-      <br>
-      Unit testing - A lot 
-      <br>
-      Refactoring code - A lot 
-    </p>
-
+    <header>
+      <h1>Information about Alex Li</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <article>
+          <p>Hi, I'm Alex Li, part of the class of 2026 at WPI.</p>
+          <p>I am majoring in Computer Science and minoring in Data Science.</p>
+          <img src="wpi_image.jpg" alt="WPI Campus" style="width:100%; max-width:400px; display:block; margin:1em auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+        </article>
+        <aside>
+          <p>Fun fact: I like to bike and run and am training for 1/2 marathon in December!</p>
+        </aside>
+      </section>
+      <section id="courses">
+        <h2>Previous CS Courses at WPI</h2>
+        <ul>
+          <li>CS 1101</li>
+          <li>CS 2102</li>
+          <li>CS 2303</li>
+          <li>CS 2223</li>
+          <li>CS 2022</li>
+          <li>CS 3516</li>
+          <li>CS 3043</li>
+          <li>CS 3013</li>
+          <li>CS 3431</li>
+          <li>CS 3133</li>
+          <li>CS 3041</li>
+          <li>CS 4341</li>
+          <li>CS 4731</li>
+        </ul>
+        <details>
+          <summary>More about my courses</summary>
+          <p>These courses have given me a strong foundation in algorithms, systems, and software engineering.</p>
+        </details>
+        <p>More to come!</p>
+      </section>
+      <section id="skills">
+        <h2>Experience with Technologies & Methods</h2>
+        <table>
+          <thead>
+            <tr><th>Technology/Method</th><th>Experience</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>HTML</td><td>Some</td></tr>
+            <tr><td>CSS</td><td>Some</td></tr>
+            <tr><td>Java</td><td>A lot</td></tr>
+            <tr><td>JavaScript</td><td>Some</td></tr>
+            <tr><td>Python</td><td>Some</td></tr>
+            <tr><td>Unit testing</td><td>A lot</td></tr>
+            <tr><td>Refactoring code</td><td>A lot</td></tr>
+          </tbody>
+        </table>
+        
+      </section>
+    </main>
+    <footer>
+     2025 Alex Li | CS4241 Assignment 1
+    </footer>
   </body>
 </html>
