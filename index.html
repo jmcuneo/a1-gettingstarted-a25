@@ -1,25 +1,62 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
+    <title>CS4241 Assignment 1 - Eric Li</title>
     <meta charset="utf-8">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
       body {
-        font-family: Arial, sans-serif;
+        font-family: 'Funnel Sans', Arial, sans-serif;
         line-height: 1.6;
+        background: linear-gradient(#c4d8fd,#e0eafc);
       }
       h1, h2 {
-        color: #1e0996;
+        color: #2882ed;
       }
       p {
         margin: 0 0 1em;
       }
+      nav {
+        background: #9EEF92;
+        padding: 10px 0;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px #b0b8d1;
+        text-align: center;
+      }
+      nav a {
+        color: #1e5ab2;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: color 0.2s;
+      }
+      nav a:hover {
+        color: #77d2ed;
+      }
+      footer {
+        margin-top: 40px;
+        padding: 16px 0;
+        background: #e0eafc;
+        text-align: center;
+        color: #28c0ed;
+      }
     </style>
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#coursework">Coursework</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">More</a>
+      </nav>
+    </header>
   <button id="funnyBtn" style="margin: 20px 0;">Show me a funny image</button>
   <div id="funnyImgContainer" style="margin-bottom: 20px;"></div>
-    <h1>Information about Eric Li</h1>
+    <h1 id="about">Information about Eric Li</h1>
+  <img src="https://ericli3.github.io/static/media/profile.38c7dd8a1cc672321603.png" alt="Eric Li profile" style="display:block;margin:18px auto 18px auto;width:200px;height:200px;object-fit:cover;border-radius:50%;box-shadow:0 2px 8px #888;">
     <p>
       BS CS (2026 soon!), Minor in Data Science, Worcester Polytechnic Institute
     </p>
@@ -27,12 +64,12 @@
       He was born in 2004 in Westborough, MA to a Chinese family of 4. He is fluent in both English and Chinese (debatable). Eric is currently a senior at Worcester Polytechnic Institute (WPI) majoring in Computer Science. Eric likes to be active and can be found hiking, biking, or playing sports in his free time. He also enjoys reading and playing the violin. He is passionate about technology and is always looking to learn new things.
     </p>
 
-    <h2> Coursework and Technologies </h2>
+    <h2 id="coursework"> Coursework and Technologies </h2>
     <p> I've taken many CS courses at WPI as I'm a senior right now. Some of the key courses include: Software Engineering, Operating Systems, Database, Systems, Algorithms, DS I & II, and Machine Learning.</p>
     <p>
       HTML (some), CSS (some), Java (lots), JavaScript (some), Python (lots), Unit testing (some), Refactoring code (lots)
     </p>
-    <h2>Experience</h2>
+    <h2 id="experience">Experience</h2>
     <p>
       Working experience
     </p>
@@ -42,7 +79,13 @@
       <li>Kumon (Tutor)</li>
     </ul>
 
+    <h2 id="contact">Find out more!</h2>
     <p>If you're interested in learning more about Eric, feel free to checkout his personal site: <a href="https://ericli3.github.io/">ericli</a></p>
+    
+    <footer>
+      &copy; 2025 Eric Li | CS4241 Assignment 1
+    </footer>
+
     <script>
       // Array of public funny/cute image URLs
       const funnyImages = [
