@@ -16,6 +16,7 @@ const server = http.createServer( function( request,response ) {
 })
 
 server.listen( process.env.PORT || port )
+console.log("Server started successfully at " + new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true }))
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
