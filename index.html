@@ -17,6 +17,8 @@
     </style>
   </head>
   <body>
+  <button id="funnyBtn" style="margin: 20px 0;">Show me a funny image</button>
+  <div id="funnyImgContainer" style="margin-bottom: 20px;"></div>
     <h1>Information about Eric Li</h1>
     <p>
       BS CS (2026 soon!), Minor in Data Science, Worcester Polytechnic Institute
@@ -25,7 +27,8 @@
       He was born in 2004 in Westborough, MA to a Chinese family of 4. He is fluent in both English and Chinese (debatable). Eric is currently a senior at Worcester Polytechnic Institute (WPI) majoring in Computer Science. Eric likes to be active and can be found hiking, biking, or playing sports in his free time. He also enjoys reading and playing the violin. He is passionate about technology and is always looking to learn new things.
     </p>
 
-    <h2> Technologies </h2>
+    <h2> Coursework and Technologies </h2>
+    <p> I've taken many CS courses at WPI as I'm a senior right now. Some of the key courses include: Software Engineering, Operating Systems, Database, Systems, Algorithms, DS I & II, and Machine Learning.</p>
     <p>
       HTML (some), CSS (some), Java (lots), JavaScript (some), Python (lots), Unit testing (some), Refactoring code (lots)
     </p>
@@ -34,10 +37,26 @@
       Working experience
     </p>
     <ul>
-      <li>Fidelity Investments (Swe intern)</li>
+      <li>Fidelity Investments (SWE intern)</li>
       <li>WPI (PLA)</li>
+      <li>Kumon (Tutor)</li>
     </ul>
 
     <p>If you're interested in learning more about Eric, feel free to checkout his personal site: <a href="https://ericli3.github.io/">ericli</a></p>
+    <script>
+      // Array of public funny/cute image URLs
+      const funnyImages = [
+        'https://media.tenor.com/t3dLLNaI50oAAAAe/cat-cats.png', // Cat meme
+        'https://media.printler.com/media/photo/176171-1.jpg?rmode=crop&width=725&height=1024', // Dog meme
+        'https://imgcdn.stablediffusionweb.com/2024/3/21/98ff1af8-62b1-4e0e-b05b-102b18a8ded6.jpg', // Funny frog
+        'https://static.wixstatic.com/media/187deb_540735a986904077a8d5c1a9121103aa~mv2.jpg/v1/fill/w_528,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/187deb_540735a986904077a8d5c1a9121103aa~mv2.jpg', // Silly raccoon
+      ];
+      const btn = document.getElementById('funnyBtn');
+      const container = document.getElementById('funnyImgContainer');
+      btn.addEventListener('click', function() {
+        const idx = Math.floor(Math.random() * funnyImages.length);
+        container.innerHTML = `<img src="${funnyImages[idx]}" alt="Funny" style="max-width:300px;border-radius:12px;box-shadow:0 2px 8px #888;">`;
+      });
+    </script>
   </body>
 </html>
