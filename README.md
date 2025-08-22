@@ -3,7 +3,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, OnRender
 
 *DUE: Friday, August29, 2025 by 11:59 PM*
 
-First assignment! You will deploy the starting Web site that you will use this term to [OnRender](http://www.onrender.com/)](https://www.render.com/). 
+First assignment! You will deploy the starting Web site that you will use this term to [Render](https://www.render.com/). 
 
 Treat this assignment as a chance to get up to speed on Git, GitHub, and OnRender, as well as experiment some with HTML/CSS/JS. If you already know these, great! 
 However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. Don't just get your website up and done, as
