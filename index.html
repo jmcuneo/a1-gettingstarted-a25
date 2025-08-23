@@ -3,52 +3,14 @@
   <head>
     <title>CS4241 Assignment 1 - Eric Li</title>
     <meta charset="utf-8">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-      body {
-        font-family: 'Funnel Sans', Arial, sans-serif;
-        line-height: 1.6;
-        background: linear-gradient(#c4d8fd,#e0eafc);
-      }
-      h1, h2 {
-        color: #2882ed;
-      }
-      p {
-        margin: 0 0 1em;
-      }
-      nav {
-        background: #9EEF92;
-        padding: 10px 0;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px #b0b8d1;
-        text-align: center;
-      }
-      nav a {
-        color: #1e5ab2;
-        text-decoration: none;
-        margin: 0 15px;
-        font-weight: bold;
-        transition: color 0.2s;
-      }
-      nav a:hover {
-        color: #77d2ed;
-      }
-      footer {
-        margin-top: 40px;
-        padding: 16px 0;
-        background: #e0eafc;
-        text-align: center;
-        color: #28c0ed;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <nav>
         <a href="#about">About</a>
         <a href="#coursework">Coursework</a>
+        <a href="#technologies">Technologies</a>
         <a href="#experience">Experience</a>
         <a href="#contact">More</a>
       </nav>
@@ -66,6 +28,42 @@
 
     <h2 id="coursework"> Coursework and Technologies </h2>
     <p> I've taken many CS courses at WPI as I'm a senior right now. Some of the key courses include: Software Engineering, Operating Systems, Database, Systems, Algorithms, DS I & II, and Machine Learning.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Technologies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Software Engineering</td>
+          <td>TS, AWS, CI/CD, Agile </td>
+        </tr>
+        <tr>
+          <td>Operating Systems</td>
+          <td>C, Linux</td>
+        </tr>
+        <tr>
+          <td>Database Systems</td>
+          <td>SQL, NoSQL</td>
+        </tr>
+        <tr>
+          <td>Algorithms</td>
+          <td>Java</td>
+        </tr>
+        <tr>
+          <td>Data Science I & II</td>
+          <td>Python, Pandas, AI</td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td>Python, TensorFlow</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 id="technologies">Technologies</h2>
     <p>
       HTML (some), CSS (some), Java (lots), JavaScript (some), Python (lots), Unit testing (some), Refactoring code (lots)
     </p>
@@ -99,6 +97,18 @@
       btn.addEventListener('click', function() {
         const idx = Math.floor(Math.random() * funnyImages.length);
         container.innerHTML = `<img src="${funnyImages[idx]}" alt="Funny" style="max-width:300px;border-radius:12px;box-shadow:0 2px 8px #888;">`;
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Select all children of body except script and style
+        const elements = Array.from(document.body.children).filter(el => el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE');
+        elements.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("fade-in");
+          }, index * 150);
+        });
       });
     </script>
   </body>

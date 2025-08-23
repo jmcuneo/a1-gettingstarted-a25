@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --color-1: #c4d8fd;
+    --color-2: #2882ed;
+    --color-3: #28c0ed;
+    --color-4: #9eef92;
+    --color-5: #1e5ab2;
+    --color-6: #77d2ed;
+}
+
+body {
+  font-family: 'Funnel Sans', Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(var(--color-1), #e0eafc);
+  padding: 3vw 4vw;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  color: var(--color-2);
+}
+@media (max-width: 700px) {
+  body {
+    padding: 2vw 1vw;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+nav {
+  background: var(--color-4);
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px var(--color-1);
+  text-align: center;
+}
+
+nav a {
+  color: var(--color-5);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--color-6);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-4);
+}
+
+footer {
+  margin-top: 40px;
+  padding: 16px 0;
+  background: #e0eafc;
+  text-align: center;
+  color: var(--color-3);
+}
