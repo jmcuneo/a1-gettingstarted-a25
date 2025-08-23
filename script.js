@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // --------------------------
-    // Fade-in & pulsing header
-    // --------------------------
     const header = document.querySelector("header h1");
     header.style.opacity = 0;
 
@@ -26,9 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     animateHeader();
 
-    // --------------------------
-    // Typing animation for "Fun Animation" section
-    // --------------------------
     const text = [
         "Nia is typing...",
         "console.log('Hello World!');",
