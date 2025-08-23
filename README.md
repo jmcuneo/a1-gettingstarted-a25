@@ -112,19 +112,26 @@ This project shows ...
   - Added rules for *body*
   - Added rules for *p*
   - Added rules for *ul* that occurs directly after *p*
-  - Added rules for a class called container
+  - Added rules for *article*
+  - Added rules for *article*
   - Added rules for a class called collapsible
   - Added rules for when a table has the class collapsible
-  - Added rules for an id main
+  - Added rules for a class called horizontal-container
+  - Added rules for a class called vertical-container
+  - Added rules for an id banner
+  - Added rules for an id frame
+  - Added rules for an id moving-object
 
 - **Added a simple JavaScript animation to the page**:
+  - Added a *div* element that served as the frame in which another *div* element would move around in the frame and reverse direction if it was about to/hits the frame that houses it
+  - This was inspired by the dvd logo screen
 
 - **Used other semantic tags:**
   - I used the *table* tag to store the information regarding technologies and methods
   - I used the *section* tag to break up my article into different sections with their own relevant text
   - I used the *footer* tag to add a copyright statement at the bottom of my webpage
   - I used the *article* tag to house the different sections that give information about me
-  - I used the *aside* tag to house the JavaScript animation
+  - I used the *div* tag to house the JavaScript animation and the different types of elements to make sure they were laid out to my liking on the webpage
 
 ## Design Achievements
 - **Used the Sansita Swashed Font & Arimo Font from Google Fonts**: 
