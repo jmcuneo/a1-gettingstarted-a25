@@ -1,6 +1,8 @@
 Arianna Xie
 http://a1-joshuacuneo.Render.com
 
+<img src="./AchievementImages/fullproject.png" alt="Full Project Screenshot">
+
 This project shows ...
 
 ## Technical Achievements
@@ -22,13 +24,14 @@ This project shows ...
 <img src="./AchievementImages/table.png" alt="Table">
 
 6. I added a media query to the 'container' and 'tag' for responsive page resizing styling. I added this because I noticed the page format would get messed up when the page would become narrow, so I did some trial and error with media queries until I thought it looked okay.
+<img src="./AchievementImages/rows.png" alt="Rows">
 
 - **Added JavaScript animation to the page**: I added an alert popup. This was pretty simple, although I did have to Google how to insert JavaScript into HTML.
 <img src="./AchievementImages/alertbox.png" alt="Alert Box">
 
 - **Added Semantic Tags**:
 1. I added 2 links that link to the websites of the companies I worked for. To do this, I had to look at an example of links in HTML to remind myself of how to include one.
-<img src="./AchievementImages/table.png" alt="Table">
+<img src="./AchievementImages/links.png" alt="Links">
 
 2. I added 2 section tags for the main writing section and the Experience section.
 3. I added 1 aside tag for my graduation year, major, and minor.
