@@ -1,0 +1,48 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comic Sans MS', 'Helvetica', 'Arial', sans-serif;
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    padding: 0.5em;
+}
+
+p{
+    width: 80%;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    color: black;
+    text-align: left;
+    padding: 0.5em;
+    text-wrap: wrap;
+}
+
+p + ul{
+    text-align: left;
+    list-style-type: square;
+    list-style-position: inside;
+    margin-top: -.5em;
+    margin-bottom: -.5em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+table.collapsible{
+    margin: .5em;
+    width: 80%;
+}
+
+
+.collapsible{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: .5em;
+}
+
+#main{
+   justify-self: center;
+}
