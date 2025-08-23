@@ -3,26 +3,78 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./mystyles.css"/>
+
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div class="card">
+        <h1>Information about Arianna Xie</h1>
+        
+        <main>
+            <div class="container">
+                <aside>
+                    <img src="myphoto.jpg" alt="Photo of Arianna">
+                    <p>
+                        <span class="label">Graduation Year:</span>
+                        2026
+                    </p>
+                    <p>
+                        <span class="label">Major:</span>
+                        <span id="majorTag">Computer Science</span>
+                    </p>
+                    <p>
+                        <span class="label">Minor:</span>
+                        <span id="minorTag">Data Science</span>
+                    </p>
+                </aside>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+                <section class="info">
+                    <p>
+                        Hi! I'm Arianna, an ungraduate senior at WPI. I am interested in pursuing a career in fullstack development; more specifically, UI/UX design. 
+                    </p>
+
+                    <p>
+                        I have taken Program Design, Systems Programming Concepts, Introduction to Machine Organization and Assembly, Algorithms, Operating Systems, Software Engineering, Computer Networks, Human-Computer Interaction, and Machine Learning. I am taking Database Systems I this term.
+                    </p>
+
+                    <p>
+                        I have experience with HTML, CSS, Java, Python, Unit testing, and a little bit of experience with refactoring code, although I don't feel confident in that yet. I don't have much experience with JavaScript, however, I am hoping I will be able to learn throughout the course of this term.
+                    </p>
+                </section>
+
+            </div>
+
+            <section>
+                <h2>Experience</h2>
+                <div class="experience">
+                    <p class="label2">Work Experience:</p>
+
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Position</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://usa.united-imaging.com/">United Imaging Intelligence</a>
+                            </td> 
+                            <td>Summer Intern</td>  
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://xellarbio.com/">Xellar Biosystems</a>
+                            </td>
+                            <td>Fullstack Summer Intern</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
   </body>
+
+  <script>
+    alert("Welcome to Arianna's About Me Page!");
+  </script>
+
 </html>

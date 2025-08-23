@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Source+Sans+3:ital,wght@0,700;1,700&display=swap');
+
+h1 {
+    color: #7D64FA;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    color: #9E8CFA;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    font-style: normal;
+}
+
+body {
+    margin: 30px 50px 30px 50px;
+    background-color: rgb(246, 243, 250);
+}
+
+.card {
+    border-radius: 10px;
+    background-color: white;
+    padding: 3px 30px 20px 30px;
+}
+
+main {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+@media (width < 800px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
+.info {
+    background-color: #F0EDF0;
+    border-radius: 10px;
+    padding: 3px 20px 3px 20px;
+}
+
+.label {
+    font-weight: 900;
+}
+.label2 {
+    font-size: larger;
+    font-weight: 900;
+}
+
+aside {
+    flex: 0 0 230px;
+    border-radius: 10px;
+    background-color: #F0EDF0;
+    padding: 15px 15px 5px 15px;
+    justify-content:center
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media (width < 800px) {
+    .tag{
+        flex: 1;
+    }
+}
+#majorTag {
+    border-radius: 10px;
+    background-color: #C5E4FA;
+    padding: 3px 6px 3px 6px;
+    width: fit-content;
+}
+#minorTag {
+    border-radius: 10px;
+    background-color: #EFD5FA;
+    padding: 3px 6px 3px 6px;
+    width: fit-content;
+}
+
+.experience {
+    border-radius: 10px;
+    background-color: #F0EDF0;
+    padding: 5px 15px 20px 15px;
+}
+
+table, th, td {
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: black;
+}
+td {
+    padding: 3px 10px 3px 10px;
+}
+tr:nth-child(even) {
+    background-color: #F0EDF0;
+}
+tr:nth-child(odd) {
+    background-color: #EFE0FA;
+}
