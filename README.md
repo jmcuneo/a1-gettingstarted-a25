@@ -104,10 +104,16 @@ Sample Readme (delete the above when you're ready to submit, and modify the text
 Joshua Cuneo
 http://a1-joshuacuneo.Render.com
 
+Nathaniel Schneider
+
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: I used link, image, footer, header, and section elements
+- **animation**: press my name at the top for a color change animation
+- **CSS rules**: display, flex-direction, color, border, align-text, background-color, padding, margin and more.
+
 
 ## Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Roboto Font from Google Fonts**: I used Inter as the google font
+- **color scheme**: I used 5 colors: #00BFFF, #004EBF, #4C8FE6, #6B4CE6 and #79D6E5

@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-h1 {
+.name {
     background-color: #00BFFF;
     color: black;
     margin: 0;
@@ -47,12 +47,18 @@ h1 {
     margin: 0;
     padding: 0;
     margin-left: 12vw;
-    color: darkblue;
+    color: 004EBF;
     font-weight: 200;
 }
 
+
 .languages {
     text-align: center;
+}
+
+.sectionTwo {
+    padding-left: 5vw;
+    color: #6B4CE6;
 }
 
 ul {
