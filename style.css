@@ -1,0 +1,63 @@
+/* Base page styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDF6FA;
+    color: #41494C;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #B77EFA, #DC8BF7);
+    color: #000A1D;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 4px solid #41494C;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+/* Sections */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #B77EFA;
+    margin-top: 2rem;
+    border-left: 6px solid #DC8BF7;
+    padding-left: 0.5rem;
+}
+
+/* Lists */
+ul {
+    list-style: square;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin: 0.3rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #000A1D;
+    color: #DC8BF7;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    border-top: 3px solid #B77EFA;
+}
