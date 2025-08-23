@@ -105,8 +105,9 @@ Joshua Cuneo
 http://a1-joshuacuneo.Render.com
 
 Nathaniel Schneider
+https://a1-nathanielschneider.onrender.com/
 
-This project shows ...
+This project shows [...](https://a1-nathanielschneider.onrender.com/)
 
 ## Technical Achievements
 - **Styled page with CSS**: I used link, image, footer, header, and section elements
