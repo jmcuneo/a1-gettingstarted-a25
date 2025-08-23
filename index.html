@@ -3,26 +3,89 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+  <header id="header">
+    This is the beginning of Ken's website
+  </header>
+    <h1>Information about Ken Sebastian</h1>
     <p>
-      [Self introduction]
+      I'm a senior at WPI. I enjoy rock climbing, basketball, and reading. Here is a link to
+      YouTube: <link href="https://youtube.com"/>
     </p>
     <p>
-      [Major and other information]
+      I'm studying CS and DS. some courses I have taken are Intro to AI, Software engineering, and Databases
     </p>
     <p>
-      [Other things]
+      HTML (a lot), CSS (a lot), Java (some), JavaScript (none), Python (some), Unit testing (some), Refactoring code (some)
     </p>
 
     <h2>Experience</h2>
     <p>
-      Working experience
+      Working Experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li> Shawmut Design and Construction, Boston - Software engineering internship this past summer</li>
     </ul>
+  <details>
+    <summary>Click the triangle to see some info about WPI</summary>
+    <p>WPI was founded in 1865</p>
+    <p>Its founders were John Boynton and Ichabod Washburn</p>
+    <p>WPI has 7 week terms</p>
+  </details>
+    <h3> Truth tables? </h3>
+    <table id="and">
+      <thead>
+        <th>AND</th>
+        <th>True</th>
+        <th>False</th>
+      </thead>
+      <tr>
+        <th>True</th>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr>
+        <th>False</th>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+    </table>
+    <br/>
+    <table id="or">
+      <thead>
+      <th>OR</th>
+      <th>True</th>
+      <th>False</th>
+      </thead>
+      <tr>
+        <th>True</th>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr>
+        <th>False</th>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+    </table>
+  <br/>
+  <p> Color pallette for this website: (Generated on Coolors)</p>
+    <img src="ColorPallette.png" alt="pallette">
+  <footer>
+    This is the end of Ken's website
+  </footer>
+  <script>
+    let header = document.getElementById("header");
+    let pos = 0;
+    setInterval(() => {
+      pos += 10;
+      header.style.left = pos + "px";
+    }, 1000); // 1000 ms = 1 second
+  </script>
   </body>
 </html>

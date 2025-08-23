@@ -1,0 +1,28 @@
+body {
+    font-family: "Funnel Sans", sans-serif;
+    background-color: #EAD2AC;
+    color: #2A0800;
+}
+
+h1 {
+    color: #240B36;
+}
+
+h2 {
+    color: #616163;
+    text-shadow: 2px 2px 4px #CC5803
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 5px;
+    text-align: center;
+}
+
+header {
+    position: relative
+}
