@@ -3,17 +3,23 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
+    <h1 class="header">Nathaniel Schneider</h1>
+    <section class="aboutMe">
+      <img src="./pic.jpg" alt="Picture of me" height="200" width="auto">
+      <p class="description">
+        Hi I'm Nate Schneider, I am currently a senior at WPI, I am from Rhode Island and I enjoy skateboarding, sailing and spending time with friends. I also really like to travel and explore new places.
+      </p>
+    </section>
+    
+    <p class="major">
+      Computer Science major w/ a minor in Datascience!
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+    <p class="majorDescription">* Click the text above for animation *</p>
+    <p class="languages">
+      I have experience with HTML, CSS, Java, JavaScript and Python and more!
     </p>
 
     <h2>Experience</h2>
@@ -24,5 +30,32 @@
       <li>IBM/Rational</li>
       <li>WPI</li>
     </ul>
+    <footer>
+      <a class="email" href="mailto:nmschneider@wpi.edu">Contact Me!</a>
+      <p class="emailText">Copyright: Nate 2025</p>
+    </footer>
+
+  <script>
+        const major = document.querySelector(".major");
+        const header = document.querySelector(".header");
+        let toggled = false;
+        major.addEventListener('click', changeColor);
+        header.addEventListener('click', changeColor);
+        function changeColor() {
+          if (toggled) {
+            major.style.color = "black";
+            major.style.backgroundColor = "#00BFFF"
+            header.style.color = "black";
+            header.style.backgroundColor = "#00BFFF"
+          } else {
+            major.style.color = "white";
+            major.style.backgroundColor = "#004EBF";
+            header.style.color = "white";
+            header.style.backgroundColor = "#004EBF"
+          }
+          toggled = !toggled;
+        }
+    </script>
+
   </body>
 </html>
