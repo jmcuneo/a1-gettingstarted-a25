@@ -1,20 +1,21 @@
 # Eric Li
 
-Deployed site: https://a1-ericli.onrender.com/
+Deployed site: https://a1-ericli-1.onrender.com/
 
 ## Technical Achievements
 - **Styled page with CSS**: 
 	- Used a custom color palette with CSS variables (`:root { --color-1 ... --color-6 }`) for easy management.
 	- Applied a linear gradient background to the body
-	- Added responsive padding to the body to separate content from the browser edges.
-	- Styled headings (`h1`, `h2`) with a primary color variable.
+	- Added responsive padding to body as to separate content from the browser edges.
+    - Used Funnel Sans font throughout the body.
+	- Styled headings (`h1`, `h2`) with color 2.
 	- Styled the navigation bar with background, rounded corners, and shadow, using color variables.
 	- Styled navigation on hover with hover color transitions.
 	- Styled tables with alternating row colors, rounded corners, and box-shadow.
-	- Styled the footer with background and color variables for a consistent look.
-	- Added a fade-in animation to all body content elements on page load.
+	- Styled the footer with background and color variables for a consistent look using color 3.
+	- Fade-in animation to all body content elements on page load.
 
-- **JavaScript Animation**: 
+- **JavaScript Animation**:
 	- Added a button that, when clicked, displays a random funny animal image below it using JavaScript. [First script in index.html]
 	- Added a script that applies a fade-in effect to all main content elements (headings, sections, etc.) when DOM loads. [Second script block in index.html]
 
