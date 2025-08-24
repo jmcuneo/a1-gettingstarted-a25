@@ -35,6 +35,35 @@ p a {
   transition: transform 1s ease-in-out; /* This makes the rotation smooth when starting and stopping */
 }
 
+.color-pallet {
+  display: flex;
+  height: 100px;
+  overflow: hidden;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-desc {
+  display: flex;
+  margin-top: 20px;
+  overflow: hidden;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-desc div {
+  flex: 1; /* percentage division */
+  font-weight:900;
+  text-align: center;
+}
+
+.color-box {
+  flex: 1;
+  height: 80px;
+  border-radius: 8px; 
+  border: 1px solid #ccc;
+}
+
 .spin-effect {
   transform: rotateY(360deg); /* This rotates the image a full 360 degrees */
 }
