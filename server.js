@@ -16,6 +16,9 @@ const server = http.createServer( function( request,response ) {
     case '/public/Doodle_Art_Converted.jpg':
       sendFile(response, 'public/Doodle_Art_Converted.jpg', 'image/jpeg') // be careful with relative path and absolute path, if we use "/" the file system FS later will understand we want to start from C:/ in the hard-disk
       break
+    case '/spin-animation.js':
+      sendFile(response, 'spin-animation.js', 'text/javascript')
+      break
     default:
       response.writeHead(404); // if there is no writeHead, it will send default status as '200'
       response.end( '404 Error: File Not Found' )

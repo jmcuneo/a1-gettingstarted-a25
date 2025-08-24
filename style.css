@@ -22,11 +22,19 @@ h1 {
   text-align: center;
 }
 
-.avata {
+.avatar-container {
   display: flex;
   justify-content: center;
 }
 
 p a {
   padding: 15px;
+}
+
+.avatar-container img {
+  transition: transform 1s ease-in-out; /* This makes the rotation smooth when starting and stopping */
+}
+
+.spin-effect {
+  transform: rotateY(360deg); /* This rotates the image a full 360 degrees */
 }
