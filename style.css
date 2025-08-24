@@ -1,0 +1,16 @@
+body{
+    background-color: lightblue;
+}
+
+headerDiv{
+    background-color: lightgray;
+    font-family: Futura;
+}
+
+introDiv{
+    background-color: turquoise;
+}
+
+listDiv{
+    background-color: lightgreen;
+}
