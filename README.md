@@ -9,7 +9,7 @@ styled page using CSS
 added a JS animation to page
 * popup alert when button is clicked
 
-experimented with other HTML tags
+used other HTML tags
 1. added a table
 2. added a button
 3. added a link
