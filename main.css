@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --primary-color: #3365a6;
+  --secondary-color: #1C8DA6;
+
+  --dark: #12151A;
+  --secondary-dark: #0B2126;
+  --white: #E1E6E8;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,18 +21,57 @@ body {
   overflow-x: hidden;
 
   font-family: "Roboto", sans-serif;
-  margin-top: 25px;
+
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+ul {
+  list-style-position: inside;
+}
+
+img {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: 1s;
+}
+
+.spin {
+  transform: rotate(360deg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 5px;
+}
+
+.section, footer {
+  margin: 10px auto;
+  width: 600px;
 }
 
 .section {
-  width: 600px;
-  margin: 0 auto;
-  padding-bottom: 10px;
+  padding: 15px;
+
+  box-shadow: 15px 6px 54px -9px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  border: 3px solid var(--secondary-dark);
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
-  .section {
-    padding: 0 25px;
-    width: 100%;
+  footer, .section {
+    width: 90%;
   }
 }

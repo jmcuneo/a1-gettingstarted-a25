@@ -62,9 +62,24 @@
         <li><a href="https://wpi.cleancatalog.net/computer-science/cs-4516">CS 4516: Advanced Computer Networks</a></li>
       </ul>
     </div>
-
-    <!--  <div class="footer">
+    <div class="section">
+      <h2>My Cats</h2>
+      <p>A photo of my cats from 2014 when they were kittens.</p>
+      <img src="cats.jpg" id="cat-image"/>
+    </div>
+    <footer>
       Created by Brendan Leu for <a href="https://wpi.cleancatalog.net/computer-science/cs-4241">WPI CS 4241</a>.
-    </div>  -->
+    </footer>
+
+    <script>
+      let catImage = document.getElementById("cat-image");
+      catImage.addEventListener("click", (event) => {
+        if (catImage.classList == "") {
+          catImage.classList = "spin"
+        } else {
+          catImage.classList = ""
+        }
+      })
+    </script>
   </body>
 </html>
