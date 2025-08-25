@@ -1,16 +1,47 @@
 body{
-    background-color: lightblue;
+    background: linear-gradient(90deg,rgba(68, 39, 232, 1) 0%, rgba(185, 175, 240, 1) 50%, rgba(194, 39, 232, 1) 100%);
+    font-family: 'Montserrat', sans-serif;
 }
 
-headerDiv{
-    background-color: lightgray;
-    font-family: Futura;
+.headerDiv{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
 }
 
-introDiv{
-    background-color: turquoise;
+
+.headerBoxDiv{
+    display: inline-block;
+    background-color: rgba(39, 132, 232, 0.282);
+    border: black 2px solid;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
-listDiv{
-    background-color: lightgreen;
+.introDiv{
+    
+}
+
+.listDiv{
+    
+}
+
+other{
+    background-color: #2785E8;
+    background-color: #C227E8;
+    background-color: #B9AFF0;
+    background-color: #4427E8;
+    background-color: #2748E8;
+     background-color: #8327E8;
+    /*https://cssgradient.io/*/
+}
+
+#header {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
 }
