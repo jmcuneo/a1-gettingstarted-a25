@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const header = document.querySelector("header h1");
-    header.style.opacity = 0;
+    header.style.opacity = "0";
 
     let opacity = 0;
     let fadingIn = true;
