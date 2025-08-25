@@ -107,7 +107,17 @@ http://a1-joshuacuneo.Render.com
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **CSS Styles**
+  - *, html, body styles added to combat browser defaults & add font
+  - .section class and @media styles added for basic responsive styling
+- **JavaScript**
+  - Server code edited to support more files
+  - ... add something to page
+- **HTML Tags**
+  - `<br />` Break tag used to add spacing and break up text blocks
+  - `<div>` A generic block container tag with minimal styling used to structure a page
+  - `<a>` An inline tag used for creating clickable links 
 
 ## Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Noto Sans**: I used Noto Sans from Google Fonts as the primary font for my website.
+- **FontAwesome**: Included Font Awesome icons
