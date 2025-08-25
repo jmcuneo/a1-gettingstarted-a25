@@ -28,7 +28,7 @@ This project shows ...
   - I used the *section* tag to break up my article into different sections with their own relevant text
   - I used the *footer* tag to add a copyright statement at the bottom of my webpage
   - I used the *article* tag to house the different sections that give information about me
-  - I used the *div* tag to house the JavaScript animation and the different types of elements to make sure they were laid out to my liking on the webpage
+  - I used the *a* tag to link elements in my document to other websites
 
 ## Design Achievements
 - **Used the Sansita Swashed Font & Arimo Font from Google Fonts**: 
