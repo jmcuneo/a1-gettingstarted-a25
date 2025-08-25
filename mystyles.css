@@ -1,3 +1,32 @@
+:root {
+    --main-color: #2D3980;
+	--secondary-color: #737EBF;
+	--tertiary-color: #060F40;
+	--background-color: #F2F4FF;
+}
+body {
+	font-family: "Oswald";
+	background-color: var(--background-color);
+}
+header,footer {
+	text-align: center;
+	background-color: var(--secondary-color);
+}
 h1 {
-	color:red;
+	color: var(--main-color);
 	}
+h2 {
+	color: var(--main-color);
+	}
+p {
+	text-indent: 50px;
+	color: var(--secondary-color);
+	}
+ul {
+	color: var(--tertiary-color);
+	}
+img {
+	display: block;
+	margin: auto;
+	width: 50%;
+}
