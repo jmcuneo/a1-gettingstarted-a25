@@ -2,27 +2,84 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div class="section">
+      <h1><i class="fa-solid fa-circle-info"></i> Information about Brendan Leu</h1>
+      <p>
+        Im Brendan, a student studying computer science at WPI. Class of 2026.
+      </p>
+      <br />
+      <p>
+        Major: Computer Science
+      </p>
+      <p>
+        Minor: Data Science
+      </p>
+    </div>       
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div class="section">
+      <h2><i class="fa-solid fa-code-branch"></i> Experience</h2>
+      <ul>
+        <li>HTML - A lot</li>
+        <li>CSS - A lot (including tools such as SASS and tailwind)</li>
+        <li>Java - A lot</li>
+        <li>JavaScript - A lot</li>
+        <li>Python - A lot</li>
+        <li>Unit testing - A lot</li>
+		    <li>Refactoring code - Some</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><i class="fa-solid fa-graduation-cap"></i> Previous Courses</h2>
+      <ul>
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-1102">CS 1102</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-2011">CS 2011</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-2103">CS 2103</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-2223">CS 2223</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-2303">CS 2303</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-3013">CS 3013</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-3041">CS 3041</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-3043">CS 3043</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-3133">CS 3133</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-3431">CS 3431</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-3733">CS 3733</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-4233">CS 4233</a>,
+        <a href="https://wpi.cleancatalog.net/computer-science/cs-4731">CS 4731</a>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><i class="fa-solid fa-graduation-cap"></i> Current Courses</h2>
+      <ul>
+        <li><a href="https://wpi.cleancatalog.net/computer-science/cs-4241">CS 4241: Webware</a></li>
+        <li><a href="https://wpi.cleancatalog.net/computer-science/cs-4342">CS 4342: Machine Learning</a></li>
+        <li><a href="https://wpi.cleancatalog.net/computer-science/cs-4516">CS 4516: Advanced Computer Networks</a></li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2><i class="fa-solid fa-paw"></i> My Cats</h2>
+      <p>A photo of my cats from 2014 when they were kittens.</p>
+      <img src="cats.jpg" id="cat-image"/>
+    </div>
+    <footer>
+      Created by Brendan Leu for <a href="https://wpi.cleancatalog.net/computer-science/cs-4241">WPI CS 4241</a>.
+    </footer>
+
+    <script>
+      let catImage = document.getElementById("cat-image");
+      catImage.addEventListener("click", (event) => {
+        if (catImage.classList == "") {
+          catImage.classList = "spin"
+        } else {
+          catImage.classList = ""
+        }
+      })
+    </script>
   </body>
 </html>
