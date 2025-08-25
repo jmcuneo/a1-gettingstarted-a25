@@ -15,6 +15,7 @@ This project shows ...
 - I added a simple animation of a wheel spinning at the bottom of the webpage.
 ### Semantic HTML Tags
 - Audio (audio)-> I added audio of Never Gonna Give You Up by Rick Astley.
+- Anchor Element (a)-> I added a hyperlink to a Youtube video.
 - Image (img)-> I added an image of the Green Bay Packers.
 - Table (table)-> I added a table with CS courses I have taken including the course number and course title.
 - Form (form)-> I added a form where you can select what type of car I have.
