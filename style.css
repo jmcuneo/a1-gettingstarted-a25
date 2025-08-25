@@ -1,0 +1,80 @@
+:root {
+    --text-color: #02020A; /* Black */
+    --background-color: #D9E5D6; /* Honeydew */
+    --primary-color: #F7A072; /* Atomic tangerine */
+    --secondary-color: #FBB874; /* Fawn */
+    --accent-color: #7180AC; /* Glaucous */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    line-height: 1.5;
+
+    padding: 2rem 5rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+
+    padding: 1rem 2.5rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+a {
+    color: var(--primary-color);
+    font-weight: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.subheading {
+    font-size: 1em;
+    font-weight: 500;
+
+    margin-top: 0;
+}
+
+.subheading strong {
+    color: var(--secondary-color);
+}
+
+p strong {
+    color: var(--accent-color);
+}
+
+.skill-great {
+    color: var(--primary-color);
+}
+
+.skill-good {
+    color: var(--secondary-color);
+}
+
+.skill-great, .skill-good {
+    font-weight: bold;
+    padding-left: 1rem;
+}
