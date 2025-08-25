@@ -1,9 +1,7 @@
 Brendan Leu
 https://a1-brendanleu.onrender.com
 
-This project shows ...
-
-For the Technical and Design achievements, make sure you thoroughly describe in your README what you did why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM. Remember that the success of Achievements hinges on how well you describe them in your README. Well formatted text, images, and concise and clear descriptions are helpful. You must include a Technical Achievements and Design Achievements section, even if none are attempted.
+This project showcases my ability to structure an HTML document, style it with the appropriate css, and incorporate JavaScript into the page for client side functionality. I first put enough content to achieve the basic requirements as described in the assignment requirements, with some slight styling such as some responsive styles and a different font. Then, I created a color scheme and created styles based on this color scheme. Lastly, I added some extra content in order to implement features for the technical achievements section. The CSS and JavaScript was somewhat difficult because I haven't touched "vanilla" CSS or JS in years. I am used to tools and frameworks like nodemon, SASS, React, Jekyll, etc.
 
 ## Technical Achievements
 - **CSS Styles**
