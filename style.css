@@ -1,0 +1,48 @@
+h1{
+    color: #1D46DB;
+
+}
+h1 + p{
+    border: 2px solid #7B70DC;
+    padding: 10px;
+    margin-left: 50px;
+}
+h1 + p + img + p + audio + p{
+    color:#6E1DDB;
+    font-size: 160%;
+}
+
+h1 + p + img + p + audio + p + p{
+    font-family: 'Playwrite CA', cursive;
+    font-size: 180%;
+    color: #9866DB;
+}
+
+h2 {
+    color: #1D46DB;
+}
+
+h2 ~ p{
+    margin-left:50px;
+    font-size:150%;
+    color:#AC1DDB;
+}
+
+.rounded{
+    width: 50%;
+    margin-left: 50px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+table,th,td{
+    border:1px solid #DB1DBF;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border: 5px solid #7B70DC;
+    border-radius: 50%;
+    background: repeating-conic-gradient(#6E1DDB 0 10deg, white 10deg 20deg);
+}

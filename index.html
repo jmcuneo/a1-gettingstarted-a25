@@ -3,26 +3,172 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="./rickroll.MP3" as="audio" type="audio/mpeg">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    </audio>
+    <h1>Information about Shawn Patel</h1>
     <p>
-      [Self introduction]
+      Hi, my name is Shawn Patel, and I’m a senior majoring in Computer Science at WPI. Outside of academics,
+      I’m passionate about fitness and staying active, whether that’s working out at the gym, playing
+      sports, or getting outdoors for a game. I also enjoy playing video games, watching TV shows and movies, and
+      keeping up with the latest in tech and gaming. In my free time, I like exploring new music, relaxing, and trying
+      new restaurants. I’m always interested in learning new skills, whether that’s coding projects, problem-solving
+      challenges, or just picking up a new hobby.
+    </p>
+    <img src = "https://krcgtv.com/resources/media/05fb282e-8edf-48ed-bf73-86e43cf49086-medium16x9_footballhelmet.png" class="rounded">
+    <p>
+      Click on the play button:
+    </p>
+    <audio controls>
+      <source src="./rickroll.MP3" type = "audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p>
+      Senior at WPI (Class of 2026) <br> Computer Science Major
     </p>
     <p>
-      [Major and other information]
+      Previous CS Courses Taken at WPI:
     </p>
-    <p>
-      [Other things]
-    </p>
+    <table>
+      <tr>
+        <th> Course Number</th>
+        <th> Course Title</th>
+      </tr>
+      <tr>
+        <td>CS 4433</td>
+        <td>Big Data Management and Analytics</td>
+      </tr>
+      <tr>
+        <td>CS 4731</td>
+        <td>Computer Graphics</td>
+      </tr>
+      <tr>
+        <td>CS 4033</td>
+        <td>Numerical Methods For Calculus and Differential Equations</td>
+      </tr>
+      <tr>
+        <td>CS 3043</td>
+        <td>Social Implications Of Information Processing</td>
+      </tr>
+      <tr>
+        <td>CS 3431</td>
+        <td>Database Systems I</td>
+      </tr>
+      <tr>
+        <td>CS 3133</td>
+        <td>Foundations of Computer Science</td>
+      </tr>
+      <tr>
+        <td>CS 3013</td>
+        <td>Operating Systems</td>
+      </tr>
+      <tr>
+        <td>CS 1101</td>
+        <td>Introduction to Program Design</td>
+      </tr>
+      <tr>
+        <td>CS 2102</td>
+        <td>Object-Oriented Design Concepts</td>
+      </tr>
+      <tr>
+        <td>CS 2223</td>
+        <td>Algorithms</td>
+      </tr>
+      <tr>
+        <td>CS 2303</td>
+        <td>Systems Programming Concepts</td>
+      </tr>
+      <tr>
+        <td>CS 3516</td>
+        <td>Computer Networks</td>
+      </tr>
+      <tr>
+        <td>CS 4099</td>
+        <td>Special Topics in Computer Science</td>
+      </tr>
+      <tr>
+        <td>CS 2022</td>
+        <td>Discrete Mathematics</td>
+      </tr>
+    </table>
 
+    <form id="car-form">
+      <label for="car-make">I have one of these cars brands:</label>
+      <input list="car-makes" id="car-make" name="car-makes" placeholder="Select brand.." />
+      <datalist id="car-makes" >
+        <option value="BMW">
+        <option value="Tesla">
+        <option value="Toyota">
+        <option value="Volkswaggon">
+        <option value="Mazda">
+      </datalist>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="result"></p>
+    <script>
+      const form = document.getElementById('car-form');
+      const input = document.getElementById('car-make');
+      const result = document.getElementById('result');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault(); // stop page refresh
+
+        if (input.value === "BMW") {
+          result.textContent = "✅ Correct! BMW is the right answer.";
+          result.style.color = "green";
+        } else {
+          result.textContent = "❌ Wrong answer. Try again.";
+          result.style.color = "red";
+        }
+      });
+    </script>
+
+    <a href = "https://www.youtube.com/watch?v=dw0bpLLGYjg">Erwin's Speech</a>
     <h2>Experience</h2>
     <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>WPI HREC (Housing and Residential Experience Center)</li>
+      <li>Subway</li>
+      <li>Olive Garden</li>
+    </ul>
+    <p>
+      Technical experience
+    </p>
+    <ul>
+      <li>HTML: a lot of experience</li>
+      <li>CSS: a lot of experience</li>
+      <li>Java: a lot of experience</li>
+      <li>JavaScript: a fair amount of experience</li>
+      <li>Python: solid amount of experience</li>
+      <li>Unit Testing: decent amount of experience</li>
+      <li>Refactoring Code: a lot of experience</li>
+
     </ul>
   </body>
+
+  <h2>JS Animation</h2>
+  <div id="animation-container" style="position: relative; width: 300px; height: 150px;">
+    <div id="circle" class="circle" style="position:absolute; left:50px; top:40px;"></div>
+  </div>
+  <script>
+    const circle = document.getElementById('circle');
+
+    let angle = 0;
+
+    function rotateCircle() {
+      angle += 2;   // gear1 clockwise
+
+      circle.style.transform = `rotate(${angle}deg)`;
+
+      requestAnimationFrame(rotateCircle);
+    }
+
+    rotateCircle();
+  </script>
 </html>
