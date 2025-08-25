@@ -23,3 +23,4 @@ This project shows ...
 ## Design Achievements
 - **Used the Playwrite CA Font from Google Fonts**: I used Playwrite CA as the font for the p tag "Previous CS Courses Taken at WPI:".
 - ![Adobe Color Pallete](Adobe_Color_Pallete.png)
+- I used all the colors from the pallete: #1D46DB, #7B70DC, #6E1DDB, #9866DB, #AC1DDB, and #DB1DBF.
