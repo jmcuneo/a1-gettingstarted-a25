@@ -1,17 +1,18 @@
 body{
     background: linear-gradient(90deg,rgba(68, 39, 232, 1) 0%, rgba(185, 175, 240, 1) 50%, rgba(194, 39, 232, 1) 100%);
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
-.headerDiv{
+.sectionContainer{
     display: flex;
-    height: 10vh;
+    height: auto;
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-top: 5px;
+    padding-top: 20px;
+    padding-right: 10px;
 }
-
 
 .headerBoxDiv{
     display: inline-block;
@@ -21,27 +22,54 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    font-size: 20px;
 }
 
-.introDiv{
-    
+.introBoxDiv{
+    display: inline-block;
+    background-color: rgba(194, 39, 232, 0.282);
+    border: black 2px solid;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3); 
+    font-size: 18px;
 }
 
-.listDiv{
-    
+.listBoxDiv{
+    display: inline-block;
+    background-color: rgba(185, 175, 240, 0.282);
+    border: black 2px solid;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3); 
+    font-size: 18px;
 }
 
-other{
+
+/*
     background-color: #2785E8;
     background-color: #C227E8;
     background-color: #B9AFF0;
     background-color: #4427E8;
     background-color: #2748E8;
-     background-color: #8327E8;
-    /*https://cssgradient.io/*/
-}
+    background-color: #8327E8;
+*/  /*https://cssgradient.io/*/
 
-#header {
+
+#transitionFirst {
   opacity: 0;
   transition: opacity 1s ease-in-out; 
+}
+
+#transitionSecond {
+  opacity: 0;
+  transition: opacity 2s ease-in-out; 
+}
+
+#transitionThird {
+  opacity: 0;
+  transition: opacity 3s ease-in-out; 
 }
