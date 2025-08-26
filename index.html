@@ -3,26 +3,120 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Knewave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+  <body onload="bouncer()">
+    <img src="https://www.freeiconspng.com/uploads/lemon-fruit-png-clipart-9.png" alt="lemon" id="lemon">
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div id="content">
+      <div id="soundboard">
+        <p style="margin-top: 0">Cool soundboard</p>
+        <input type="radio" id="splat" name="sfx" value="splat">
+        <label for="html">Splat</label><br>
+        <input type="radio" id="zap" name="sfx" value="zap">
+        <label for="css">Zap</label><br>
+        <input type="radio" id="sparkle" name="sfx" value="sparkle">
+        <label for="javascript">Sparkle</label><br><br>
+        <button type="button" onclick="playSound()">Play Sound</button>
+      </div>
+
+      <h1>Information about Ashley Fontaine!!!</h1>
+      <p>
+        Computer Science, Class of 2027
+      </p>
+      <p id="intro">
+        I am an undergrad student at Worcester Polytechnic Institute, with a focus in network engineering. I hope to pursue a Master's degree in the coming year. I enjoy network design and solving problems. In my free time I read, write poetry, cook, and compete nationally at music based video games.
+      </p>
+
+      <p>
+        Strong experience with HTML, CSS, Java, Refactoring Code<br>
+        Little experience with Javascript, Python, Unit Testing
+      </p>
+
+      <h2>Experience</h2>
+
+      <p>
+        Class experience
+      </p>
+      <ul id="classlist">
+          <li>3013</li>
+          <li>3133</li>
+          <li>3516</li>
+          <li>3431</li>
+          <li>3043</li>
+          <li>2103</li>
+          <li>2303</li>
+        </ul>
+
+      <p>
+        Working experience
+      </p>
+      <ul>
+        <li>A&W Restaurants</li>
+        <li>Rhode Island Nursing Education Center</li>
+        <li>Island Fin Poke Co.</li>
+        <li>Lowes</li>
+        <li>Professor Heffernan's Lab, WPI</li>
+      </ul>
+    </div>
+
+    <div id="musicplayer">
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+      </audio>
+      <p>Generic royalty free audio</p>
+    </div>
+
+    <script>
+      function playSound() {
+        const val = document.querySelector('input[name="sfx"]:checked').value;
+        var audio = null;
+        if(val == "splat"){
+          audio = new Audio('splat.mp3');
+        } else if (val == "zap") {
+          audio = new Audio('zap.wav');
+        } else if (val == "sparkle"){
+          audio = new Audio('sparkle.wav');
+        }
+        audio.play();
+      }
+
+      function bouncer() {
+        let id = null;
+        const elem = document.getElementById("lemon");
+        const maxY = document.getElementById("content").clientHeight - 60;
+        let x = 1;
+        let dx = 0.25;
+        let y = 1;
+        let dy = 3;
+        let z = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if(x >= 100){
+            dx = -0.25;
+          } else if (x <= 0){
+            dx = 0.25;
+          }
+          if(y >= maxY){
+            dy = -3;
+          } else if (y <= 0){
+            dy = 3;
+          }
+          if(z == 360){
+            z = 0;
+          }
+          x = x + dx;
+          y = y + dy;
+          z = z + 0.5;
+          elem.style.top = y + "px";
+          elem.style.left = x + "%";
+          elem.style.rotate = z + "deg";
+        }
+      }
+    </script>
   </body>
 </html>
