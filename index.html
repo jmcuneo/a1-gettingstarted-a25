@@ -2,27 +2,147 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+
+    <!--CSS Styling-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+      body {
+        font-family: 'Roboto', sans-serif;
+        color: #748965;
+        background-color: #e1eadd;
+        text-align: center;
+        text-decoration: wavy;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Creates three equal-width columns */
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+
+      /* Responsive adjustment for smaller screens */
+      @media (max-width: 768px) {
+          .grid-container {
+              grid-template-columns: 1fr; /* Stacks columns on top of each other */
+          }
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      .picture-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        align-items: center; /* This is the key change */
+      }
+
+      img {
+        max-width: 90%;
+        height: auto;
+        filter: drop-shadow(10px 10px 15px #6B8E33);
+      }
+
+      .banner {
+        color: #47A866;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      p b {
+        color: #326921;
+      }
+      </style>
+
+      <!-- JS Simple Typing Animation for First Header -->
+      <script>
+        var i=0;
+        var txt = 'Information about Amanda Chavarria Pleitez';
+        var speed = 150; //Duration in milliseconds
+
+        function type(){
+          if (i < txt.length){
+            document.getElementById("typing").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(type, speed);
+          }
+        }
+        // Call function and make it start as soon as the page loads
+        window.onload = type;
+      </script>
+
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1 id="typing"></h1>
+    <p class="banner">· · ─────── ·𖥸· ─────── · ·</p>
     <p>
-      [Self introduction]
+      <b>Bio: </b>Hello! My name is Amanda Chavarria Pleitez and I am pursuing my bachelors in Computer Science. I am part of class of 2026 so this is my final year of college! It went by so fast but I hope to make lots of fun memories :) Some things I love to do in my free time is playing video games with friends, listening to music/podcasts, working out, reading, and sleeping! I'm really excited for fall activities such as apple picking, corn mazes, pumpkin decorating, and more. I'm also super excited to learn a lot from this class (especially some fullstack and more JavaScript).
     </p>
     <p>
-      [Major and other information]
+      <b>Major:</b> Computer Science (BS)
     </p>
     <p>
-      [Other things]
+      <b>Fun Fact:</b> I have an emotional support animal(mouse) named Toast!
     </p>
+    <br>
+    <br>
+    <div class="picture-container">
+      <div class="pic-1-col">
+        <img src="toast.png">
+      </div>
+      <div class="pic-2-col">
+        <img src="amandaa.jpg">
+      </div>
+    </div>
 
+    <br>
+    <br>
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <p class="banner">· · ─────── ·𖥸· ─────── · ·</p>
+    <br>
+    <div class="grid-container">
+      <div class="column">
+        <b>Previous CS Courses @ WPI</b>
+        <ul>
+          <li>CS 1001</li>
+          <li>CS 2011</li>
+          <li>CS 2022</li>
+          <li>CS 2102</li>
+          <li>CS 2223</li>
+          <li>CS 2303</li>
+          <li>CS 3013</li>
+          <li>CS 3041</li>
+          <li>CS 3043</li>
+          <li>CS 3133</li>
+          <li>CS 4341</li>
+        </ul>
+      </div>
+      <div class="column">
+        <b>Technologies/Methods Skill Level</b>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Unit testing</li>
+          <li>Refactoring code</li>
+        </ul>
+      </div>
+      <div class="column">
+        <b>Working Experience</b>
+        <ul>
+          <li>NAVSEA</li>
+          <li>RCN Capital</li>
+        </ul>
+      </div>
+  </div>
   </body>
 </html>
