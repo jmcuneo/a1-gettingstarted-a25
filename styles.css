@@ -1,0 +1,90 @@
+body {
+    background-color: #faad66;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Handlee", cursive;
+}
+
+ul {
+    width: 30%;
+    border-width: 4px;
+    border-color: #fac466;
+    border-style: solid;
+    background-color: #fad666;
+    position: relative; 
+    left: 35%; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+h1 {
+    color: #fadeac;
+    font-family: "Knewave", system-ui;
+    font-weight: 200;
+    background-color: #fa9466;
+    padding: 10px 0px 10px 0px;
+    margin-top: 0px;
+}
+
+h2 {
+    font-family: "Knewave", system-ui;
+    font-weight: 100;
+}
+
+
+#content {
+    background-color: #fae866;
+    width: 76%;
+    position: relative;
+    left: 12%;
+    border-style: solid;
+    border-width: 0px 10px 0px 10px;
+    border-color: #fa9466;
+    padding: 50px 0px 50px 0px;
+}
+
+#intro {
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+
+#classlist {
+    width: 20%;
+    left: 40%
+}
+
+#lemon {
+    position: absolute;
+    height: 70px;
+}
+
+#musicplayer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    width: 300px;
+    background-color: #fae866;
+    border-style: solid;
+    border-color: #fa9466;
+    border-width: 10px;
+    padding: 10px;
+}
+
+#soundboard {
+    position: absolute;
+    top: 500px;
+    left: 30px;
+    background-color: #faad66;
+    border-color: #fadeac;
+    border-width: 5px;
+    border-style: solid;
+    padding: 20px;
+}
