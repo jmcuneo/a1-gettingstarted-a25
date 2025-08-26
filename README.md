@@ -34,6 +34,7 @@ This project shows a simple webpage with information about me, a cute typing ani
   - Black: `#000A1D`  
   Color palette link: [https://color.adobe.com/create/color-wheel](https://color.adobe.com/create/color-wheel)  
 - Styled the site using these colors for headers, text, backgrounds, and the typing animation container.  
-- Added a fun typing animation using JavaScript to make the page interactive and engaging.  
+- Added a fun typing animation using JavaScript to make the page interactive and engaging.
+- The animation is of a computer screen that types away what my hobbies are like coding and serving and how I love WPI and the service industry 
 
 
