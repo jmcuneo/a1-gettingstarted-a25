@@ -1,0 +1,14 @@
+.butterfly{
+    display: flex;
+    justify-content: center;
+    img {
+        width: 80vw;
+    }
+}
+
+.experiencetable{
+    table, th, td{
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+}
