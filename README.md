@@ -1,5 +1,5 @@
 Ashley Fontaine
-http://a1-ashleyFontaine.Render.com
+http://a1-ashleyFontaine-a25.onrender.com
 
 This project shows a simple HTML website with information about myself and my experience in work and computer science. It examples some HTML tags stylized with CSS and even some Javascript features. I designed the site to include some interactivity, like a soundboard and music player, to make it more specialized and personable to myself, however I made sure to use royalty free sounds.
 
@@ -11,3 +11,4 @@ This project shows a simple HTML website with information about myself and my ex
 ## Design Achievements
 - **Used the Handlee and Knewave Font from Google Fonts**: I wanted my site to have a more relaxed feel to it, using a handwritten looking font for the titles and text. I used a nice bold, marker looking font for titles and a simpler, thinner font for basic text. I almost wish the body text font was a bit thinner, but I think the two selected fonts work well together.
 - **Created color palette from Adobe**: My favorite colors are pink and yellow, so I selected a range that was within that. I tried to use the paler yellow shades as background while the colors closer to salmon and pink I used as accent shades. 
+
