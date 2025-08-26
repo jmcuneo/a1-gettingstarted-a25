@@ -3,18 +3,21 @@ const http = require('http'),
       port = 3000
 
 const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
+  const url = "." + request.url;
+  
+  if (fs.existSync(url)) {
+
+  switch( url ) {
     case '/':
       sendFile( response, 'index.html' )
       break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
-    case '/mystyles.css':
-      sendFile( response, 'mystyles.css' )
-      break
+
     default:
-      response.end( '404 Error: File Not Found' )
+      sendFile(response, url);
+  }
+  }
+  else {
+    response.end("404: Error. Fuile does not exist.");
   }
 })
 
