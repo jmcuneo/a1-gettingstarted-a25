@@ -111,3 +111,37 @@ This project shows ...
 
 ## Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+
+Notes:
+- had to add style.css in server.js as a case. It was not working by itself before.
+- used W3Schools a lot to refresh on CSS syntax
+
+# ************************************
+****** Design Achievements: ******
+# ************************************
+Color palette:
+
+
+Font: 
+
+# ************************************
+****** Technical Achievements: ******
+# ************************************
+Styled CSS page:
+- body
+    --> set a light purple background color (#f1effa) and used the Roboto font from Google Fonts
+    --> added padding around everything to make it look cleaner and increased the line spacing a bit so it’s easier to read
+- headings (h1, h2, h3)
+    --> made them bigger and used a maroon color (#4a2c2a)
+    --> added a line underneath the h2 and h3 headers with a light tan color to make the headers stand out
+- section
+    --> created a container to use for readability purposes/set contrast between background and text
+    --> added a shadow too for aesthetic purposes 
+- list
+    --> used a soft pink background
+    --> created a border on the left of each list item
+    --> added rounded corners (border-radius) for aesthetic purposes
+- paragraph
+    --> made paragraph text to be slightly bigger 
+
+
