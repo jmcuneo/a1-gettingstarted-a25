@@ -3,26 +3,42 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="webStyle.css">
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body style="margin: 50px;">
+    <h1>Information about Michael Lin</h1>
+    <img src="Michael.jpg" alt="Picture of Michael Lin" width="200">
     <p>
-      [Self introduction]
+      My name is Michael Lin, a senior student in WPI. 
     </p>
     <p>
-      [Major and other information]
+      Major is Computer Science and plan for a data science minor
     </p>
+    <h1>Experience</h1>
     <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
+      Class taken
     </p>
     <ul>
-      <li>IBM/Rational</li>
+      <li>Software </li>
       <li>WPI</li>
     </ul>
+    <button class = 'btn' onclick="changeBackground()" id="backgroundChanger">Click me</button><br>
+    <a href="https://github.com/MikeLin0321/a1-MichaelLin-a25.git" target="_blank">Link for Github assignment for this project</a>
   </body>
 </html>
+
+<script>
+let index = 0;
+const gradients = [
+  "linear-gradient(to right, #24eef0, #1cef9b)",
+  "linear-gradient(to right, #f0db2d, #c636f0)",
+  "linear-gradient(to right, #f0db2d, #1cef9b)"
+]
+
+  function changeBackground() {
+   index = (index + 1) % gradients.length;
+   document.body.style.backgroundImage = gradients[index];
+   btn = document.getElementById("backgroundChanger");
+   btn.style.backgroundImage = gradients[index];
+}
+</script>

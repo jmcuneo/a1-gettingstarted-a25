@@ -1,0 +1,44 @@
+font-face {
+    font-family: Macondo;
+    src: url('Macondo-Regular.ttf');
+}
+
+
+h1 {
+    color: green;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+p {
+    font-family: 'Macondo', cursive;
+    font-size: 20px;
+}
+
+body {
+    background-image: linear-gradient(to right, #24eef0, #1cef9b);
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+  float:right;
+  margin-right: 200px;
+}
+
+.btn{
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background-image: linear-gradient(to right, #240AFC,#C20AFC,#730AFC);
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.btn:hover{
+    background-image: linear-gradient(to right, #730AFC,#C20AFC,#240AFC);
+    color: white;
+    font-weight: bold;
+}
