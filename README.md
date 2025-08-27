@@ -1,5 +1,5 @@
 Conor McCoy
-http://a1-conormccoy.Render.com
+https://a1-conormccoy.onrender.com/
 
 
 This project is a basic personal webpage displaying the information required for Assignment 1. It utilizes HTML for structure and CSS for styling.

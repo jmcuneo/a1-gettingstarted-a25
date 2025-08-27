@@ -4,6 +4,18 @@ const http = require('http'),
 
 
 const server = http.createServer(function (request, response) {
+/*    const url = "." + request.url;
+    switch (url) {
+        case '/':
+            sendFile(response, 'index.html');
+            break
+        default:
+            sendFile(response, url);
+    }
+} else
+{
+    response.end("404: Error. File does not exist.");
+}*/
     switch (request.url) {
         case '/':
             sendFile(response, 'index.html')
