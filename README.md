@@ -1,4 +1,4 @@
-Amanda Chavarria Pleitez [add render link]
+Amanda Chavarria Pleitez https://a1-amandachavarriapleitez.onrender.com
 
 This project shows information about myself such as my name, major, class, hobbies, things I am looking forward to, my mouse, and experiences/skills.
 
