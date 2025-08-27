@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
 ===
 
 ## Owen Hart
-http://a1-joshuacuneo.Render.com
+https://a1-owenhart-a25.onrender.com
 
 This project contains a webpage with some information about myself. It also serves as an introduction to
 CS4241, Computer Webware.
