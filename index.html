@@ -1,46 +1,93 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./mystyles.css"/>
-    <script>
-      alert("My First JavaScript");
-    </script>
-  </head>
-  <body>
-    <h1>Information about Conor McCoy</h1>
-    <p>
-      Hi, my name is Conor! I am a Comp Sci major in my senior year.
-    </p>
-    <p>
-      Major: Computer Science
-      Minor: History
-    </p>
-    <p>
-      I enjoy playing video games in my free time.
-    </p>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+<h1>Information about Conor McCoy</h1>
+<p>
+    <i>Hi, my name is Conor! I am a Comp Sci major in the class of 2026.</i>
+</p>
+<table>
+    <tr>
+        <th><u>Major</u></th>
+        <th><u>Minor</u></th>
+    </tr>
+    <tr>
+        <td>Computer Science</td>
+        <td>History</td>
+    </tr>
+</table>
+<h2><u>Experience</u></h2>
+<div class="experience-container">
+    <div>
+        <h3>
+            <u><i>CS classes at WPI</i></u>
+        </h3>
+        <ul>
+            <li>CS1101</li>
+            <li>CS2102</li>
+            <li>CS2303</li>
+            <li>CS2223</li>
+            <li>CS3013</li>
+            <li>CS3431</li>
+            <li>CS3043</li>
+            <li>CS3041</li>
+            <li>CS3733</li>
+            <li>CS3516</li>
+            <li>CS4342 (In Progress)</li>
+        </ul>
+    </div>
+    <div>
+        <h3>
+            <u><i>Technology & Method Experience</i></u>
+        </h3>
+        <ul>
+            <li>HTML - Some</li>
+            <li>CSS - Some</li>
+            <li>Java - A lot</li>
+            <li>JavaScript - Some</li>
+            <li>Python - Some</li>
+            <li>Unit Testing - A lot</li>
+            <li>Refactoring Code - A lot</li>
+        </ul>
+    </div>
+</div>
+<h2><u>Other Info</u></h2>
+<p>
+    In my free time, I enjoy playing video games. I'm especially looking forward to the upcoming release of Hollow
+    Knight: Silksong.
+</p>
 
-    <h2>Experience</h2>
-    <p>
-     CS classes at WPI
-    </p>
-    <ul>
-      <li>CS1101</li>
-      <li>CS2102</li>
-      <li>CS2303</li>
-      <li>CS2223</li>
-      <li>CS3013</li>
-      <li>CS3431</li>
-      <li>CS3043</li>
-      <li>CS3041</li>
-      <li>CS3733</li>
-      <li>CS3516</li>
-      <li>CS4342 (In Progress)</li>
-    </ul>
+<a href="https://hollowknightsilksong.com/">
+    <img src="assets/silksong.png" alt="Hollow Knight: Silksong"/>
+</a>
 
-    <p>
-      Technology/Method Experience
-    </p>
-  </body>
+<footer>
+    <p><i>CS4241 HW#1 - Conor McCoy</i></p>
+</footer>
+
+<script>
+    const introHeader = document.querySelector('h1');
+    introHeader.classList.add('fade-in');
+
+    setTimeout(() => { //length between fade in and out
+        introHeader.classList.add('visible');
+    }, 300);
+</script>
+
+</body>
 </html>

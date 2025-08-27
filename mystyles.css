@@ -1,0 +1,96 @@
+
+:root {
+    --header-color: #8000f6;
+    --text-color: #302739;
+    --dark-purple: #4C3463;
+    --background-color: #E6E4F0;
+    --dark-color: #2F2C33;
+
+}
+
+body {
+    font-family: "Source Code Pro", serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    text-align: center;
+    align-content: center;
+}
+
+h1, h2 {
+    color: var(--header-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    align-content: center;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--dark-purple);
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+img {
+    display: inline-block;
+    border: 4px solid var(--dark-purple);
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid var(--dark-color);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--dark-color);
+}
+
+th{
+    color: var(--dark-purple);
+    font-weight: bold;
+}
+
+ul{
+    padding-right: 50px;
+    margin: 0;
+    padding-top: 0;
+    list-style-position: inside;
+    display: inline-block;
+}
+
+.experience-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
