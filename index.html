@@ -4,29 +4,85 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./app.css"/>
-    <script>
-      alert('script')
-    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   </head>
   <body>
+  <header>
     <h1>Information about Owen Hart</h1>
+  </header>
     <p>
-      [Self introduction]
+      Class of 2027
     </p>
     <p>
-      [Major and other information]
+      Computer Science Major and ECE Minor
     </p>
-    <p>
-      [Other things]
-    </p>
+    <h2>
+      Previous Courses
+    </h2>
+    <div style="display: flex; gap: 100px;">
+      <div>
+        <ul>
+          <li>3733 - software engineering</li>
+          <li>3431 - database systems</li>
+          <li>3041 - social implications</li>
+          <li>340X - intro to security</li>
+          <li>3133 - foundations of CS</li>
+          <li>4342 - machine learning</li>
+          <li>3013 - operating systems</li>
+          <li>2223 - algorithms</li>
+          <li>2011 - intro to machine org</li>
+          <li>2303 - systems programming</li>
+          <li>2103 - accelerated OOD</li>
+          <li>1102 - accelerated intro to CS</li>
+        </ul>
+      </div>
+      <div>
+        <div style="display: flex; gap: 100px;">
+          <p>color palette used for this page</p>
+          <button onclick="myAnimate()">Click To Rotate Image</button>
+        </div>
+        <img id="image" src="ColorPalette.png" alt="Color Palette" width="700" height="400"/>
+      </div>
+    </div>
+    <script>
+      function myAnimate() {
+        let id = null
+        const element = document.getElementById("image")
+        clearInterval(id)
+        id = setInterval(frame, 5);
+        let deg = 0
+
+        function frame() {
+          if (deg >= 360) {
+            clearInterval(id);
+          } else {
+            deg++
+            element.style.rotate = deg + "deg"
+          }
+        }
+      }
+    </script>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML: Some Experience</li>
+      <li>CSS: Some Experience</li>
+      <li>Java: A Lot of Experience</li>
+      <li>JS: Some Experience</li>
+      <li>Python: A Lot of Experience</li>
+      <li>Unit Testing: A Lot of Experience</li>
+      <li>Refactoring Code: A Lot of Experience</li>
     </ul>
+    <footer>
+      <p>Also I have a WIP website</p>
+      <a href="https://o-wel.github.io/ovh-website">Go to my site here</a>
+      <ul>
+        <li>IBM/Rational</li>
+        <li>WPI</li>
+      </ul>
+    </footer>
   </body>
 </html>

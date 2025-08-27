@@ -1,3 +1,28 @@
-h1 {
-    color: red;
+body {
+    color: #293003;
 }
+
+button {
+    background-color: #2A3033;
+    color: lightgray;
+}
+
+h1 {
+    color: #24A3DC;
+    font-weight: bold;
+}
+
+h2 {
+    color: #3D525C;
+}
+
+p {
+    color: #427186;
+    font-family: "Permanent Marker", cursive;
+}
+
+li {
+    color: #3A8BB1;
+    font-style: italic;
+}
+
