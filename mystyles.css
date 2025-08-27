@@ -1,3 +1,26 @@
-h1{
-color: red    
+header h1{
+color: #1b263b;    /* header color rule */
+}
+body {
+  font-family: 'Roboto', sans-serif; /* r1 font Rule */
+  background-color: #fdf6e3;  /* r2 background color rule */
+  color: #333;
+  margin: 20px;
+}
+nav a {
+  color: #268bd2;
+  margin: 0 10px;
+  text-decoration: none;
+}
+table, th, td {
+  border: 1px solid black;  /* r4 tabl borders */
+  border-collapse: collapse;
+}
+nav a:hover {
+  color: orange;   /* r5 hover */
+}
+footer {
+  background-color: #eee8d5;
+  text-align: center;
+  padding: 10px;
 }
