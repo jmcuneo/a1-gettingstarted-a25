@@ -4,18 +4,6 @@ const http = require('http'),
 
 
 const server = http.createServer(function (request, response) {
-/*    const url = "." + request.url;
-    switch (url) {
-        case '/':
-            sendFile(response, 'index.html');
-            break
-        default:
-            sendFile(response, url);
-    }
-} else
-{
-    response.end("404: Error. File does not exist.");
-}*/
     switch (request.url) {
         case '/':
             sendFile(response, 'index.html')
@@ -28,9 +16,6 @@ const server = http.createServer(function (request, response) {
             break
         case '/assets/silksong.png':
             sendFile(response, 'assets/silksong.png')
-            break
-        case '/myscript.js':
-            sendFile(response, 'myscript.js')
             break
         default:
             response.end('404 Error: File Not Found')
