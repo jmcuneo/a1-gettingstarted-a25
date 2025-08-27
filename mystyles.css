@@ -1,0 +1,54 @@
+header {
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #6B3E2C;
+    padding: 20px;
+    color: #EBD1C7;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    background-color: #AB8678;
+    padding: 20px;
+    color: #EBD1C7;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+}
+
+h2 {
+    padding-left: 30px;
+    color: #5C968C;
+}
+
+p {
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid #C7EBE5;
+    padding: 8px;
+}
+
+img {
+    margin: 20px;
+}
+
+ul {
+    margin-left: 20px;
+}
