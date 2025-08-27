@@ -10,6 +10,12 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+    case '/styles.css':
+      sendFile( response, 'styles.css' )
+      break
+    case '/image.jpg':
+      sendFile( response, 'image.jpg' )
+      break
     default:
       response.end( '404 Error: File Not Found' )
   }
@@ -22,3 +28,20 @@ const sendFile = function( response, filename ) {
      response.end( content, 'utf-8' )
    })
 }
+
+
+
+
+
+
+// const server = http.createServer( function( request,response ) {
+//   const url = "." + request.url;
+
+//   if( fs.existsSync(url)){
+//     sendFile( response, 'index.html' )   
+//   }
+//   else {
+//     response.end( '404 Error: File Not Found' )
+//   }
+
+// })

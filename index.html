@@ -1,28 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#animation">Animation</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 id="home">Information about John Diamond, class of 2026</h1>
+
     <p>
-      [Self introduction]
+      I am a Senior at WPI who enjoys playing basketball and hanging out with
+      friends in my free time.
     </p>
+    <p>Major: Computer Science</p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      CS courses taken: 1101, 2102, 2223, 2011, 2303, 3013, 3043, 3431, 3733,
+      3516, 4341, 4099
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <figure>
+      <img src="image.jpg" />
+      <figcaption>Me during my internship at IBM</figcaption>
+    </figure>
+
+    <h2 id="experience">Experience</h2>
+    <h3>Technologies</h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML - some</li>
+      <li>CSS - some</li>
+      <li>Java - a lot</li>
+      <li>JavaScript - some</li>
+      <li>Python - a lot</li>
+      <li>Unit testing - some</li>
+      <li>Refactoring code - some</li>
     </ul>
+    <h3>Working Experience</h3>
+    <ul>
+      <li>IBM</li>
+      <li>Codomax</li>
+      <li>UMass Chan Medical School</li>
+    </ul>
+    <p><a href="https://www.linkedin.com/in/john-yang-diamond/">LinkedIn</a></p>
+
+    <p id="animation"><button onclick="myMove()">Click Me</button></p>
+
+    <div id="container">
+      <div id="animate"></div>
+    </div>
+
+    <script>
+      function myMove() {
+        let id = null;
+        const elem = document.getElementById("animate");
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 350) {
+            clearInterval(id);
+          } else {
+            pos++;
+            elem.style.top = pos + "px";
+            elem.style.left = pos + "px";
+          }
+        }
+      }
+    </script>
+
+    <footer>
+      <p>Author: John Diamond</p>
+      <p>Blog Created <time datetime="2025-08-26">August 26th</time></p>
+    </footer>
   </body>
 </html>
