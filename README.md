@@ -13,7 +13,7 @@ This project is a personal profile page for Matthew Franco, created for CS4241 A
 - **Styled page with CSS:** I created a custom stylesheet (`styles.css`) to style the HTML elements, including headings, paragraphs, lists, and icons. I implemented a fade-in animation for my profile picture using CSS keyframes, which required learning about CSS animations. I also used advanced CSS filters to recolor the GitHub icon to purple on hover, which was challenging because it required experimenting with filter values to achieve the desired color effect.
 - **JavaScript Feature:** I added a button that will alert the user using JavaScript.
 - **Image and Icon Linking:** I added clickable icons for LinkedIn and GitHub that open my profiles in new tabs.
-- **Additional HTML tags:** I experimented with other tags such as <footer>, <a>, <br>, <img>, and <span>.
+- **Additional HTML tags:** I experimented with other tags such as `<footer>`, `<a>`, `<br>`, `<img>`, and `<span>`.
 
 ## Design Achievements
 
