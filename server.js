@@ -10,8 +10,8 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
-    case '/styles.css':
-      sendFile( response, 'styles.css' )
+    case 'https://a1-johndiamond.onrender.com/styles.css':
+      sendFile( response, 'https://a1-johndiamond.onrender.com/styles.css' )
       break
     case '/image.jpg':
       sendFile( response, 'image.jpg' )
