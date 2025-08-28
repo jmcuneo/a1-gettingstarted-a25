@@ -1,23 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<link rel="stylesheet" href="public/styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monomakh&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
+</head>
   <body>
-  <link rel="stylesheet" href="public/styles.css" />
-    <header>Information about Maxwell Jeronimo</header>
-    <p class="information">
-      My name is Max Jeronimo, and I am in the Class of 2027.
-    <br/>
-      <br/>
+  <header>
+    <nav>
+      <h1 class="logo">
+        JERONIMO
+      </h1>
+      <br>
+      <ul class="nav-links">
+        <li><a href="#hero" class="hero">Home</a></li>
+        <li><a href="#about" class="about">About</a></li>
+        <li><a href="#experience" class="experience">Experience</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section id="hero" class="hero">
+      <h2>My name is Max Jeronimo, and I am in the <span>Class of 2027.</span></h2>
       I am studying Computer Science, with the goal of getting my masters in AI.
-    <br/>
-  <br/>
+
+
+      Some of my favorite things are listening to music, collecting vinyls, playing soccer, and snowboarding.
+    </section>
+
+  <section id="about" class="about">
+    <h3>About</h3>
+    <p>I am studying Computer Science, with the goal of getting my masters in AI.
       Some of my favorite things are listening to music, collecting vinyls, playing soccer, and snowboarding.
     </p>
+  </section>
 
-    <h2>Experience</h2>
+  <section id="experience" class="experience">
+    <h3>Experience</h3>
     <p>
       I have taken the following Computer Science classes here at WPI:
     </p>
@@ -34,9 +55,9 @@
       <li>3733</li>
       <li>3133</li>
     </ul>
-  <p>
-    I have also used the following languages:
-  </p>
+    <p>
+      I have also used the following languages:
+    </p>
     <ul>
       <li>HTML - A lot</li>
       <li>CSS - Some</li>
@@ -46,5 +67,8 @@
       <li>Unit testing - Some</li>
       <li>Refactoring code - Some</li>
     </ul>
+  </section>
+
+
   </body>
 </html>
