@@ -18,7 +18,8 @@
     display: flex;
     justify-content: center;
     img {
-        width: 80vw;
+        max-width: 80vw;
+        max-height: 600px;
         border-radius: 7px;
     }
     opacity: 0;
