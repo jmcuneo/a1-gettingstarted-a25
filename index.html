@@ -5,6 +5,12 @@
         <meta charset="utf-8">
 
         <style>
+            .profile_pic {
+                border-radius: 50%;
+                width: 12em;
+                height: 12em;
+            }
+
             h1, h2 {margin-left: 2%;}
             p {margin-left: 2%;}
             ul {list-style: none;}
@@ -12,37 +18,61 @@
                 content: '\27A4';
                 margin-right: 2%;
             }
-            .flex-container {
+            .flex_rows, .flex_cols {
                 display: flex;
-                background-color:darksalmon;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .flex_cols {
+                flex-direction: column;
+            }
+            .flex_rows > div {
+                padding: 1em;
+                margin-bottom: auto;
+            }
+            .item {
+                flex-grow: 1;
+                margin: 5%;
+            }
+            .website_side_div {
+                background-color: steelblue;
+                border-width: 0%s;
+                width: 1em;
+                height: 100vh;
+                flex-grow: 1;
             }
         </style>
 
     </head>
     <body>
-        <h1>Information about Matthew Papesh</h1>
-        <p style="font-style: italic; font-weight: bold;">B.S. Robotics Engineering and Computer Science Student <!--Major & Other Info--></p>
-        <ul>
-            <li>Class of 2026</li>
-            <li>Residential Advisor</li>
-            <li>President, Robotics Prototyping Club (RPC)</li>
-            <li>Student Advisory Board, Robotics Engineering Dept</li>
-        </ul>
-        
-        <table>
-            <tr>
-                <th>1</tr><th>2</tr>
-            </tr>
-        </table>
-        
-
-    <h2>Experience</h2>
-    <p>
-        Working experience
-    </p>
-    <ul>
-        <li>IBM/Rational</li>
-        <li>WPI</li>
-    </ul>
+        <div class="flex_rows"> <!--<style="display: flex; flex-direction: column; justify-content:space-between; align-items: center;"-->
+            <div class="website_side_div"></div>
+            <div>
+                <div class="flex_rows">
+                   <div>
+                       <img class="profile_pic" src="img/profile.jpg">
+                   </div>
+                   <div>
+                       <h1>Information about Matthew Papesh</h1>
+                       <p style="font-style: italic; font-weight: bold;">B.S. Robotics Engineering and Computer Science Student <!--Major & Other Info--></p>
+                       <ul>
+                           <li>Class of 2026</li>
+                           <li>Residential Advisor</li>
+                           <li>President, Robotics Prototyping Club (RPC)</li>
+                           <li>Student Advisory Board, Robotics Engineering Dept</li>
+                       </ul>
+                   </div>
+                </div>  
+                <div>
+                   <h2>Work Experience</h2>
+                   <ul>
+                       <li></li>
+                       <li></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="website_side_div"></div>
+        </div>  
   </body>
 </html>
