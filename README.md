@@ -36,7 +36,7 @@ This assignment requires that your website is both contained in a GitHub reposit
         * CSS
         * Java
         * JavaScript
-        * Python
+        * Pythonls
         * Unit testing
 		* Refactoring code
 3. Complete some technical and/or design achievements (see below).

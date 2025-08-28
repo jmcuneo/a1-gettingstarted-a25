@@ -1,0 +1,87 @@
+CS4241 Assignment 1
+
+Author: Aditya Patel
+Course: CS4241 – Webware
+Professor: Prof. Cuneo
+
+Overview
+
+This is Assignment A1. The goal was to create a personal webpage using HTML, CSS, and JavaScript, while meeting all rubric requirements for Technical Achievements and Design Achievements.
+
+Technical Achievements
+
+5 CSS Rules (5 pts)
+
+Font Rule: Used Roboto from Google Fonts across the site (body).
+
+Background Color Rule: Set the body background to #FFFEF2 from my Adobe palette.
+
+Header Color Rule: Header <h1> text is styled with palette color #FFFA9E.
+
+Table Borders Rule: Styled <table>, <th>, and <td> with a solid border (1px solid #333).
+
+Hover Rule: Navigation links change color to palette color #9EFFCB when hovered.
+
+→ This covers 5 distinct CSS styling rules.
+
+JavaScript Animation (5 pts)
+
+Added a small JavaScript animation in script.js that changes the header’s color every second 
+
+Semantic HTML Tags (5 pts)
+
+Used a variety of semantic HTML elements:
+
+<header> and <footer> for page structure.
+
+<nav> for navigation links.
+
+<section> for About and Experience areas.
+
+<ul> and <table> for lists and structured data.
+
+<img> for a profile picture.
+-  ensures semantic, meaningful structure.
+
+Design Achievements
+
+Color Palette (10 pts)
+I created a color palette using Adobe Color
+.
+The 5 palette colors are:
+
+#9EFFCB
+
+#9EFFA9
+
+#BAFF9D
+
+#D3FF57
+
+#FFFA9E
+
+Plus background: #FFFEF2
+
+Where they are used in my site:
+
+#FFFEF2 → Background color of the entire page.
+
+#FFFA9E → Header <h1> text color.
+
+#9EFFCB → Navigation hover effect.
+
+#BAFF9D → Footer background.
+
+#D3FF57 → Background for the Experience section.
+
+→ Screenshot of my Adobe Color wheel is included in the repo (colorwheel.png).
+
+Google Fonts (5 pts)
+
+Used the Roboto font from Google Fonts for all text.
+
+Hosting
+
+Render Link:
+
+The project is hosted on Render and source code is stored in a GitHub repo.
