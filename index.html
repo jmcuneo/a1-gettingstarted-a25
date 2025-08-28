@@ -45,7 +45,7 @@
 <p>
     I do photography sometimes:
 </p>
-<div class="butterfly">
+<div id="butterfly" >
     <img src="butterflies.webp" alt="Butterflies">
 </div>
 
@@ -56,44 +56,40 @@
 <div class="experiencetable">
     <table>
         <tr>
-            <th>
-                None
-            </th>
-            <th>
-                Some
-            </th>
-            <th>
-                A lot
-            </th>
+            <th>None</th>
+            <th>Some</th>
+            <th>A lot</th>
         </tr>
         <tr>
-            <td>
-                Python
-            </td>
-            <td>
-                Unit testing
-            </td>
-            <td>
-                HTML
-            </td>
+            <td>Python</td>
+            <td>Unit testing</td>
+            <td>HTML</td>
         </tr>
         <tr>
-            <td>
-
-            </td>
-            <td>
-
-            </td>
-            <td>
-                JavaScript
-            </td>
+            <td></td>
+            <td>CSS</td>
+            <td>JavaScript</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Refactoring code</td>
+            <td>Java</td>
         </tr>
     </table>
 </div>
-<ul>
-    <li>CSS</li>
-    <li>Java</li>
-    <li>Refactoring code</li>
-</ul>
 </body>
+<script>
+    const butterfly = document.getElementById("butterfly");
+    const fadein = (element) => {
+        let opacity = 0;
+        const timer = setInterval( ()=> {
+            if (opacity >= 1){
+                clearInterval(timer);
+            }
+            element.style.opacity = opacity;
+            opacity += 0.02;
+        }, 15);
+    };
+    fadein(butterfly)
+</script>
 </html>

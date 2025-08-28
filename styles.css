@@ -1,9 +1,10 @@
-.butterfly{
+#butterfly{
     display: flex;
     justify-content: center;
     img {
         width: 80vw;
     }
+    opacity: 0;
 }
 
 .experiencetable{
@@ -11,4 +12,22 @@
         border: 1px solid;
         border-collapse: collapse;
     }
+    th, td {
+        padding: 5px;
+    }
+}
+
+body {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 2vw;
+}
+
+:root {
+    background-color: #0C4848;
+    color: #EBF2F2;
+}
+
+h1 {
+    color: #85c8c8;
 }

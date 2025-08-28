@@ -6,7 +6,7 @@ const server = http.createServer(function (request, response) {
     const url = "." + request.url;
     if (fs.existsSync(url)) {
         switch (url) {
-            case '/':
+            case './':
                 sendFile(response, 'index.html')
                 break
             default:
