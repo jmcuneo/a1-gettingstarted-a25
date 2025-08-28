@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="styles.css">
 
 <body>
-<div id="header-container">
+<div class="header-footer-container">
     <header>
         <h1>Information about Christopher Yon</h1>
     </header>
@@ -25,34 +25,50 @@
     </p>
     <ul>
         <li>
-            <mark> CS3733 Software Engineering</mark>
+            <a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/3776/computer-science#CS-3733">
+                CS3733 Software Engineering
+            </a>
         </li>
         <li>
-            CS2102 Object-Oriented Design Concepts (Java)
+            <a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/3776/computer-science#CS-2102">
+                CS2102 Object-Oriented Design Concepts (Java)
+            </a>
         </li>
         <li>
-            CS2303 Systems Programming Concepts (C/C++)
+            <a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/3776/computer-science#CS-2303">
+                CS2303 Systems Programming Concepts (C/C++)
+            </a>
         </li>
         <li>
-            CS2223 Algorithms
+            <a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/3776/computer-science#CS-2223">
+                CS2223 Algorithms
+            </a>
         </li>
         <li>
-            CS2011 Machine Organization and Assembly Language
+            <a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/3776/computer-science#CS-2011">
+                CS2011 Machine Organization and Assembly Language
+            </a>
         </li>
         <li>
-            CS3013 Operating Systems
+            <a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/3776/computer-science#CS-3013">
+                CS3013 Operating Systems
+            </a>
         </li>
         <li>
-            CS3431 Database Systems
+            <a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/3776/computer-science#CS-3431">
+                CS3431 Database Systems
+            </a>
         </li>
         <li>
-            CS3133 Foundations of Computer Science
+            <a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/3776/computer-science#CS-3133">
+                CS3133 Foundations of Computer Science
+            </a>
         </li>
     </ul>
     <p>
         I do photography sometimes:
     </p>
-    <div id="butterfly" >
+    <div id="butterfly">
         <img src="butterflies.webp" alt="Butterflies">
     </div>
 
@@ -60,7 +76,7 @@
     <p>
         Technologies and techniques by experience
     </p>
-    <div class="experiencetable">
+    <div>
         <table>
             <tr>
                 <th>None</th>
@@ -86,13 +102,24 @@
     </div>
 </section>
 
+<div class="header-footer-container">
+    <footer>
+        <p id="footerText">Hello!</p>
+    </footer>
+</div>
+
 </body>
 <script>
+    (() => {
+        const footerGreetings = ["Don't mind me, just hanging out down here :)", 'Hi there! :)', "Have a good day! :)", "You found me :O"];
+        const randomGreeting = Math.floor(Math.random() * footerGreetings.length);
+        document.getElementById('footerText').innerHTML = footerGreetings[randomGreeting];
+    })();
     const butterfly = document.getElementById("butterfly");
     const fadein = (element) => {
         let opacity = 0;
-        const timer = setInterval( ()=> {
-            if (opacity >= 1){
+        const timer = setInterval(() => {
+            if (opacity >= 1) {
                 clearInterval(timer);
             }
             element.style.opacity = opacity;
