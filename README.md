@@ -7,7 +7,7 @@ styled page using CSS
 5. added margin to button
 
 added a JS animation to page
-* popup alert when button is clicked
+* button moves on page, alert when clicked
 
 used other HTML tags
 1. added a table
