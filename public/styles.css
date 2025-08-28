@@ -8,14 +8,13 @@ body{
 header{
     position: sticky;
     top: 0;
-    padding: 20px 50px;
+    padding: 1px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-    background-color: #000000;
+    background-color: #9a0d0d;
     color: #F2F2F2;
-    font-size: 50px;
+    font-size: 32px;
     font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -84,6 +83,7 @@ nav {
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 200px;
 }
 
 
