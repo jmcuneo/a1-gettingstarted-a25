@@ -60,7 +60,6 @@ h3 {
 
 ul {
     list-style: none;
-    padding: 0;
 }
 
 li {
@@ -72,4 +71,18 @@ li {
 
 li:hover {
     color: #CA02FA;
+}
+
+footer {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1em;
+    color: #cccccc;
+
+    min-height: 1vh;
+}
+
+.footer-item {
+    padding: 10px;
 }
