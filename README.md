@@ -107,7 +107,17 @@ http://a1-joshuacuneo.Render.com
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+
+- h1: bottom border following color scheme generated on Adobe
+- h2: bottom border following color scheme generated on Adobe
+- h3: bottom border following color scheme generated on Adobe
+- li: changes color on hover following color scheme generated on Adobe
+- body: changed body text to Roboto flex, a publicly available font from Google
+
+- section: made text fade in when on screen and fade out when not in view
+
+- img: portrait picture of myself
+- a and img: hyperlinks to my various accounts at the bottom of the page
 
 ## Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
