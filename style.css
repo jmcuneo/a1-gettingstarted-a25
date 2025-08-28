@@ -1,0 +1,51 @@
+body {
+  background-color: #DBB804;
+  margin: 0;
+}
+
+h2 {
+  color: #DB6004;
+}
+
+h3 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+  font-style: italic;
+}
+
+header {
+  background-color: #DB9B04;
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-evenly;
+}
+
+.bodyclass {
+  margin: 10px;
+}
+
+button {
+  background-color: #DB8404; /* Green */
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+button:hover {
+  transform: scale(1.5);
+  border: #DB6004;
+}
+
+footer {
+  background-color: #DBD200;
+  text-align: center;
+}
+
+li {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
