@@ -66,21 +66,55 @@ li {
 /*-- learned about doing picture framing here:
      https://code2care.org/tutorial/creative-css-profile-picture-designs/
 */
-.profile-picture.circular {
+
+/* from what I understand,  the "." is an html class selector */
+.profile-picture.icon {
     width: 200px;
     height: 200px;
     border-radius: 40%;
+    /* this removes parts of the picture outside of the circle */
     overflow: hidden;
+    /* this centers the picture */
     margin: auto;
 }
 
-.profile-picture.circular img {
+/* from what I understand, by including img we are targeting anything
+that has img inside within an element that has both profile-picture and icon
+ */
+.profile-picture.icon img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* change the colors of my image */
+    filter: sepia(40%) saturate(50%);
 }
 
 footer {
     text-align: center;
     background-color: var(--font_color);
+}
+
+.tracker {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+
+    /* make it circular */
+    border-radius: 50%;
+
+    /* make it transparent */
+    opacity: 90%;
+
+    /* make it unclickable */
+    pointer-events: none;
+
+    /* used to smooth out animations */
+    transition: left 0.15s linear, top 0.15s linear;
+
+    /* centers it on the coordinates */
+    transform: translate(-50%, -50%);
+
+    /* makes it appear behind other elements on the website*/
+    z-index: -1;
 }
