@@ -2,24 +2,16 @@ const http = require('http'),
       fs   = require('fs'),
       port = 3000
 
-const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
-    case '/style.css':
-      sendFile( response, 'style.css' )
-      break
-    case '/wpi_image.jpg':
-      sendFile( response, 'wpi_image.jpg' )
-      break
-    default:
-      response.end( '404 Error: File Not Found' )
+const server = http.createServer( function( request, response ) {
+  let url = request.url;
+  let path = url === '/' ? 'index.html' : url.replace(/^\//, '');
+
+  if (fs.existsSync(path)) {
+    sendFile(response, path);
+  } else {
+    response.end("404: Error: File Not Found");
   }
-})
+});
 
 server.listen( process.env.PORT || port )
 
