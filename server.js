@@ -17,7 +17,7 @@ const server = http.createServer( function( request,response ) {
         sendFile(response, 'script.js');
         break;
       case '/mypic.jpg':
-        sendFile(response, 'aadipic.jpg');
+        sendFile(response, 'aadipic.JPG');
         break;
       default:
       response.end( '404 Error: File Not Found' )
