@@ -1,7 +1,7 @@
 # Assignment 1: Personal Website Deployment
 
 ## Project Link
-[Render link]
+https://a1-rohittallapragada.onrender.com
 
 ## Project Description
 My first assignment for the Webware; makes use of HTML, CSS, and JavaScript, and is deployed using Git, GitHub, and Render.
@@ -43,4 +43,5 @@ My first assignment for the Webware; makes use of HTML, CSS, and JavaScript, and
 2. Edited index.html with personal information
 3. Styled with CSS and added JavaScript animation
 4. Deployed to Render
+
 5. Created pull request to original repository
