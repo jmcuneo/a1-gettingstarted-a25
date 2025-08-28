@@ -54,7 +54,6 @@
 header {
     background-color: #85C8C8;
     width: 82%;
-    height: 67px;
     border-radius: 7px;
     margin-top: -15px;
 
@@ -76,9 +75,7 @@ header {
     }
 
 }
-body {
-    overscroll-behavior-y: none;
-}
+
 :root {
     background-color: #0C4848;
     color: #EBF2F2;
@@ -88,6 +85,7 @@ h1 {
     color: #331402;
     font-family: playfair, serif;
     padding-left: 1vw;
+    margin-bottom: 3px;
 }
 h2 {
     font-weight: bold;
