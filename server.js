@@ -5,10 +5,7 @@ const http = require('http'),
 const server = http.createServer( function(request,response) {
 
     const url = "." + request.url;
-
-
     console.log("Request for:", url, "\n");
-
 
     if (fs.existsSync(url)) {
         switch (url) {
