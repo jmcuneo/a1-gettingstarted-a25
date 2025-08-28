@@ -7,6 +7,7 @@ This project is my personal site for the first assignment of CS4241.
 It contains information about me (name, class year, major, CS courses taken, current courses, experience, and interests).  
 It is hosted on Render and managed using GitHub and Node.js.  
 
+
 ---
 
 ## Technical Achievements
