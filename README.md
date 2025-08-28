@@ -134,9 +134,7 @@ This project shows ...
 
 ## Design Achievements
 - **Adobe Colour Palette**:
-    I created a palette featuring five shades that centre around purple.
-    A lavender shade for the backdrop of the site, a fuschia shade for normal text, a grape shade for header text, a greyish-blue shade for
-    text backgrounds, and a light pink shade [TBD].
+    I created a palette featuring five shades that centre around purple. A lavender shade for the backdrop of the site, a grape shade for text, a greyish-blue shade for text backgrounds, and a fuschia and light pink shade for [TBD].
 
 - **Google Font**:
-    
+    I important the fonts Cinzel Decorative for header text and Cormorant Unicase for normal text.

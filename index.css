@@ -1,8 +1,3 @@
-.cinzel-decorative-regular {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 body {
     background-color: #DFC0FA;
@@ -10,15 +5,19 @@ body {
 
 h1 {
     display: inline;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 45px;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
     color: #AF63DB;
     background-color: #C4BFE6;
 }
 
 h2 {
     display: inline;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 30px;
     color: #AF63DB;
     background-color: #C4BFE6;
@@ -26,7 +25,9 @@ h2 {
 
 h4 {
     display: inline;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 25px;
     color: #AF63DB;
     background-color: #C4BFE6;
@@ -34,10 +35,12 @@ h4 {
 
 p, ul li {
     display: table;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 20px;
-    color: #DC65E2;
+    color: #AF63DB;
     background-color: #C4BFE6;
 }
 
-/* #FFB7ED TBD */
+/* #FFB7ED and #DC65E2 TBD */
