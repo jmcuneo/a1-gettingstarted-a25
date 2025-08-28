@@ -1,5 +1,5 @@
 John Diamond
-http://a1-johndiamond.Render.com
+https://a1-johndiamond-1.onrender.com
 
 This project shows my ability to implement a basic design of a portfolio page using HTML, CSS, and JavaScript as well as deploying it using Github and Render.
 
