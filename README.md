@@ -38,10 +38,10 @@ My first assignment for the Webware; makes use of HTML, CSS, and JavaScript, and
 - Used Roboto font from Google Fonts
 - Applied different font weights for different sections
 
-## Setup and Deployment
+## Setup & Deployment
 1. Forked original repository
 2. Edited index.html with personal information
 3. Styled with CSS and added JavaScript animation
 4. Deployed to Render
-
 5. Created pull request to original repository
+
