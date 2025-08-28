@@ -1,12 +1,22 @@
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 1em;
+}
+
 body {
     font-family: "Overpass", sans-serif;
     color: #264653;
     margin: 3em;
+    background-color: #f4e3b2;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 h1, h2 {
     font-weight: bold;
     color: #8eb1c7;
+    margin-bottom: 0;
 }
 
 p {
@@ -43,6 +53,11 @@ p {
     display: flex;
     align-items: end;
     gap: 2em;
+}
+
+.experience {
+    display: flex;
+    justify-content: space-between;
 }
 
 .profile-icons {
