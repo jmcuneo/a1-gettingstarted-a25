@@ -69,11 +69,23 @@
 <a href="https://www.example.com">This is a link to an example website</a>
 <br/>
 <script>
+    window.onload = () => {
+        let button = document.getElementById("myButton");
+        let pos = 0;
+        let direction = 1;
+        const animate = () => {
+            pos += 2 * direction;
+            if (pos > 100 || pos < 0) direction *= -1;
+            button.style.transform = `translateX(${pos}px)`;
+            requestAnimationFrame(animate);
+        }
+        animate();
+    }
     const myFunction = () => {
         alert("Hello! I am an alert box!");
     }
 </script>
-<button onclick="myFunction()">Try it</button>
+<button id="myButton" onclick="myFunction()">Try it</button>
 <br/>
 <footer>My footer down here</footer>
 </body>
