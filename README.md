@@ -111,3 +111,32 @@ This project shows ...
 
 ## Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+
+
+## Technical Achievements
+- **Styled page with CSS**:
+    1. 
+    2. 
+    3. 
+    4. 
+    5. 
+
+- **JavaScript Animation**:
+
+
+- **Semantic HTML Tags**:
+    1. 
+    2. 
+    3. 
+    4. 
+    5. 
+
+
+## Design Achievements
+- **Adobe Colour Palette**:
+    I created a palette featuring five shades that centre around purple.
+    A lavender shade for the backdrop of the site, a fuschia shade for normal text, a grape shade for header text, a greyish-blue shade for
+    text backgrounds, and a light pink shade [TBD].
+
+- **Google Font**:
+    
