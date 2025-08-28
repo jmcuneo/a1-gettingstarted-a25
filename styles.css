@@ -19,6 +19,7 @@
     justify-content: center;
     img {
         width: 80vw;
+        border-radius: 7px;
     }
     opacity: 0;
 }
@@ -26,28 +27,67 @@
 .experiencetable{
     table, th, td{
         border: 1px solid;
-        border-collapse: collapse;
+        border-spacing: 0;
     }
+    table {
+        border-radius: 7px;
+        :first-child > :first-child{
+            border-top-left-radius: 6px;
+        }
+        :first-child > :last-child{
+            border-top-right-radius: 6px;
+        }
+        :last-child > :first-child{
+            border-bottom-left-radius: 6px;
+        }
+        :last-child > :last-child{
+            border-bottom-right-radius: 6px;
+        }
+    }
+
+
     th, td {
         padding: 5px;
     }
 }
 
-body {
+header {
+    background-color: #85C8C8;
+    width: 82%;
+    height: 67px;
+    border-radius: 7px;
+    margin-top: -15px;
+
+}
+
+#header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.maintext {
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 2vw;
     font-family: ubuntu, sans-serif;
-}
+    mark {
+        background-color: #4E9D9D;
+        color: #331402;
+    }
 
+}
+body {
+    overscroll-behavior-y: none;
+}
 :root {
     background-color: #0C4848;
     color: #EBF2F2;
 }
 
 h1 {
-    color: #85c8c8;
+    color: #331402;
     font-family: playfair, serif;
+    padding-left: 1vw;
 }
 h2 {
     font-weight: bold;
