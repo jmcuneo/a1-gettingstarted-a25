@@ -3,26 +3,76 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./mystyle.css"/>
   </head>
+  <header>
+    Information about Grace Robinson
+  </header>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <section>
+      <h1>Who am I?</h1>
+      <p>
+        Hello! My name is Grace Robinson and I am a Senior here at WPI. I am originally from Boise, Idaho! I enjoy playing soccer, hiking, walking on the beach, and camping with friends.
+      </p>
+      <p>
+        I am completing my BS in Computer Science and a MS in Data Science. Some previous courses that I have taken that are my favorite are Foundations of Computer Science, Software Engineering, Big Data Analytics and Management, and Introduction To Machine Organization And Assembly Language. 
+      </p>
+      <p>
+        I have a lot of experience with technologies and methods such as CSS, Java, JavaScript, HTML, and Python. However, I have less experience with unit testing and refactoring code.
+      </p>
+      <button id="showBtn">
+        See Me!
+      </button>
+      <div id="showimage">
+        <img src="/images/face.png">
+        <div id="hiddenimage">
+          <button id="hideBtn">
+            Hide Me!
+          </button>
+        </div>
+      </div>
+      <script>
+        document.getElementById("showBtn").addEventListener("click", () => {
+          document.getElementById("showimage").style.display = "block";
+        });
+        document.getElementById("hideBtn").addEventListener("click", () => {
+          document.getElementById("showimage").style.display = "none";
+        });
+      </script>
+    </section>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>Undergraduate Reasearcher for WPI Business School</li>
+        <li>Software Engineering Intern at The Home Depot</li>
+        <li>User Experience Design</li>
+        <li>CSS and Python</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>My Favorite Things</h2>
+      <table>
+        <tr>
+          <th>Foods</th>
+          <th>Places</th>
+          <th>Plants</th>
+        </tr>
+        <tr>
+          <td>Chicken</td>
+          <td><a href="https://prague.eu/en/">Prague, CR</a></td>
+          <td>Lily flowers</td>
+        </tr>
+        <tr>
+          <td>Anything at Trader Joes</td>
+          <td><a href="https://idaho.gov/">Idaho</a></td>
+          <td>Weeping Willow</td>
+        </tr>
+      </table>
+    </section>
   </body>
+  <footer>
+    <h3>That was me!</h3>
+  </footer>
 </html>

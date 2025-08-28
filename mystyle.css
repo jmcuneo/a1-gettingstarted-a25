@@ -1,0 +1,152 @@
+header {
+    background-image: url('/images/sky.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: auto;
+    text-align: center;
+    align-content: center;
+    color: #FED1D7;
+    font-size: 400%;
+    font-weight: bold;
+    text-align: center;
+}
+body {
+    background-color: #DFE2E8;
+    font-family: Verdana;
+}
+h1 {
+    color: #7B080C;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    color: #7B080C;
+    font-size: 200%;
+    font-weight: bold;
+    margin-left: 15px;
+    text-align: center;
+    margin-top: 75px;
+}
+h3 {
+    color: #7B080C;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    color: #7A3828;
+    border: 2px solid #DF7987;
+    padding: 30px;
+    background-color: #FED1D7;
+    width: 400px;
+    height: 150px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+    vertical-align: top;
+    text-align: center;
+    align-content: center;
+}
+section {
+    vertical-align: top;
+    text-align: center;
+    align-content: center;
+}
+li {
+    color: #7A3828;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    vertical-align: top;
+    text-align: center;
+    align-content: center;
+}
+ul li {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    padding-left: 40px;
+    color: #7A3828;
+    border: 2px solid #DF7987;
+    padding: 30px;
+    background-color: #FED1D7;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+button {
+    background-color: #C76D6A;
+    border: 2px solid #B2282B;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    color: #E6D7BE;
+    font-size: 125%;
+    text-align: center;
+    align-content: center;
+}
+button:hover {
+    background-color: #B2282B;
+}
+#showimage {
+    display: none;
+    margin-top: 10px;
+}
+#hiddenimage {
+    display: block;
+    margin-top: 10px;
+}
+img {
+    width: 500px;
+    height: 375px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    margin-bottom: 50px;
+    border: 2px solid #61112C;
+    border-collapse: collapse;
+    background-color: #FED1D7;
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+  border: 1px solid #61112C; 
+  padding: 10px;
+  text-align: left;
+}
+tr {
+    width: 200px;
+    height: 30px;
+    font-size: 130%;
+}
+tr, th, td {
+    vertical-align: top;
+    text-align: center;
+    align-content: center;
+    color: #61112C;
+}
+a {
+    color: #7A3828
+}
+footer {
+    height: 100px;
+    width: auto;
+    background-color: #A86854;
+    text-align: center;
+    align-content: center;
+}
