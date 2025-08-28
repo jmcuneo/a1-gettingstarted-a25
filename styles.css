@@ -1,3 +1,19 @@
+@font-face {
+    font-family: playfair;
+    src: url(PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
 #butterfly{
     display: flex;
     justify-content: center;
@@ -21,6 +37,7 @@ body {
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 2vw;
+    font-family: ubuntu, sans-serif;
 }
 
 :root {
@@ -30,4 +47,8 @@ body {
 
 h1 {
     color: #85c8c8;
+    font-family: playfair, serif;
+}
+h2 {
+    font-weight: bold;
 }
