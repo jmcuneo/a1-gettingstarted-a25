@@ -2,8 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
 ===
 
 Michael Napoleone
-http://a1-michaelnapoleone.Render.com
-
+https://a1-michaelnapoleone.onrender.com
 This project shows ...
 
 ## Technical Achievements
