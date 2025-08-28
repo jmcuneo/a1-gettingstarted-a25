@@ -108,14 +108,17 @@ This project shows ...
 
 ## Technical Achievements
 
+### CSS Styling
 - h1: bottom border following color scheme generated on Adobe
 - h2: bottom border following color scheme generated on Adobe
 - h3: bottom border following color scheme generated on Adobe
 - li: changes color on hover following color scheme generated on Adobe
 - body: changed body text to Roboto flex, a publicly available font from Google
 
+### JS Transitions
 - section: made text fade in when on screen and fade out when not in view
 
+### Semantic HTML
 - img: portrait picture of myself
 - a and img: hyperlinks to my various accounts at the bottom of the page
 
