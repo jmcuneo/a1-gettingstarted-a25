@@ -1,6 +1,6 @@
 
 Ayush Kulkarni
-http://a1-ayushkulkarni.Render.com
+https://a1-ayushkulkarni.onrender.com/
 
 This project shows a webpage all about me. It also displays my current skills in html, css, and learning to host on Render. 
 
