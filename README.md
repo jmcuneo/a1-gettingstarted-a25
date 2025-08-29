@@ -8,10 +8,15 @@ This project shows ...
 - **Added a simple JavaScript animation to the page**: I used JavaScript to make the image fade in when the page loads. To achieve this, I defined the base opacity of the image container to be 0, then embedded a script in the HTML that retrieves the image container by its ID, defines a function that uses an interval to repeatedly increase the opacity until it reaches 100%, then immediately runs that function so the image fades in when the page is loaded. This was challenging because it required me to research how JavaScript animations were typically done (intervals), and how to change attributes of HTML elements with JavaScript. While not necessarily an animation, the embedded script also randomly chooses from several greetings to put inside the footer each time the page is loaded, again requiring research on how to manipulate HTML with JavaScript.
 - **Used other semantic HTML tags:**
   - Header
+    - I put the title of the page inside a header.
   - Links
+    - I made each course in the list of courses a link to official WPI course info for the respective course.
   - Image
+    - I included an image to show off one of my hobbies.
   - Table
+    - I organized my proficiency with each technology/technique into a table with one column for each level of proficiency. The levels of proficiency are table headers, and each technology/technique is in a table data tag.
   - Footer
+    - I included a fun greeting inside a footer that is randomly selected on each reload;.
 
 ## Design Achievements
 - **Used a Color Palette created with color.adobe.com**: I created a color palette with color.adobe.com and implemented it across all the colors on the website. The header background, footer background, and links are light green (#85C8C8), the header and footer text is dark brown (#331402), and the body text is off-white (#EBF2F2).
