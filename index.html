@@ -3,26 +3,106 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link href="style.css" rel = "stylesheet">
 
-    <h2>Experience</h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <article>
+    <header>
+      <h1 style="font-size:40px;">Information about Cameron Norris</h1>
+    </header>
+  </article>
+  <body>
     <p>
-      Working experience
+      WPI Class of 2027
+    </p>
+    <p>
+      Computer Science Major, Music Minor
+    </p>
+    <p>
+      Classes taken:
     </p>
     <ul>
-      <li>IBM/Rational</li>
+      <li>Accelerated Intro</li>
+      <li>Accelerated OOD</li>
+      <li>Systems</li>
+      <li>Discrete Math</li>
+      <li>OS</li>
+      <li>Algos</li>
+      <li>Foundations</li>
+      <li>HCI</li>
+    </ul>
+    <h2>Experiences:</h2> 
+    <p>
+      Unit testing, refactoring code, Java, some Python (among other languages not listed)</h2>
+    </p>
+      <p>
+      Working experience (relating to computer science):
+    </p>
+    <ul>
       <li>WPI</li>
     </ul>
+    <section>
+      <h2>Miscellaneous Other Things:</h2>
+      <br>
+      <br>
+        <p>
+          <button onclick="myMove()">Click to move the guitar image</button>
+          <img id="myImage" src="https://adamharkus.b-cdn.net/wp-content/uploads/2023/03/Gibson_SG_Standard_2006.jpg" style="position:absolute;left:0px;top:570px;width:70px;height:50px;">
+        </p>
+        <a href="https://www.imdb.com/title/tt0052357/">My favorite film, Vertigo</a>
+      
+        <script>
+          var i = null;
+          function myMove() {
+            var elem = document.getElementById("myImage");   
+            var pos = 0;
+            clearInterval(i);
+            i = setInterval(frame, 10);
+            function frame() {
+              if (pos == 350) {
+                clearInterval(i);
+              } else {
+                pos++; 
+                elem.style.left = pos + 'px'; 
+              }
+            }
+          }
+        </script>
+
+        <br>
+        <p>
+          Luke's Lightsaber colors in the original Star Wars Trilogy:
+        </p>
+        <table>
+          <tr>
+            <th>Lightsaber Color</th>
+            <th>Film</th>
+          </tr>
+          <tr>
+            <td>Blue</td>
+            <td>A New Hope</td>
+          </tr>
+          <tr>
+            <td>Blue</td>
+            <td>Empire Strikes Back</td>
+          </tr>
+          <tr>
+            <td>Green</td>
+            <td>Return of the Jedi</td>
+          </tr>
+        </table>
+
+    </section>
+
+    <footer>
+      <small>A1 "Getting Started" for CS4241; created by Cameron Norris</small>
+    <footer>
   </body>
 </html>
