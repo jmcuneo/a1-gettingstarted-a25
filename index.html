@@ -9,13 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1 class="asimovian-regular">Information about Colin Lemire</h1>
-    <p>
-      Hi! I am a junior at WPI interested in cybersecurity and video games.
-    </p>
-    <p>
-      My major is Computer Science and I am currently talking to my department advisor to talk about joining the BS/MS program.
-    </p>
+    <div>
+      <header><h1 class="asimovian-regular">Information about Colin Lemire</h1></header>
+      <p>
+        Hi! I am a junior at WPI interested in cybersecurity and video games.
+      </p>
+      <p>
+        My major is Computer Science and I am currently looking into the BS/MS program.
+      </p>
+    </div>
     <h1>Experience</h1>
     <h2>
       CS Classes Taken at WPI
@@ -83,30 +85,30 @@
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const box = document.getElementById('box');
+        const window = document.body;
         let x = 100;
         let y = 100;
-        let dx = 2; // horizontal speed
-        let dy = 2; // vertical speed
+        let dx = 2; 
+        let dy = 2;
 
-        function animate() {
+        function move() {
           x += dx;
           y += dy;
-
           box.style.left = x + 'px';
           box.style.top = y + 'px';
           
-          if (x > window.innerWidth - 200 || x < 0) {
+          if (x > window.clientWidth - 200 || x < 0) {
             dx *= -1;
           }
 
-          if (y > window.innerHeight - 200 || y < 0) {
+          if (y > window.clientHeight - 200 || y < 0) {
             dy *= -1;
           }
 
-          requestAnimationFrame(animate);
+          requestAnimationFrame(move);
         }
 
-        animate(); // Start the animation
+        move(); 
       });
     </script>
 
