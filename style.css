@@ -1,0 +1,26 @@
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: navy;
+}
+h2 {
+    color: rebeccapurple;
+}
+h3 {
+    color: powderblue;
+}
+p {
+    color: red;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+header {
+    background-color: navy;
+}
