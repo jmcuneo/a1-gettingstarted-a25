@@ -4,15 +4,21 @@ Technical Achievements:
     Styled page with CSS: Added rules for body and subsections such as h1,h2,h3.
     added a little image based on an example I found online. I figured out how to move it around on the page and adjust qualities. I also studied why it worked.
     added interesting semantics like <footer>, used <a> for a hyperlink on a piece of text for the github page, added bulleted points, added a collapsible for the work experience section.
+    added a javascript animation for a circle to appear behind/trail the cursor. I also made it appear behind the text for extra style points.
+    I made it so the website works on both my node.js server locally and on Render.
 
 Design Achievements:
-    Used colors from a color palette provided by Adobe.
+    Used colors from a color palette provided by Adobe. Used these colors for other parts of my project.
     Used an imported font from google fonts. I used a retro looking font called Press Start 2P.
     reorganized the code to make it appear a lot cleaner. Tried to use good practices by offloading much of the specifics to a style sheet.
+
 
 AI usage:
     Initially I wanted to make my phrasing sound better for the about me section but I ended up re-doing it cause it sounded way too corporate for my liking. I asked gemini to
     provide examples of how people use CSS with HTML and javascript. I asked it to explain why people did the things they did from the textbook. I asked some questions about syntax.
+    I remember struggling about why my css file was being seen as a text file so I asked about this type of error. It told me that I could try setting the content type explicitly as
+    some hosting sites don't properly detect the type so setting it explicitly can help. I found a stack exchange post example of someone doing it explicitly.
+
 
 Resource usage and citations:
     A variety of links were provided and included in comments to show where I had learned to do things from online resources. One particularly useful example was a picture display example.
