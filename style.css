@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(90deg,rgba(68, 39, 232, 1) 0%, rgba(185, 175, 240, 1) 50%, rgba(194, 39, 232, 1) 100%);
+    background: linear-gradient(90deg,rgba(68, 39, 232, 0.586) 0%, rgba(185, 175, 240, 0.526) 50%, rgba(193, 39, 232, 0.586) 100%);
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
@@ -48,6 +48,18 @@ body{
     font-size: 18px;
 }
 
+.imageBoxDiv{
+    display: inline-block;
+    background-color: rgba(131, 39, 232, 0.282);
+    border: black 2px solid;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3); 
+    font-size: 18px;
+}
+
 
 /*
     background-color: #2785E8;
@@ -61,15 +73,20 @@ body{
 
 #transitionFirst {
   opacity: 0;
-  transition: opacity 1s ease-in-out; 
+  transition: opacity 0.5s ease-in-out; 
 }
 
 #transitionSecond {
   opacity: 0;
-  transition: opacity 2s ease-in-out; 
+  transition: opacity 1s ease-in-out; 
 }
 
 #transitionThird {
   opacity: 0;
-  transition: opacity 3s ease-in-out; 
+  transition: opacity 1.5s ease-in-out; 
+}
+
+#transitionFourth{
+  opacity: 0;
+  transition: opacity 2s ease-in-out; 
 }
