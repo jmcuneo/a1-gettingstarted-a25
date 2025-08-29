@@ -17,6 +17,20 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
-     response.end( content, 'utf-8' )
+     if (err) {
+       response.writeHead(500, { 'Content-Type': 'text/plain' });
+       response.end('500: Internal Server Error');
+       return;
+     }
+     // Set Content-Type based on file extension
+     let ext = filename.split('.').pop().toLowerCase();
+     let contentType = 'text/plain';
+     if (ext === 'html') contentType = 'text/html';
+     else if (ext === 'css') contentType = 'text/css';
+     else if (ext === 'js') contentType = 'text/javascript';
+     else if (ext === 'png') contentType = 'image/png';
+
+     response.writeHead(200, { 'Content-Type': contentType });
+     response.end(content);
    })
 }
