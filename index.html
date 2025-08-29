@@ -82,9 +82,12 @@
                 background-color: var(--accent-color);
                 border-radius: 10px;
             }
+            .my_name {
+                font-family: "Libertinus Keyboard";
+            }
 
         </style>
-
+        
     </head>
     <body style="background-color: var(--background-color)">
         <div class="flex_rows"> 
@@ -97,7 +100,7 @@
                    <div style="display: inline-block; text-align: left;">
                         <div class="flex_rows">
                             <div><h1>Information about </h1></div>
-                            <div><h1 style="font-family: Libertinus Keyboard;">Matthew Papesh</h1></div>
+                            <div><h1 class="my_name" id="my_name">Matthew Papesh</h1></div>
                         </div>
                         <p style="font-style: italic; font-weight: bold;">B.S. Robotics Engineering and Computer Science Student <!--Major & Other Info--></p>
                         <ul>
@@ -144,7 +147,16 @@
             </div>
             <div class="website_side_right_div"></div>
         </div>  
-        
+        <script>
+            const title = document.getElementById("my_name");
+            const colors = ["var(--primary-color)", "var(--text-color)"];
+            let iterator = 0;
+            setInterval(() => {
+                let index = iterator % colors.length;
+                title.style.color = colors[index];
+                iterator++;
+            }, 1000); // color is updated every second
+        </script>
     </body>
     <footer style="color: var(--background-color); background-color: var(--secondary-color);">
         All rights reserved.
