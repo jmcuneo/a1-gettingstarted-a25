@@ -1,5 +1,17 @@
 h1{
-    color:red;
+    color: #4141e0;
+}
+
+h2 {
+  color: #4141e0;
+}
+
+body {
+  background-color: #94c5e1;
+}
+
+li {
+  color: #4174e0
 }
 
 table {
@@ -15,5 +27,13 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: grey;
+  background-color: #41E0b3;
+}
+
+tr:nth-child(odd) {
+  background-color: #41d8e0;
+}
+
+img {
+  width:105%;
 }
