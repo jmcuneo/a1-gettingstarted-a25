@@ -102,6 +102,16 @@ If you need refreshers for JavaScript/HTML/CSS or Git/GitHub, check out the reso
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
+Aditri Thakur
+This project shows ...
+
+## Technical Achievements
+- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+
+## Design Achievements
+- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+
+
 Joshua Cuneo
 http://a1-joshuacuneo.Render.com
 

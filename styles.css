@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+body {
+    /* Is the #DB8260 color with less opacity */
+    background-color: #DB826050;
+  }
+h1 {
+    font-family: "Fascinate Inline", system-ui;
+    color: #662208;
+    font-size:75px;
+    font-family: "Fascinate Inline", system-ui;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+h2 {
+    font-family: "Fascinate Inline", system-ui;
+    color: #9E4D2E;
+    font-size:55px;
+    margin-left: 20px;
+  }
+h3 {
+    font-size: 12px;
+  }
+p{
+    font-size:30px;
+    color: #418A7C;
+    font-weight: bolder;
+    margin-left: 20px;
+  }
+ul{
+    list-style: square;
+    margin-left: 20px;
+  }
+li{
+    font-size:30px;
+    color:  #353535;
+    margin-left: 20px;
+  }
+.box{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #fbfaf950;
+    width: 80%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+table {
+    width: 80%;
+    border-collapse: collapse; /* Closes Gaps */
+    background-color: #fbfaf950;
+}
+th, td {
+    padding: 12px 16px;
+    border: 1px solid #DB8260;
+    font-size:30px;
+}
+th {
+    color: #418A7C;
+    text-align: center;
+}
+td {
+    color:  #353535;
+    text-align: left;
+}
+summary {
+    font-family: "Fascinate Inline", system-ui;
+    color: #DB8260;
+    font-size:25px;
+}
+
+details {
+    color: #418A7C;
+    font-size:20px;
+}
