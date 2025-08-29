@@ -16,12 +16,12 @@ This project shows ...
 - **Added a JavaScript Animation**: I added an animation to have the guitar move from left to right.
 
 - **Used semantic HTML tags**:
-    - Used <header> for the main header text at the top.
-    - <footer> for the bottom of the page including the assignment name.
-    - <a> to link my favorite film.
-    - <img> for my moving image.
-    - <table> for the table of lightsaber colors.
-    - <section> to break up the different sections of the page.
+    - Used < header> for the main header text at the top.
+    - < footer> for the bottom of the page including the assignment name.
+    - < a> to link my favorite film.
+    - < img> for my moving image.
+    - < table> for the table of lightsaber colors.
+    - < section> to break up the different sections of the page.
     - < ul> and < li> for the bullet points.
     - < small> for the small footer text.
 
