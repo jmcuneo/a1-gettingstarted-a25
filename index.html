@@ -2,27 +2,75 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+  <header>remy jiang</header>
+  <body class="body" onload="init_animation()">
+    <div class="duck" id="duck">
+      <img src="duck_img.png">
+    </div>
+    <audio id="quack" controls src="quack.mp3" style="margin: 0; padding: 0; visibility: hidden; position: fixed;">
+      <source src="quack.mp3" type="audio/mpeg">
+    </audio>
+    <div class="flex-container">
+      <div>
+        <div class="window-top">info</div>
+        <div class="window-content">
+          <article>
+            <h1>Information about <span class="emphasis-text">Remy Jiang</span></h1>
+            <p>
+              Hello, my name is <span class="emphasis-text">Remy Jiang.</span>
+            </p>
+            <p>
+              I am an undergraduate student at <br> Worcester Polytechnic Institute (WPI). <br> Computer Science Major & IMGD Minor <br> Class of 2026.
+            </p>
+            <p>
+              I do digital painting, character design, and currently<br> tending to an aquarium! <br> I own an iPod 4th Gen Classic I repaired myself!
+            </p>
+          </article>
+        </div>
+      </div>
+      <div>
+        <div class="window-top">experience</div>
+        <div class="window-content">
+          <article>
+          <h1>
+            Programming Experience
+          </h1>
+            <ul style="display: inline-block; margin-top: 0; margin-bottom: 0;">
+              <li><b>HTML:</b> some </li>
+              <li><b>CSS:</b> some </li>
+              <li><b>Java:</b> a lot </li>
+              <li><b>JS/TS:</b> some </li>
+              <li><b>Python:</b> some </li>
+              <li><b>Unit Testing:</b> some </li>
+              <li><b>Refactoring Code:</b> a lot </li>
+            </ul>
+            <h1>
+              Work Experience
+            </h1>
+            <ul style="display: inline-block; margin-top: 0;">
+              <li>WPI: Housing and Residential Experience Center</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <div>
+        <div class="window-top">classes</div>
+        <div class="window-content">
+          <section>
+            <h1>Classes I am currently taking!</h1>
+            <ul style="display: inline-block; margin-top: 0;">
+              <li><b>CS4516:</b> Advanced Computer Networks</li>
+              <li><b>CS4241: </b>Webware: Computational Technology <br> for Network Information Systems</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+        <canvas id="wave-canvas" width="500" height="50"></canvas>
+        <footer class="footer">Created by Remy Jiang for the CS4241: Webware course.</footer>
+    </div>
   </body>
+  <script src="scripts.js"></script>
 </html>

@@ -1,0 +1,101 @@
+header {
+    background-color: var(--card-accent-color);
+    color: var(--card-main-color);
+    padding: 20px;
+    font-size: 20px;
+}
+.body {
+    background-color: var(--background-accent-color);
+    padding: 0;
+    margin: 0;
+}
+.paragraph {
+    font-size: large; 
+}
+.flex-container {
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 85%;
+    background-color: var(--background-main--color);
+    z-index: -1;
+}
+.flex-container > div {
+    background-color: var(--card-main-color);
+    border-radius: 5px;
+    border: 1px dashed var(--card-accent-color);
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 18px;
+    color: var(--card-accent-color);
+    z-index: 2;
+}
+.window-top {
+    cursor: move;
+    text-align: left;
+    height: 20px;
+    border-bottom: 1px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    color: var(--card-main-color);
+    background-color: var(--card-accent-color);
+}
+.window-content {
+    background-color: var(--card-main-color);
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px dashed var(--card-accent-color);
+    margin: 5px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 16px;
+    color: var(--text-main-color);
+}
+.footer {
+    color: var(--text-main-color);
+    font-size: 15px;
+}
+.duck {
+    z-index: 1;
+    height: 85px;
+    width: 85px;
+    position: fixed;
+    animation: move_box 110s infinite, bobbing 1s ease-in-out infinite alternate;
+}
+img { 
+    max-width: 100%;
+    max-height: 100%;
+}
+@keyframes move_box {
+  0% { top: 75%; left: -4%; }
+  100% { top: 75%; left: 104%; }
+}
+@keyframes bobbing { 
+    0% {
+        transform: rotate(5deg);
+    }
+    100% { 
+        transform : rotate(-5deg);
+    }
+}
+.emphasis-text {
+    color: var(--text-highlight-color);
+}
+canvas{
+    top: 65%;
+    position:fixed;
+    z-index: 0;
+}
+:root {
+    --background-main--color: #ffff;
+    --background-accent-color: #9EDDFF;
+    --card-accent-color: #577180;
+    --card-main-color: #FFD8A5;
+    --text-main-color: #707070;
+    --text-highlight-color: #F58600;
+}
