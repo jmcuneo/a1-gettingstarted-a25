@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+    color: #60463B;
+    background-color: #CCC9E7;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    color: #2E3138;
+    background-color: #CCC9E7;
+}
+
+p, button {
+    text-align: center;
+    color: #856A5D;
+    font-family: "Gaegu", sans-serif;
+    font-size: larger;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    text-align:unset;
+    color: #6C6F7D;
+    list-style-type: none;
+    font-family: "Gaegu", sans-serif;
+    font-size: larger;
+}
+
+footer {
+    font-size: small;
+    font-family: "Gaegu", sans-serif;
+    color: #2E3138;
+}
+
+#myContainer {
+    width:auto;
+    height: 400px;
+    position: relative;
+    background: blue;
+}
+
+#myFish {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    position: absolute;
+    background: yellow;
+}

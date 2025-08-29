@@ -1,28 +1,84 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styleref.css">
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Kelsey Bishqemi:</h1>
     <p>
-      [Self introduction]
+      I'm Kelsey, WPI class of 2027
     </p>
+    <img src="IMG_2533.GIF" alt="waveGif" width="300" height="300">
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      I'm a CS major. Maybe I'll be an IMGD minor too, not sure yet
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h2>My experience with the following:</h2>
+
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML - some</li>
+      <li>CSS - some</li>
+      <li>JS - some</li>
+      <li>Java - some</li>
+      <li>Python - some</li>
+      <li>Unit testing - some</li>
+      <li>Refactoring code - some</li>
     </ul>
+
+    <h2>
+      I have taken the following CS courses: 
+    </h2>
+
+    <ul>
+      <li>CS 1101 - Intro to Program Design</li>
+      <li>CS 2102 - Object-Oriented Design Concepts</li>
+      <li>CS 2303 - Systems Programming Concepts</li>
+      <li>CS 3431 - Database Systems I</li>
+      <li>CS 3043 - Social Implications of Information Processing</li>
+      <li>CS 2223 - Algorithms</li>
+      <li>CS 3516 - Computer Networks</li>
+      <li>CS 2011 - Introduction to Machine Organization and Assembly Language</li>
+    </ul>
+
+    <footer>(This list is in chronological order of when I took these classes)</footer>
+
+    <h3>
+      <button onclick="moveFish()">Click to See the "Fish" Move!</button>
+    </h3>
+
+    <div id="myContainer">
+    <div id="myFish"></div>
+    </div>
+
+    <h4>
+      Thank you!
+    </h4>
+
+    <script>
+      var id = null;
+
+function moveFish() {
+    var fish = document.getElementById("myFish");
+    var posy = 0;
+    var posx = 0;
+    clearInterval(id);
+    id = setInterval (frame, 15);
+    function frame() {
+      posx ++
+      posy ++
+            fish.style.top = posy + 'px';
+            fish.style.left = posx + 'px';
+        if (posy == 350) {
+            posy = 50;
+        } if (posx == 1200) {
+            posx = 50;
+        }
+    }
+}
+    </script>
+
   </body>
 </html>
