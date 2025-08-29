@@ -2,27 +2,92 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <img src="https://media.licdn.com/dms/image/v2/D4E16AQEFuCLzIVylQg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1694551460239?e=1759363200&v=beta&t=NqgqW3MrRILxkAXXaRUASfRNZf_0jYTEvS-XkhoI36I" alt="Picture of Mount Denali" class="coverImage">
+    <h1 id="animatedTitle" href="style.css">Information about Brandon Yeu</h1>
     <p>
-      [Self introduction]
+      I am a senior at WPI studying Computer Science with a minor in Data Science. I am interested in software engineering, AI, big data, and much more!
+      I have previously interned in the financial technology, application consulting, and, most recently, in the insurance industry as a data engineer.
     </p>
+    <div class="h2Box">
+      <h2 class="googleFont">Academics (uses Google Font Edu NSW ACT Cursive)</h2>
+    </div>
+    
     <p>
-      [Major and other information]
+      B.S./M.S. in Computer Science from WPI (May 2026), minor in Data Science
     </p>
-    <p>
-      [Other things]
-    </p>
+    <!-- <p>
+      Previous CS courses at WPI: CS 1102 - Accelerated Introduction To Program Design, CS 2102 - Object-Oriented Design Concepts, CS 2303 - Systems Programming Concepts, CS 2223 - Algorithms, CS 2011 - Introduction To Machine Organization And Assembly Language, CS 3516 - Computer Networks, CS 3431 - Database Systems I, CS 3133 - Foundations Of Computer Science, CS 3733 - Software Engineering, CS 3013 - Operating Systems, CS 4804 - Data Visualization, CS 4518 - Mobile & Ubiquitous Computing, CS 4401 - Software Security Engineering, CS 4341 - Introduction To Artificial Intelligence, CS 4233 - Object-Oriented Analysis And Design, CS 3043 - Social Implications Of Information Processing, CS 5003 - Foundations Of Computer Science: An Introduction
+    </p> -->
+    <table>
+      <thead>
+        <tr>
+          <th>Course Number</th>
+          <th>Course Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>CS 1102</td><td>Accelerated Introduction To Program Design</td></tr>
+        <tr><td>CS 2102</td><td>Object-Oriented Design Concepts</td></tr>
+        <tr><td>CS 2303</td><td>Systems Programming Concepts</td></tr>
+        <tr><td>CS 2223</td><td>Algorithms</td></tr>
+        <tr><td>CS 2011</td><td>Introduction To Machine Organization And Assembly Language</td></tr>
+        <tr><td>CS 3516</td><td>Computer Networks</td></tr>
+        <tr><td>CS 3431</td><td>Database Systems I</td></tr>
+        <tr><td>CS 3133</td><td>Foundations Of Computer Science</td></tr>
+        <tr><td>CS 3733</td><td>Software Engineering</td></tr>
+        <tr><td>CS 3013</td><td>Operating Systems</td></tr>
+        <tr><td>CS 4804</td><td>Data Visualization</td></tr>
+        <tr><td>CS 4518</td><td>Mobile & Ubiquitous Computing</td></tr>
+        <tr><td>CS 4401</td><td>Software Security Engineering</td></tr>
+        <tr><td>CS 4341</td><td>Introduction To Artificial Intelligence</td></tr>
+        <tr><td>CS 4233</td><td>Object-Oriented Analysis And Design</td></tr>
+        <tr><td>CS 3043</td><td>Social Implications Of Information Processing</td></tr>
+        <tr><td>CS 5003</td><td>Foundations Of Computer Science: An Introduction</td></tr>
+      </tbody>
+    </table>
+    
 
     <h2>Experience</h2>
     <p>
-      Working experience
+      Working experience:
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Data Engineer at Hanover Insurance</li>
+      <li>App UI/UX Developer at Gumus Design Group</li>
+      <li>IT Intern at Partners in Animal Welfare</li>
+      <li>Data Science Intern at Moon Technologies</li>
+    </ul>
+    <h2>Experience with technologies</h2>
+    <ul>
+      <li>HTML - some</li>
+      <li>CSS - some</li>
+      <li>Java - a lot</li>
+      <li>JavaScript - some</li>
+      <li>Python - a lot</li>
+      <li>Unit Testing - some</li>
+      <li>Refactoring Code - some</li>
     </ul>
   </body>
 </html>
+
+
+<script>
+  window.onload = function() {
+    const title = document.getElementById("animatedTitle");
+    title.style.opacity = 0;
+    title.style.transform = "translateY(20px)";
+    title.style.transition = "opacity 1s ease-out, transform 1s ease-out";
+
+    setTimeout(() => {
+      title.style.opacity = 1;
+      title.style.transform = "translateY(0)";
+    }, 100);
+  };
+</script>

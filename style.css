@@ -1,0 +1,67 @@
+@charset "utf-8";
+h1{
+    color: #F58362;
+    font-family: Arial;
+}
+
+p{
+    color: #F56962;
+}
+
+.googleFont {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFD166;
+}
+
+.h2Box {
+    background-color: #F58262;
+    height: 75px;
+    width: 40%;
+    margin-left: 40px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.coverImage {
+    width: 110%;
+    height: auto;
+    margin-left: -5%;
+    margin-top: -5%;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+  
+th, td {
+    border: 1px solid #FFB19B;
+    padding: 10px;
+    text-align: left;
+}
+  
+th {
+    background-color: #F562A5;
+    color: #F59D62;
+}
+  
+tr:nth-child(even) {
+    background-color: #F5B662;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFC39C;
+}
+  
+#animatedTitle {
+  opacity: 0;
+  transform: translateY(20px);
+}
