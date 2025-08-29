@@ -101,8 +101,8 @@ If you need refreshers for JavaScript/HTML/CSS or Git/GitHub, check out the reso
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Joshua Cuneo
-http://a1-joshuacuneo.Render.com
+Maxwell Jeronimo
+https://a1-jeronimo-m-a25.onrender.com
 
 This project shows ...
 
