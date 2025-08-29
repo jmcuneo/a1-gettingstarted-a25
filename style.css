@@ -73,7 +73,7 @@ p {
     z-index: 1;
 }
 .duck {
-    z-index: 0;
+    z-index: 1;
     height: 85px;
     width: 85px;
     position: fixed;
@@ -99,7 +99,7 @@ img {
     color: var(--text-highlight-color);
 }
 canvas{
-    top: 65%;
+    top: 75%;
     position:fixed;
     z-index: 0;
 }

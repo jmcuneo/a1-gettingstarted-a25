@@ -5,7 +5,7 @@ var width = canvas.width = window.innerWidth;
 var height = canvas.height = window.innerHeight;
 
 var amplitude = 10;
-var frequency =0.02;
+var frequency =0.01;
 var phase = 0;
 var speed = 0.01;
 
@@ -25,7 +25,7 @@ function drawWave() {
     }
 
     context.strokeStyle='#9EDDFF';
-    context.lineWidth = 500;
+    context.lineWidth = 700;
     context.stroke();
 
     phase+=speed;
