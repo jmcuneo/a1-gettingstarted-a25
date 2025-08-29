@@ -125,9 +125,9 @@ This project shows ...
     I created a simple animation where a pink square covers a purple square then recedes back into itself.
 
 - **Semantic HTML Tags**:
-    1. 
-    2. 
-    3. 
+    1. Header for the title.
+    2. Footer for an inspirational quote.
+    3. A HREF for aformentioned inspirational quote.
     4. 
     5. 
 

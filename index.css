@@ -1,5 +1,5 @@
 
-.centered-paragraph {
+#centered-paragraph {
     text-align: center;
 }
 
@@ -8,6 +8,10 @@ body {
 }
 
 header {
+    text-align: center;
+}
+
+footer {
     text-align: center;
 }
 
