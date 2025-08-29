@@ -17,18 +17,8 @@ const server = http.createServer( function( request,response ) {
 
 server.listen( process.env.PORT || port )
 
-const sendFile = function(response, filename) {
-  fs.readFile(filename, function(err, content) {
-    if (err) {
-      response.writeHead(500);
-      response.end('500 Error: Internal Server Error');
-    } else {
-      // Set Content-Type based on file extension
-      let contentType = 'text/html'; // default
-      if (filename.endsWith('.css')) contentType = 'text/css';
-
-      response.writeHead(200, { 'Content-Type': contentType });
-      response.end(content, 'utf-8');
-    }
-  });
+const sendFile = function( response, filename ) {
+   fs.readFile( filename, function( err, content ) {
+     response.end( content, 'utf-8' )
+   })
 }
