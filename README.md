@@ -1,7 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
 
 Cameron Norris
-http://a1-cameronnorris.Render.com
+http://a1-cameronnorris.onrender.com
 
 This project shows ...
 
@@ -28,3 +28,8 @@ This project shows ...
 ## Design Achievements
 - **Color Palette**: I created a color palette with Adobe for a variety of colors on the page.
 - **Google Font**: I used the Libertinus Sans Google Font for the header.
+
+<img width="641" height="515" alt="image" src="https://github.com/user-attachments/assets/24cb6f89-71e9-43b1-ac58-eb9b7dd833cb" />
+<img width="1190" height="591" alt="image" src="https://github.com/user-attachments/assets/3d3a01fb-ba63-46d6-b45e-c4a6887bc6b2" />
+
+
