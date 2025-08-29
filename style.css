@@ -84,8 +84,8 @@ img {
     max-height: 100%;
 }
 @keyframes move_box {
-  0% { top: 75%; left: -4%; }
-  100% { top: 75%; left: 104%; }
+  0% { top: 86%; left: -4%; }
+  100% { top: 86%; left: 104%; }
 }
 @keyframes bobbing { 
     0% {
@@ -99,7 +99,7 @@ img {
     color: var(--text-highlight-color);
 }
 canvas{
-    top: 75%;
+    top: 70%;
     position:fixed;
     z-index: 0;
 }
