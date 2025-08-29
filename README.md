@@ -1,7 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
 
 Kelsey Bishqemi
-http://a1-kelseybishqemi.Render.com
+https://a1-kelseybishqemi.onrender.com
 
 This project shows my name, graduating year, major and possible minor, cs classes I have taken, and my experience with certain technologies and methods. It displays this information on a static webpage, making use of different HTML semantic tags, styles, and animation.
 
