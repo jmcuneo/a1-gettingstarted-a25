@@ -17,7 +17,7 @@ const server = http.createServer( function( request,response ) {
   }
   }
   else {
-    response.end("404: Error. Fuile does not exist.");
+    response.end("404: Error. File does not exist.");
   }
 })
 

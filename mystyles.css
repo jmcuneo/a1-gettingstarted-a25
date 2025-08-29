@@ -45,6 +45,14 @@ h4 {
     font-style: normal;
 }
 
+button {
+    color: #ff7f50;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #1F1106;
+}
+
 footer {
     text-align: center;
 }
@@ -56,5 +64,5 @@ footer {
 }
 
 #animate {
-  position: absolute; /* so "left" changes actually move it */
+  position: absolute; 
 }
