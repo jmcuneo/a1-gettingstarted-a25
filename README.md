@@ -14,4 +14,4 @@ This project shows ...
 
 ## Design Achievements
 - **Color palette**: 
-- **Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Google Fonts**: I used Dosis as the font for the primary copy text in my site.
