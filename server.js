@@ -9,7 +9,7 @@ const server = http.createServer( function( request,response ) {  //first respon
 	if (fs.existsSync(url)){ //does this file exist?
 
 		switch( url ) { 
-   			case './':
+   			case '/':
      				sendFile( response, 'index.html' )
      		 		break
    
@@ -27,6 +27,20 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
-     response.end( content, 'utf-8' )
+
+	let filetype = 'text/html';
+
+	if (filename.endsWith('.css')){
+		filetype = 'text/css';
+	}
+	else if (filename.endsWith('.jpg'){
+		filetype = 'image/jpeg';
+	}
+	else if (filename.endswith('.js'){
+		filetype = 'application/javascript';
+	}
+
+
+     response.end( content, 'utf-8' );
    })
 }
