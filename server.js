@@ -26,7 +26,7 @@ const server = http.createServer( function( request,response ) {
 })
 
 server.listen( process.env.PORT || port, function(){
-  console.log("backend is running")
+  console.log(`backend is running at port ${port}`);
 })
 
 //send content of the file and type of that content

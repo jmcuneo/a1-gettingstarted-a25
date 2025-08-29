@@ -1,5 +1,5 @@
 body {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 header, main {
@@ -35,6 +35,10 @@ p a {
   transition: transform 1s ease-in-out; /* This makes the rotation smooth when starting and stopping */
 }
 
+.spin-effect {
+  transform: rotateY(360deg); /* This rotates the image a full 360 degrees */
+}
+
 .color-pallet {
   display: flex;
   height: 100px;
@@ -64,6 +68,3 @@ p a {
   border: 1px solid #ccc;
 }
 
-.spin-effect {
-  transform: rotateY(360deg); /* This rotates the image a full 360 degrees */
-}
