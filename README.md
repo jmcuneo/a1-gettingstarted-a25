@@ -19,4 +19,4 @@ server.js - node.js server
 ## Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site. Both as header text and regular text. I used variations of bolded font and italic 
 - **Used all of the colors within my color palette**: #e6efe9, #c5f4e0, #a7c4a0, #8f8389, #c2eaba I used all of the colors within the color palette that I created through coolors because I really enjoy using coolors over the other options. One of the ways I implemented more of the color palette is I made my website body a linear gradient. 
-![alt text](vscode-file://vscode-app/Users/amandalongo/Desktop/webware/a1-gettingstarted-a25/colorpallete.png)
+<img width="1600" height="1200" alt="color pallete" src="https://github.com/user-attachments/assets/43094ef9-425c-41b3-944c-d2362468fac2" />
