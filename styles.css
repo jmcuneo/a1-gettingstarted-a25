@@ -21,7 +21,7 @@ h2 {
 h3 {
     font-size: 12px;
   }
-p{
+p, address{
     font-size:30px;
     color: #418A7C;
     font-weight: bolder;
@@ -65,11 +65,13 @@ td {
 }
 summary {
     font-family: "Fascinate Inline", system-ui;
-    color: #DB8260;
+    color: #DB826055;
     font-size:25px;
 }
-
 details {
     color: #418A7C;
     font-size:20px;
+}
+nav a, nav a:visited{
+    color: #DB8260;
 }
