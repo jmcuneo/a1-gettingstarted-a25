@@ -3,33 +3,172 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
   </head>
-  <body>
-    <h1>Information about Ceci Herriman</h1>
+  <style>
+    body {
+        background-color: #E8D4C6;
+        margin-left: 20px;
+    }
+    table {
+      border-spacing: 20px 10px; 
+      margin-top: 10px;
+    }
+    th {
+      padding: 2px 10px; 
+      font-size: 15px;    
+      text-align: left;
+    }
+    td {
+      padding: 5px 10px;  
+      font-size: 12px;       
+      text-align: left;
+    }
+    .title {
+      border-style: dotted solid;
+      border-width: 7px 4px;
+      border-color: #808385;
+      width: fit-content;
+      padding: 10px 20px;
+      color: #808385;
+      background: #E8CDB0;
+    }
+    .subtitle {
+      border-style: dotted solid;
+      border-width: 7px 4px;
+      border-color: #808385;
+      width: fit-content;
+      padding: 10px 20px;
+      color: #808385;
+      margin-top: 35px;
+      background: #E8CDB0;
+    }
+    .text-background {
+      background: #C0C4B6; 
+      padding: 3px;
+    }
+    .roboto-mono-text {
+      font-family: "Roboto Mono", monospace;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      text-shadow: 2px 2px #E8CDB0;
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #E8CDB0;
+      color: #808385;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+    
+  </style>
+  <body id="body">
+    <h1 class="title">Information about Ceci Herriman</h1>
+    <div class="text-background roboto-mono-text">
     <p>
       Hi, my name is Ceci
     </p>
     <p>
-      Computer Science Major at WPI, class of 2026
+      BS/MS Computer Science Major at WPI, class of 2026
     </p>
     <p>
-      Previous courses: Artificial Intelligence, Databases, Network Security, Cryptography, Analysis of Algorithms
+      Previous courses: CS 1101, CS 2102, CS 2022, CS 2223, CS 2011, CS 2303, CS 3733, CS 3133, CS 3516, CS 3043, CS 542, CS 3013, CS 4404, CS 4341, CS 4120
     </p>
+    <figure>
+      <img id="myPicture" src="images/IMG_2231.jpeg" alt="A picture of me in Brazil" width="300" height="250">
+      <figcaption> Me visiting the Iguazu Falls in Brazil! </figcaption>
+    </figure>
+  </div>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>Medtronic</li>
-      <li>WPI</li>
-    </ul>
-    <p>
-      Technology experience
-    </p>
-    <ul>
-      <li>Lots of experience: HTML/CSS, Javascript, Python</li>
-      <li>Some experience: Refactoring code, Java, Unit Testing</li>
-    </ul>
+    <h2 class="subtitle">Experience</h2>
+    <div class="text-background roboto-mono-text" style="margin-bottom: 100px;">
+      <p>
+        Working experience
+      </p>
+      <ul>
+        <li>Medtronic</li>
+        <li>WPI</li>
+        <li>Akston Biosciences</li>
+        <li>Market Basket</li>
+      </ul>
+    </br>
+      <p>
+        Technology experience
+      </p>
+      <table>
+        <tr>
+          <th>A lot of experience</th>
+          <th>Some experience</th>
+        </tr>
+        <tr>
+          <td> HTML/CSS</td>
+          <td> Refactoring code </td>
+        </tr>
+        <tr>
+          <td> Javascript </td>
+          <td> Java </td>
+        </tr>
+        <tr>
+          <td> Python </td>
+          <td> Unit testing </td>
+        </tr>
+      </table>
+    </div>
+
+    <footer class="footer"> 
+      <p> Ceci Herriman </p>
+      <a style="color: #808385;" href="https://www.linkedin.com/in/eherriman/">Connect on LinkedIn</a>
+    </footer>
+
+    <script> 
+      colors = ["#E8D4C6", "#C0C4B6", "#E8CDB0"]
+      let currentColor = 0;
+  
+      window.addEventListener("keydown", function (event) {
+        if (event.code === "Space") {
+          event.preventDefault();
+
+          currentColor = (currentColor + 1) % colors.length;
+          document.body.style.backgroundColor = colors[currentColor];
+        }
+
+        if (event.code === "Enter") {
+          event.preventDefault()
+
+          let id = null;
+          let picture = document.getElementById('myPicture')
+          let rotations = 0
+
+          clearInterval(id);
+          id = setInterval(move, 5);
+
+          function move() {
+            if (rotations == 73) {
+              clearInterval(id);
+              rotations = 0
+            }
+            else {
+              document.getElementById('myPicture').setAttribute("style", "transform: rotate(" + 5*rotations + "deg)");
+              rotations++ 
+            }
+          }
+        }
+      });
+
+    </script>
   </body>
 </html>
+
+
+
