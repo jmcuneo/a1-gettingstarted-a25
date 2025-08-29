@@ -24,17 +24,28 @@ p{
     font-weight: 400;
 }
 
-.ball{
-    width: 96px;
-    height: 96px;
-    border-radius: 100%;
-    background-color: #0A3737;
+li{
+    color: #C43302;
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
+}
 
+.text-title{
+    position:relative;
+}
+
+.text-title:after{
+    content:"";
+    height: 10px;
+    width: 100%;
+    background-color: #B7BF99;
+    bottom: -6%;
+    left:0;
+    display:inline-block;
     position:absolute;
-    top: 250px;
-    right: 250px;
 }
 
 .canvas{
     width: 100%;
+    background-color: #0A7373;
 }
