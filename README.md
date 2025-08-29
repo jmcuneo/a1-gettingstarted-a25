@@ -25,6 +25,8 @@ Used semantic HTML tags:
 - < ul> and < li> for the bullet points.
 - < small> for the small footer text.
   <br>
+
+
 Design Achievements
 Color Palette: I created a color palette with Adobe for a variety of colors on the page.
 Google Font: I used the Libertinus Sans Google Font for the header.
