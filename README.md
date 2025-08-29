@@ -11,8 +11,14 @@ This project shows ...
 - Next paragraph after that → Custom font (Playwrite CA), larger size (180%), and lighter purple color (#9866DB) "Previous CS Courses Taken at WPI".
 - Image -> **Border-radius** (rounds corner of the image) and **box-shadow** (adds a shadow around the element's box) -> Packers Image
 - More repeated CSS styles along with more than the 5 required (I listed some of the ones I used for credit).
+
+The headings and simple paragraph styling were not very challenging and only required a quick lookup to refresh memory on how the tags worked. I left all the styling on the styling.css file to keep code clean and organized.
+
 ### Javascript Animation
 - I added a simple animation of a wheel spinning at the bottom of the webpage. I used a variable angle which increases every animation frame to have the spinning effect of the object(wheel).
+
+This was slightly more challenging but not too difficult once I search up how to use the script tag and Javascript syntax. 
+
 ### Semantic HTML Tags
 - Audio (audio)-> I added audio of Never Gonna Give You Up by Rick Astley.
 - Anchor Element (a)-> I added a hyperlink to a Youtube video.
@@ -21,7 +27,11 @@ This project shows ...
 - Form (form)-> I added a form where you can select what type of car I have.
 - Unordered List (ul)-> I added a list for my working and technical experience(as required).
 
+  These HTML tags were easy and only required quick search and then just implement it into my assignment.
+
 ## Design Achievements
 - **Used the Playwrite CA Font from Google Fonts**: I used Playwrite CA as the font for the p tag "Previous CS Courses Taken at WPI:".
 - ![Adobe Color Pallete](Adobe_Color_Pallete.png)
 - I used all the colors from the pallete: #1D46DB, #7B70DC, #6E1DDB, #9866DB, #AC1DDB, and #DB1DBF.
+
+  This was also easy just randomly decide where to input these colors and font to style the page.
