@@ -30,7 +30,7 @@ small{
     color:darkred;
 }
 
-myImage{
+#myImage{
     position: absolute;
     width: 70px;
     height: 50px;
