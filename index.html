@@ -3,26 +3,114 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+      body { 
+        margin: 40px; 
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(135deg, #E673B2 0%, #7EA67C 50%, #526652 100%);
+        color: #3C2632;
+      }
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+      h1 { 
+        color: #526652; 
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .animated-title {
+        animation: fadeIn 2s ease-in-out;
+      }
+      h2 { 
+        color: #E673B2; 
+        border-bottom: 2px solid #7EA67C;
+        padding-bottom: 5px;
+      }
+      .highlight { background-color: #77E673; padding: 2px 5px; }
+      ul { list-style-type: square; }
+      table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+      th, td { border: 1px solid #917886; padding: 8px; text-align: left; }
+      th { background-color: #7EA67C; }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div class="container">
+      <header>
+        <h1 class="animated-title">Aarogya Rijal</h1>
+        <p><strong>Class of 2026</strong> | Computer Science at WPI</p>
+        <nav>
+          <a href="#academic">Academic</a> | 
+          <a href="#tech">Tech Experience</a> | 
+          <a href="#exp">Experience</a> | 
+          <a href="#projects">Projects</a>
+        </nav>
+      </header>
+      
+      <main>
+        <section id="academic">
+          <h2>Academic Info</h2>
+          <p><span class="highlight">Major:</span> Computer Science</p>
+          <p><span class="highlight">Previous CS Courses:</span> Software Engineering, Machine Learning, Algorithms, Database Systems, Operating Systems</p>
+        </section>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+        <section id="tech">
+          <h2>Technology Experience</h2>
+          <table>
+            <tr><th>Technology</th><th>Experience Level</th></tr>
+            <tr><td>HTML</td><td>A lot</td></tr>
+            <tr><td>CSS</td><td>A lot</td></tr>
+            <tr><td>JavaScript</td><td>A lot</td></tr>
+            <tr><td>Python</td><td>A lot</td></tr>
+            <tr><td>Refactoring code</td><td>Some</td></tr>
+          </table>
+        </section>
+
+        <section id="exp">
+          <h2>Experience</h2>
+          <ul>
+            <li>Full-Stack Engineer at WPI</li>
+            <li>Market Researcher at Baato Maps</li>
+            <li>STEM Education Facilitator</li>
+          </ul>
+        </section>
+        
+        <section id="projects">
+          <h2>Projects</h2>
+          <img src="image-1.png" alt="Color Palette" width="200">
+          <ul>
+            <li><a href="#">Flash News</a></li>
+            <li><a href="#">SmartPark</a></li>
+            <li><a href="#">Auto Water Tank Filler</a></li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p><em>August 2025</em></p>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const title = document.querySelector('.animated-title');
+        title.addEventListener('click', function() {
+          this.style.transform = 'scale(1.1)';
+          this.style.transition = 'transform 0.3s ease';
+          setTimeout(() => {
+            this.style.transform = 'scale(1)';
+          }, 300);
+        });
+      });
+    </script>
   </body>
 </html>
