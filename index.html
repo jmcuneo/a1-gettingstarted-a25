@@ -18,42 +18,57 @@
                 content: '\27A4';
                 margin-right: 2%;
             }
-            .flex_rows, .flex_cols {
+            .flex_rows, .flex_cols, .flex_profile_box, .flex_text_box {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
             }
+           
             .flex_cols {
                 flex-direction: column;
             }
             .flex_rows > div {
-                padding: 1em;
+                padding-left: 1em;
+                padding-right: 1em;
+                border-top: 0%;
                 margin-bottom: auto;
             }
+            .flex_text_box > div {
+                margin-right: auto;
+            }
+            .flex_text_box > li {
+                background-color: red;
+            }
+            
             .item {
                 flex-grow: 1;
                 margin: 5%;
             }
-            .website_side_div {
+            .website_side_left_div, .website_side_right_div {
                 background-color: steelblue;
-                border-width: 0%s;
-                width: 1em;
+                box-shadow: 0.3em 0em 0.3em rgb(100, 100, 100);
+                border-width: 0%;
+                width: 20vw;
                 height: 100vh;
                 flex-grow: 1;
             }
+            .website_side_right_div {
+                box-shadow: -0.3em 0em 0.3em rgb(100, 100, 100);
+            }
+
         </style>
 
     </head>
     <body>
         <div class="flex_rows"> <!--<style="display: flex; flex-direction: column; justify-content:space-between; align-items: center;"-->
-            <div class="website_side_div"></div>
+            <div class="website_side_left_div"></div>
             <div>
-                <div class="flex_rows">
-                   <div>
+                <div class="flex_profile_box">
+                   <div style="display: inline-block; text-align: left;">
                        <img class="profile_pic" src="img/profile.jpg">
                    </div>
-                   <div>
+                   <div style="text-align: left; flex-grow: 1;">
                        <h1>Information about Matthew Papesh</h1>
                        <p style="font-style: italic; font-weight: bold;">B.S. Robotics Engineering and Computer Science Student <!--Major & Other Info--></p>
                        <ul>
@@ -63,16 +78,42 @@
                            <li>Student Advisory Board, Robotics Engineering Dept</li>
                        </ul>
                    </div>
+                   
                 </div>  
                 <div>
-                   <h2>Work Experience</h2>
-                   <ul>
-                       <li></li>
-                       <li></li>
-                   </ul>
+                    <h2>Programming Experience</h2>
+                    
+                        <ul>
+                        <li>HTML/CSS/Javascript <p style="padding-left: 1em;">
+                                I have four months of experience with these languages. 
+                                I programmed a crude web server that had little UI/UX for a online controller; this site was hosted on a Raspberry Pi that controlled a robot arm. 
+                                The Raspberry Pi would receive controller input from users interacting with the website to control the arm. Some HTML and CSS was needed for the graphical aspect 
+                                of the website, and Javascript was used for the UI/UX.
+                            </p></li>
+                        <li>Java <p style="padding-left: 1em;">
+                                I have been programming in Java for the past six years. I have worked on projects from small game development projects and simulators with the Java Swing API,
+                                and to programming robots in Java while I did FIRST Robotics in Highschool. I have experience with Object-Oriented Programming and how to leverage Java's unique syntax.
+                            </p></li>
+                        <li>Python <p style="padding-left: 1em;">
+                                I have been programming in Python for the past three years. I have made use of Python for CS4342 Machine Learning and RBE3002 Unified Robotics IV. In Machine Learning, Python 
+                                was used for data analysis and for leveraging tools, such as the Pytorch API. In robotics, Python was used when implementing Robot Operating System (ROS) on a differential-drive TurtleBot
+                                that used Simultaneous Localization and Mapping (SLAM) for learning and navigating an initially unknown environment. 
+                            </p></li>    
+                        <li>Unit Testing <p style="padding-left: 1em;">
+                                I have done little Unit Testing in the formal sense. My last proper experience of this was in the Object Oriented Programming Concepts course here at WPI. 
+                            </p></li>
+                        <li>Refactoring <p style="padding-left: 1em;">
+                                I refactor code all of the time. I implemented a command-based programming framework while I was on the WPI VexU robotics team. The framework had to be redone several times. 
+                                The framework also had to be looked at by several other people and policies being used for the design process of the code had to be revised. The code was in C++, and one policy change
+                                was replacing all raw pointers with smart pointers.
+                            </p></li>
+                        </ul>
+                       
+                    
+                
                 </div>
             </div>
-            <div class="website_side_div"></div>
+            <div class="website_side_right_div"></div>
         </div>  
   </body>
 </html>
