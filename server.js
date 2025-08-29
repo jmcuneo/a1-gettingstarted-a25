@@ -38,6 +38,10 @@ const sendFile = function( response, filename ) {
 
     // css file kept being sent as plain text type.
     //https://www.tutorialpedia.org/blog/html-file-css-running-as-plain-text-in-browser/
+    //https://stackoverflow.com/questions/28822034/simple-node-js-server-that-sends-htmlcss-as-response
+    if (filename.endsWith('.css')) {
+        response.writeHead(200, {'Content-Type': 'text/css'});
+    }
 
         fs.readFile( filename, function( err, content ) {
      response.end( content, 'utf-8' )
