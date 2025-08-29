@@ -3,15 +3,24 @@
     <head>
         <title>CS4241 Assignment 1</title>
         <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&display=swap" rel="stylesheet">
 
         <style>
+            .libertinus-keyboard-regular {
+                font-family: "Libertinus Keyboard", system-ui;
+                font-weight: 400;
+                font-style: normal;
+            }
+
             .profile_pic {
                 border-radius: 50%;
                 width: 12em;
                 height: 12em;
             }
 
-            h1, h2 {margin-left: 2%;}
+            h1, h2 {margin-right: auto;}
             p {margin-left: 2%;}
             ul {list-style: none;}
             li:before {
@@ -22,17 +31,22 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                align-items: center;
             }
-           
+            .flex_profile_box {
+                display: inline-block;
+                text-align: left;
+            }
             .flex_cols {
                 flex-direction: column;
             }
             .flex_rows > div {
                 padding-left: 1em;
                 padding-right: 1em;
-                border-top: 0%;
                 margin-bottom: auto;
+                margin-right: auto;
+                display: inline-block;
+                text-align: left;
+                flex-grow: 1;
             }
             .flex_text_box > div {
                 margin-right: auto;
@@ -61,22 +75,25 @@
 
     </head>
     <body>
-        <div class="flex_rows"> <!--<style="display: flex; flex-direction: column; justify-content:space-between; align-items: center;"-->
+        <div class="flex_rows"> 
             <div class="website_side_left_div"></div>
             <div>
                 <div class="flex_profile_box">
                    <div style="display: inline-block; text-align: left;">
                        <img class="profile_pic" src="img/profile.jpg">
                    </div>
-                   <div style="text-align: left; flex-grow: 1;">
-                       <h1>Information about Matthew Papesh</h1>
-                       <p style="font-style: italic; font-weight: bold;">B.S. Robotics Engineering and Computer Science Student <!--Major & Other Info--></p>
-                       <ul>
+                   <div style="display: inline-block; text-align: left;">
+                        <div class="flex_rows">
+                            <div><h1>Information about </h1></div>
+                            <div><h1 style="font-family: Libertinus Keyboard;">Matthew Papesh</h1></div>
+                        </div>
+                        <p style="font-style: italic; font-weight: bold;">B.S. Robotics Engineering and Computer Science Student <!--Major & Other Info--></p>
+                        <ul>
                            <li>Class of 2026</li>
                            <li>Residential Advisor</li>
                            <li>President, Robotics Prototyping Club (RPC)</li>
                            <li>Student Advisory Board, Robotics Engineering Dept</li>
-                       </ul>
+                        </ul>
                    </div>
                    
                 </div>  
