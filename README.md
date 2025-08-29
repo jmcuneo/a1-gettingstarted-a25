@@ -121,8 +121,9 @@ This project shows ...
 ### Semantic HTML
 - img: portrait picture of myself
 - a and img: hyperlinks to my various accounts at the bottom of the page
+- header: for website layout
 - footer: for footer content
-- section: for websaite layout
+- section: for website layout
 
 ## Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the text on my site.
