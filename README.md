@@ -121,6 +121,9 @@ This project shows ...
 ### Semantic HTML
 - img: portrait picture of myself
 - a and img: hyperlinks to my various accounts at the bottom of the page
+- footer: for footer content
+- section: for websaite layout
 
 ## Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the text on my site.
+- Color scheme: blues and purples (see screenshot)
