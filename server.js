@@ -5,10 +5,13 @@ const http = require('http'),
 const server = http.createServer( function( request,response ) {
   switch( request.url ) {
     case '/':
-      sendFile( response, 'index.html' )
+      sendFile( response, 'index.html')
       break
     case '/index.html':
-      sendFile( response, 'index.html' )
+      sendFile( response, 'index.html')
+      break
+    case '/colorpalette.png':
+      sendFile( response, 'colorpalette.png')
       break
     default:
       response.end( '404 Error: File Not Found' )
