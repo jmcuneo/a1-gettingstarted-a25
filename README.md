@@ -111,3 +111,16 @@ This project shows ...
 
 ## Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+
+
+sources:
+https://fonts.google.com/specimen/Montserrat - for font
+
+html
+https://www.w3schools.com/html/html_emojis.asp
+
+css
+https://www.w3schools.com/css/css3_shadows_box.asp 
+https://www.w3schools.com/css/css3_buttons.asp 
+
+https://www.w3schools.com/js/js_htmldom_animate.asp - for animation

@@ -1,28 +1,186 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- favicon icon -->
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+      /* javascript animation */
+      #container {
+        width: 600px;
+        height: 200px;
+        position: relative;
+        background: #f4ceb3;
+        overflow: hidden;
+      }
+      .emoji {
+      font-size: 3rem;      
+      position: absolute; 
+      display: none;  /* hide initially */
+    }
+
+    .experience-section {
+      display: flex;
+      gap: 40px; /* space between boxes */
+      align-items: flex-start;
+    }
+
+      #rcorners1 {
+      border-radius: 15px;
+      background: #f4ceb3;
+      padding: 20px; 
+      box-shadow: 5px 5px #F79F90;
+      display: inline-block;
+    }
+      body {
+        background-color: #FBE2D0; 
+        color: #4B6F95; 
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      h1 {
+        color: #F79F90;              /* purple headline */
+      }
+      h2 {
+        color: #F79F90;              /* purple headline */
+      }
+
+      .button {
+        background-color: #F79F90;
+        border: none;
+        color: F79F90;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #fab81c; /* Green */
+        color: rgb(255, 255, 255);
+      }
+
+      header, footer {
+         background-color: #f4ceb3;
+      }
+
+    </style>
   </head>
+
   <body>
-    <h1>Information about [Your name here]</h1>
+    <header>
+      <h1>Information about Kyra Brown &#x1F338;</h1>
+    </header>
     <p>
-      [Self introduction]
+      Hi my name's Kyra!  I'm a senior at WPI and am super excited for this course!!
     </p>
     <p>
-      [Major and other information]
+      B.S. Computer Science 2026 &#x1F4BB;
     </p>
     <p>
-      [Other things]
+      CS Courses taken: CS1101, CS2102, CS2022, CS2223, CS2011, CS2303, CS3733, CS3133, CS3013, CS4518, CS4341, CS3041
     </p>
 
+
+    <!-- image -->
+    <img src="IMG_1057.JPG" alt="Picture of me from Hawaii for IQP!" width="150">
+    <p>Please enjoy this picture of me in Hawaii for IQP!</p>
+
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div class="experience-section">
+      <div>
+        <p><b>Technical Experience</b></p>
+      <ul id="rcorners1">
+        <li>HTML - some</li>
+        <li>CSS - some</li>
+        <li>JavaScript - some</li>
+         <li>Python - some</li>
+          <li>Unit Testing - a lot</li>
+           <li>Refactoring code - a lot</li>
+      </ul>
+      </div>
+      <div>
+        <p><b>Working Experience</b></p>
+        <ul id="rcorners1">
+          <li>Microsoft</li>
+          <li>WPI</li>
+          <li>Market Basket</li>
+        </ul>
+      </div>
+    </div>
+    <a href="https://www.linkedin.com/in/kyraybrown">Check out my Linkedin hehe</a>
+  
+
+    <!-- JavaScript animation button -->
+    <p><button class="button button1" onclick="myMove()">Click to see my favorite things about fall through emojis!</button></p> 
+    <div id ="container">
+      <span class="emoji">🍂</span>
+      <span class="emoji">🍁</span>
+      <span class="emoji">🍂</span>
+      <span class="emoji">🍁</span>
+      <span class="emoji">🎃</span>
+      <span class="emoji">☕️</span>
+      <span class="emoji">🥧</span>
+      <span class="emoji">🍂</span>
+      <span class="emoji">🍂</span>
+      <span class="emoji">🍁</span>
+      <span class="emoji">🍁</span>
+      <span class="emoji">🎃</span>
+      <span class="emoji">☕️</span>
+      <span class="emoji">🌰</span>
+      <span class="emoji">🥧</span>
+      <span class="emoji">🍂</span>
+      <span class="emoji">🍪</span>
+    </div>
+
+    <script>
+    function myMove() {
+      const box = document.getElementById("container");
+      const items = document.querySelectorAll(".emoji");
+
+      // show amojies when the button is pressed
+      items.forEach(el => el.style.display = "block");
+
+      const boxWidth = box.offsetWidth;
+      const boxHeight = box.offsetHeight;
+
+      // give each emoji its own position + velocity
+      const states = Array.from(items).map(() => ({
+        x: Math.random() * (boxWidth - 30),
+        y: Math.random() * (boxHeight - 30),
+        dx: (Math.random() < 0.5 ? 1 : -1), // horizontal speed
+        dy: (Math.random() < 0.5 ? 1 : -1)  // vertical speed
+      }));
+
+      function frame() {
+        states.forEach((s, i) => {
+          s.x += s.dx;
+          s.y += s.dy;
+
+          // bounce off walls
+          if (s.x <= 0 || s.x >= boxWidth - 30) s.dx *= -1;
+          if (s.y <= 0 || s.y >= boxHeight - 30) s.dy *= -1;
+
+          items[i].style.left = s.x + "px";
+          items[i].style.top  = s.y + "px";
+        });
+        requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    }
+    </script>
+
+    <footer>
+      <p>🕺 2025 Kyra Brown — WPI</p>
+    </footer>
+
   </body>
 </html>
+
