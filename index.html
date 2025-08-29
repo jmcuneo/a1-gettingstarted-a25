@@ -3,35 +3,63 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Information about Ryan Nemeti, Class of '27</h1>
+    <h1 id="header">Information about Ryan Nemeti, Class of '27</h1>
+    <p></p>
+    <div>
     <p>
-      Yo I play instruments real good and also code things sometimes #getmoney
+      Hello, I play a lot of instruments and also do Computer Science!
     </p>
     <p>
       I'm a Junior CS Major with a minor in music
     </p>
     <p>
-      I've taken a variety of CS classes as listed below
+      I've taken a variety of CS classes including the ones listed below
     </p>
     <ul>
+      <li>CS2102: Intro to Object Oriented Programming</li>
+      <li>CS2303: Intro to Systems Programming</li>
+      <li>CS2223: Algorithms</li>
+      <li>CS3013: Operating Systems</li>
+      <li>CS3043: Social Implications of Information Processing</li>
       <li>CS3133: Foundations of CS</li>
-      <li>CS 3013: Operating Systems</li>
-      <li>CS 3516: Computer Networks</li>
+      <li>CS3516: Computer Networks</li>
       <li>CS3431: Database Systems</li>
     </ul>
+    </div>
+    <div>
     <p>
-      I have some existing experience with HTML, CSS, JS, and Python (mainly with flask), but not a huge amount. In terms of other coding languages I am comfortable with C/C++ and Java
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
+      <strong>Programming Experiences:</strong>
     </p>
     <ul>
-      <li>IBM/Rational</li>
+      <li>HTML: <i>Somewhat experienced</i></li>
+      <li>CSS: Also somewhat experienced</li>
+      <li>Java: Plenty of experience</li>
+      <li>Javascript: Basic understanding but needs some work</li>
+      <li>Python: Fairly experienced</li>
+      <li>Unit testing: Only what I did in CS2102, which was 2 years ago. Will need to relearn for sure</li>
+      <li>Refactoring Code: Nope</li>
+    </ul>
+    <p><strong>Working experience:</strong></p>
+    <ul>
+      <li>Yale IT</li>
       <li>WPI</li>
     </ul>
+  </div>
+    <div>
+      <h2>Website color palette</h2>
+      <img src="ColorPalette.png" alt="ColorPalette">
+    </div>
+    <div>
+      <button type="button" onclick="firstButtonPress()">Awesome Button that does big things</button>
+      <button type="button" onclick="showTrombone()" id="hiding" style="display: none">If button 1 was so good why isn't there a button 2? OH WAIT</button>
+    </div>
+    <img src="trombone.jpg" alt="trombone" id="trombone" style="display: none">
   </body>
 </html>
