@@ -4,13 +4,13 @@ Assignment 1 - Hello World - Peter Czepiel
 Peter Czepiel
 Deployed Site:[https://a1-peterczepiel.onrender.com/](https://a1-peterczepiel.onrender.com/)
 
-This project shows a little piece of who I am as a person, as well as some of my academic achievements. On my site you will find
-- some basic information about me
-- my hobbies and interests outside of school
-- my club affiliations
-- the previous CS courses I have taken
-- a small table of the sports and teams that I like to follow
-- and a picture of the team I worked as a part of during my software engineering class.
+This project shows a little piece of who I am as a person, as well as some of my academic achievements. On my site you will find:
+- Some basic information about me
+- My hobbies and interests outside of school
+- My club affiliations
+- The previous CS courses I have taken
+- A small table of the sports and teams that I like to follow
+- And a picture of the team I worked as a part of during my software engineering class.
 
 ## Technical Achievements
 - **Styled page with CSS**: I used CSS to style the entire page. This included using divs to seperate the rows of my site, with each div box having there own sub divs that changed various things. While doing this I styled: header, paragraphs, bulleted lists, tables, and images. Some more description about my styling:
