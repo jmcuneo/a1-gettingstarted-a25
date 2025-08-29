@@ -51,7 +51,68 @@ Other honorable mentions:
 - `github_button` and `github_button:hover` classes were created. The initial class defined the styles for the GitHub button, but the hover class indicated how the cursor and button should behave if the cursor hovers over the button. 
 
 ## 2.0 A Simple Javascript Animation:
+Javascript (JS) was used to animate the student name `Matthew Papesh` to blink and flash between two different colors. This was done with the  `<script></script>` JS enclosing tag in HTML. This was done by implementing the following:
+```js
+<script>
+    const title = document.getElementById("my_name");
+    const colors = ["var(--primary-color)", "var(--text-color)"];
+    let iterator = 0;
+    setInterval(() => {
+        let index = iterator % colors.length;
+        title.style.color = colors[index];
+        iterator++;
+    }, 1000); // color is updated every second
+</script>
+```
 
+### 2.1 Using CSS in JS:
+The JS code needs to be able to interface the contents of the website. This is done by the JS interacting with the HTML/CSS. Each piece of content on the website can be labeled with not only a CSS class type, but also a id type. For example, an id of a div can be set as: `<div id=my_id></id>`. Variable in JS then can be set equal to the contents, also known as an element, on the website by giving an id. CSS variables can also be implemented in JS as it would be in CSS, with `var()`, but then must be wrapped in quotes. 
+
+### 2.2 `setInterval(function_object, delay_ms)`:
+This is a JS function that repeatedly calls and runs another function tat a specifically timed rate. The `setInterval()` function takes arguments in the order of the function to call repeatedly, followed by the amount of milliseconds to delay for. 
+
+### 2.3 Blinking Student Name Code:
+This is shown, in whole, in section *2.0 A Simple Javascript Animation*, above. To look closer: 
+```js
+const title = document.getElementById("my_name");
+const colors = ["var(--primary-color)", "var(--text-color)"];
+```
+
+The constant objects of `title` and `colors` are created. `title` is the content element on the actual page that has a tag labeled with the `id="my_name"`. This is true in the HTML, where we see: 
+
+```html
+<div><h1 class="my_name" id="my_name">Matthew Papesh</h1></div>
+```
+
+Even though this is not the only div in the basic student info content on the website, this is one is isolated with header text content with the aforementioned id label. This allows the JS find this element and label it `title`. Next, `colors` is simply an array of the `--primary-color` and `--text-color` variables (accessed with `var()` in CSS, and wrapped in quotes for JS). These colors come from the Adobe color pallette. 
+
+Finally a function is created while passed into `setInterval()` with a repeat delay call of every one second. This function, implemented within `setInterval()`, that is repeatedly called is seen wrapped below:
+
+```js
+let iterator = 0;
+setInterval(() => {
+    let index = iterator % colors.length;
+    title.style.color = colors[index];
+    iterator++;
+}, 1000); // color is updated every second
+```
+
+A `iterator` variable is made and tracks how many times the internal function is repeatedly called. `index` is then the remainder left over from the division of the number of internal function calls (`iterator`) by the number of colors from `colors`. This division shows how many times the list of colors can be stepped through (iteratively) based on whatever the number of `iterator`. The whole number part of this quotient is not needed for modulus. So we can focus on the decimal of 0.X that has a remainder that is the index in the color list that corresponds to the `index`. 
+
+For example, with two colors and iterator of 3, index is equal to the remainder of 3/2=1.5. This means iterator has gone through the color list once, and is 50% through it again. We only care about the 50%, or 0.5, which 1/2 has a remainder of 1. This would be the index of the second color in the list. Once the iterator repeats and becomes 4, index will be the remainder of 4/2=2, which would be 0. This modulus math corresponds the iterator to the correct index in the color list to alternate through the colors in the list everytime the function is called. 
+
+Given the index of the current color is always updated, the style color of the title element from earlier is assigned to this new current color before increasing the `iterator` by one. Then the function delays for a second before repeating to create the animation. 
+
+It is worth noting that this JS code has to be implemented below the HTML content for it to function properly in the index.html file.
+
+## 3.0 Other HTML Tags:
+Other tags used for `<img class="" src=""></img>`, `<link rel="" href="">`, `<a href=""></a>`, `<footer></footer>`, and `<button type="button"></button>`. 
+
+- **1:** `<img></img>` => The source text ives the directory of where the image file content lives. Other arguments can be given, such as class, id, etc for CSS styling. 
+- **2:** `<link></link>` => The rel text names the relationship between this doc and the one being linked. The href text provides the actual link to connect to this doc. 
+- **3:** `<a></a>`=> Similar to a link tag, but this is tag is for when an element on the website should be associated or connected with that link as opposed to just including extra content onto this doc like how the link tag would. Anything wrapped in this tag will be hyperlinked to the link specified in the href text. Giving a target of "_blank" creates a new tab when opening the link. This was used to link the student GitHub to the website. 
+- **4:** `<footer></footer>` => This puts footer content at the very bottom row of the website. 
+- **5:** `<button></button>`=> This creates a button in visuals, but it does nothing on its own. It can be interacted with by specifying CSS for what should happen to styling when the cursor hovers over the button etc. The button can be wrapped in `<a></a>` to attach it to a hyperlink and make the button useful. 
 
 ## Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
