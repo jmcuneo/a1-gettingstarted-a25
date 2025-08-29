@@ -1,7 +1,7 @@
 ## Aarogya Rijal
 
 CS4241 Assignment 1  
-https://a1-aarogyarijal.onrender.com
+https://a1-aarogyarijal-a25.onrender.com/
 
 This repository contains:
 - Basic HTML page with personal information
@@ -17,5 +17,8 @@ This repository contains:
 ## Design Achievements  
 ![alt text](image-1.png)
 - **Color palette**: Used all 6 colors from the provided palette (#E673B2, #7EA67C, #77E673, #917886, #526652, #3C2632) in gradient background, container, headings, highlights, and table styling
-- **Google Fonts**: Implemented Roboto font familyt assignment! You will deploy the starting Web site that you will use this term to [Render](https://www.render.com/). 
+- **Google Fonts**: Implemented Roboto font family
+
+## Note
+AI was used to structure and rewrite this README. 
 
