@@ -1,0 +1,117 @@
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.intro-text {
+  min-width: 250px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.images img {
+  max-width: 400px;
+  max-height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.artists {
+  min-width: 300px;
+  max-width: 1000px;
+}
+
+.spotify-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto 10px auto;
+}
+
+.spotify-grid iframe {
+  width: 100%;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(#e6efe9, #c5f4e0);
+}
+
+h1,
+h2 {
+  color: #a7c4a0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+p,
+li,
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #8f8389;
+}
+
+li {
+  text-align: left;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #a7c4a0;
+  padding: 8px;
+  text-align: center;
+  color: #8f8389;
+  font-family: "Roboto", sans-serif;
+}
+
+.academic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.experience,
+.courses {
+  min-width: 250px;
+  max-width: 600px;
+  text-align: center;
+  padding: 30px;
+}
+
+.work-experience {
+  padding-top: 30px;
+}
+
+footer {
+  background-color: #c2eaba;
+  color: #8f8389;
+  padding: 20px;
+  text-align: center;
+}

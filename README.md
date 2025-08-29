@@ -1,111 +1,22 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
-===
 
-*DUE: Friday, August29, 2025 by 11:59 PM*
+Amanda Longo
+https://a1-amandalongo.onrender.com/
 
-First assignment! You will deploy the starting Web site that you will use this term to [Render](https://www.render.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Render, as well as experiment some with HTML/CSS/JS. If you already know these, great! 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. Don't just get your website up and done, as
-you'll need skills with these tools throughout the rest of the course.
-
-These instructions may be modified over time for purposes of clarification or to provide additional options. The requirements will NOT change. You can see any updates by looking at the commit history of this document in GitHub.
-
-**AI POLICY REMINDER:** You must adhere to the AI policy described in the course syllabus, including citations of any AI tools you used and how you used them.
-
-Assignment details
----
-
-This assignment requires that your website is both contained in a GitHub repository and hosted in Render.
-
-### Clone to computer, push to Github, import to Render (recommended)
-
-1. Fork the starting assignment code in GitHub. This repo contains the following:
-    * The server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Render
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2025) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Python
-        * Unit testing
-		* Refactoring code
-3. Complete some technical and/or design achievements (see below).
-4. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory and then going to `localhost:3000` in your browser.
-5. Modify the README file according to the specification below.
-6. Commit and push all your changes to GitHub. 
-7. Deploy your project to Render. You can do this by [importing the repo from GitHub](https://render.com/docs/github).
-    * You will need to create an Render account first.
-    * Under "Publish Directory", you can just put "./" (without the quotation marks).
-8. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-9. Create and submit a Pull Request to the original repo. This helps us find your project.
-	* Ignore any messages about conflicts. You do not need to resolve them.
-	* Make the title of your pull request "Pull Request for NAME" (ex. "Pull Request for Joshua Cuneo")
-
-### Note about alternative hosting
-Our use of Render in this class is there as a convenience for you. However, if you are already familiar with hosting through other services--or if you would like to self-host--that's perfectly fine so long as the website in question meets all of the assignment requirements. Note that we will not be able to help you if you run into issues on other hosting platforms, and you will be responsible for making sure the website stays up and running for the duration of the term. For A1, you will also still need to create a pull request with your name and your website's URL.
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-The name scheme should be `a1-yourFirstAndLastName`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future assignments.
-
-Rubric
----
-For the Technical and Design achievements, make sure you thoroughly describe in your README what you did why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM. Remember that the success of Achievements hinges on how well you describe them in your README. Well formatted text, images, and concise and clear descriptions are helpful. You must include a Technical Achievements and Design Achievements section, even if none are attempted.
-
-Note that if you want to load resources besides your index.html file (images, an CSS file, a JS file) you'll need to modify server.js to point to these. For now it's easiest to just hardcode paths to the resources, but we'll look at ways to optimize this shortly.
-
-*Basic Requirements*
-
-(10 points each)
-
-1. Assignment has proper naming scheme
-2. Files forked from original repo
-3. `index.html` properly rendered
-4. `index.html` page properly edited
-5. All changes pushed to GitHub
-6. Project deployed to Render (or other hosting option)
-7. Pull Request submitted to original repo
-
-*Technical Achievements*
-1. (5 points) Style your page using CSS. Each style rule you apply will get you 1 point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (5 points) Experiment with other *semantic* HTML tags (links, images, tables, header, footer, etc.). Each extra tag you use will get you 1 point for a maximum of 5 points. Be sure to describe the tags you use in your README.
-
-*Design Achievements*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website.
-
-**NOTE:** There are additional color pallette and font options listed on Canvas under Modules -> Resources -> Color Pallettes and Fonts. You are welcome to use one of those instead. If you know of and would like to use any other resources that are not included, feel free to contact the instructor.
-
-Resources
----
-
-If you need refreshers for JavaScript/HTML/CSS or Git/GitHub, check out the resources posted on Canvas under Modules -> Resources.
-
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
-
-Joshua Cuneo
-http://a1-joshuacuneo.Render.com
-
-This project shows ...
+This project shows an introduction to myself with all of the necessary implementations, while also showing off some technical and design achievements. This project shows basic use of deployment, git, github and more. 
+---------------------------
+index.html - main html page
+mystyles.css - custom css styles
+app.js - javascript animations
+server.js - node.js server
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: (1.)I created a div that is meant to organize the top section of my code including my intorduction, images and the spotify artist embeddings. I added 7 style rules for each separate div that I create to manage the width, margins, text alignment and image and spotify embedding sizing too. My main goal what to make it so that the content displayed side by side so that it wasn't in a full linear page and you had to scroll down a bunch. It also helped even out the space (2.) I also did this same pattern with the courses and experience content. I made an academic div and created style rules for the 3 divs that I had. This create consistent spacing and layout for the entire page. (3.) I created style rules for h1,h2 to ensure they had the same color and font styling, as well as a separate stlying rule for the body which was a colored gradient background (4.) I created style rules for p,li,a since they all involve basic text styling like color size and font. (5.) I created a style rule for the table and the table cells so that I could add border collapse so that the table itself looked more oganized (6.) I implemented a stlye rule separate for a list to ensure that the list was left aligned, since I didn't want all of the text to be left aligned, just specifically the list (7.) I created a style rule for the footer to create the block effect and to only show when you scroll to the bottom of the page. 
+
+- **Semantic tags**: (1.) I created a footer block in html to add more of my color pallete and also added (2.) 3 links (using the a tag) to my linkedin, instagram and github to practive more linking. I also added a css style to the links to bold the link when you go to click on each link. (3.) I implemented 2 images to show the club I am involved in, along with one of my hobbies. (4.) I added in a table to show my knowledge within the listed technologies and to organize it easier. (5.) I added more lists to organize the courses that I have taken throughout my CS journey as well. (6.) I also implemented 4 embeddings of spotify artists so that they link to the spotify web player. I talked about my favorite artists in my introduction, so I wanted to implement the embedding code into my webpage too!
+- **JavaScript Animation**: I implemented two javascript animations within app.js. The first animation is a general fade in whenever you reload or enter my webpage. It slowly shows all of my content. The other animation that I implemented was just fore more practive with javascript, which was a hover feature over my images. When you hover your cursor over the images, they pop out a bit and rotate to add a pop to them. I am used to using less lines of code in CSS to implement that animation, but again I wanted the practice of js. 
 
 ## Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site. Both as header text and regular text. I used variations of bolded font and italic 
+- **Used all of the colors within my color palette**: #e6efe9, #c5f4e0, #a7c4a0, #8f8389, #c2eaba I used all of the colors within the color palette that I created through coolors because I really enjoy using coolors over the other options. One of the ways I implemented more of the color palette is I made my website body a linear gradient. 
+<img width="1600" height="1200" alt="color pallete" src="https://github.com/user-attachments/assets/43094ef9-425c-41b3-944c-d2362468fac2" />
