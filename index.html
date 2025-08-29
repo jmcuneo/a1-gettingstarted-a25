@@ -18,6 +18,12 @@
       position: absolute;
       background-color: red;
     }
+    #Freddy {
+      position: absolute;
+      left: 0;
+      top: 1000px;
+      width: 1000px;
+    }
   </style>
   <header>
     <a href="https://github.com/jmcuneo/a1-gettingstarted-a25">Webware Assignment 1</a>
@@ -50,8 +56,23 @@
       }
     </script>
     <div style="text-align:center">
-      <img src="Freddy.png" alt="Freddy" width="200">
+      <img id="Freddy" src="Freddy.png" alt="Freddy" width="200">
     </div>
+
+    <script>
+      let img = document.getElementById("Freddy");
+      let pos = 0;
+
+      function moveImage() {
+        if (pos < window.innerWidth - img.width) {
+          pos += 2; // speed
+          img.style.left = pos + "px";
+          requestAnimationFrame(moveImage); // smooth animation
+        }
+      }
+
+      moveImage();
+    </script>
 
     <table>
       <tr>
