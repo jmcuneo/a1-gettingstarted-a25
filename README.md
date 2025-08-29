@@ -22,7 +22,7 @@ Used semantic HTML tags:
 - <img> for my moving image.
 - <table> for the table of lightsaber colors.
 - <section> to break up the different sections of the page.
-- <ul > and < li> for the bullet points.
+- < ul> and < li> for the bullet points.
 - <small> for the small footer text.
   
 Design Achievements
