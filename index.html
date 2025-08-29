@@ -8,6 +8,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&display=swap" rel="stylesheet">
 
         <style>
+
+            html, body {
+                height: 100%; /* Ensures html and body also take full height */
+                margin: 0;
+                padding: 0;
+            }
             :root {
                 --primary-color: #012e40;
                 --secondary-color: #024959;
@@ -36,26 +42,18 @@
                 content: '\27A4';
                 margin-right: 2%;
             }
-            .flex_rows, .flex_cols, .flex_profile_box, .flex_text_box {
+            .flex_rows, .flex_profile_box, .flex_text_box {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
             }
             .flex_profile_box {
                 display: inline-block;
                 text-align: left;
             }
-            .flex_cols {
-                flex-direction: column;
-            }
             .flex_rows > div {
                 padding-left: 1em;
                 padding-right: 1em;
                 margin-bottom: auto;
-                margin-right: auto;
-                display: inline-block;
-                text-align: left;
-                flex-grow: 1;
             }
             .flex_text_box > div {
                 margin-right: auto;
@@ -67,10 +65,8 @@
             .website_side_left_div, .website_side_right_div {
                 background-color: var(--secondary-color);
                 box-shadow: 0.3em 0em 0.3em rgb(100, 100, 100);
-                border-width: 0%;
-                width: 20vw;
-                height: 100vh;
-                flex-grow: 1;
+                width: 20%;
+                height: 100dvh;
             }
             .website_side_right_div {
                 box-shadow: -0.3em 0em 0.3em rgb(100, 100, 100);
@@ -85,6 +81,24 @@
             .my_name {
                 font-family: "Libertinus Keyboard";
             }
+            .github_button {
+                display: inline-block;
+                background-color: purple;
+                border: none;
+                border-radius: 1em;
+                padding: 0.5em;
+                height: fit-content;
+                width: 5em; 
+                text-align: center;
+                cursor: pointer;
+            }
+            .github_button > p {
+                font-weight: bold;
+                color: var(--background-color);
+            }
+            .github_button:hover {
+                background-color: violet;
+            }
 
         </style>
         
@@ -92,7 +106,7 @@
     <body style="background-color: var(--background-color)">
         <div class="flex_rows"> 
             <div class="website_side_left_div"></div>
-            <div>
+            <div style="flex-shrink: 1;">
                 <div class="flex_profile_box">
                    <div style="display: inline-block; text-align: left;">
                        <img class="profile_pic" src="img/profile.jpg">
@@ -110,7 +124,12 @@
                            <li>Student Advisory Board, Robotics Engineering Dept</li>
                         </ul>
                    </div>
-                   
+                   <div>
+                        <a href="https://github.com/Matthew-Papesh" target="_blank">
+                        <button type="button" class="github_button"><p>GitHub</p></button>
+                        </a>
+                    </div>
+
                 </div>  
                 <div class="shaded_text_box_div">
                     <h2>Programming Experience</h2>
@@ -140,9 +159,6 @@
                                 was replacing all raw pointers with smart pointers.
                             </p></li>
                         </ul>
-                       
-                    
-                
                 </div>
             </div>
             <div class="website_side_right_div"></div>
