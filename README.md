@@ -22,8 +22,8 @@ This project shows ...
     - <img> for my moving image.
     - <table> for the table of lightsaber colors.
     - <section> to break up the different sections of the page.
-    - <ul> and <li> for the bullet points.
-    - <small> for the small footer text.
+    - < ul> and < li> for the bullet points.
+    - < small> for the small footer text.
 
 ## Design Achievements
 - **Color Palette**: I created a color palette with Adobe for a variety of colors on the page.
