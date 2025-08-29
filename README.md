@@ -13,12 +13,5 @@ This project shows ...
 (5) <br> Added a line break in between the major/minor descriptor and course list.
 
 ## Design Achievements
-- **Color palette**: 
+- **Color palette**: tan #CAAB9D, dark blue #595A73, light blue #A8A9BF, light green #768C6D, dark green #65735F. Used tan for the background, dark green for the main text, dark blue for the image borders, light green for the table background, and light blue for the text in the table.
 - **Google Fonts**: I used Dosis as the font for the primary copy text in my site.
-
-/* Color Theme Swatches in Hex */
-.Light-Blue-tan-dark-blue-and-green-1-hex { color: #CAAB9D; }
-.Light-Blue-tan-dark-blue-and-green-2-hex { color: #595A73; }
-.Light-Blue-tan-dark-blue-and-green-3-hex { color: #A8A9BF; }
-.Light-Blue-tan-dark-blue-and-green-4-hex { color: #768C6D; }
-.Light-Blue-tan-dark-blue-and-green-5-hex { color: #65735F; }
