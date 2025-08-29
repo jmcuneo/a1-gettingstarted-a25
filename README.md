@@ -5,14 +5,14 @@ This project shows ...
 
 ## Technical Achievements
 ### Styling
-- h1 heading → Blue text **color** (#1D46DB).
-- Paragraph right after h1 → Purple **border** (line around element), **padding** (space between element and its border), and **left margin** (space between other elements and border).
+- h1 heading → Blue text **color** (#1D46DB) "Information about Shawn Patel". 
+- Paragraph right after h1 → Purple **border** (line around element), **padding** (space between element and its border), and **left margin** (space between other elements and border) The information about me under the title.
 - Specific paragraph after audio → Larger purple text (#6E1DDB) at 160% using **font-size**.
-- Next paragraph after that → Custom font (Playwrite CA), larger size (180%), and lighter purple color (#9866DB).
-- Image -> **Border-radius** (rounds corner of the image) and **box-shadow** (adds a shadow around the element's box)
+- Next paragraph after that → Custom font (Playwrite CA), larger size (180%), and lighter purple color (#9866DB) "Previous CS Courses Taken at WPI".
+- Image -> **Border-radius** (rounds corner of the image) and **box-shadow** (adds a shadow around the element's box) -> Packers Image
 - More repeated CSS styles along with more than the 5 required (I listed some of the ones I used for credit).
 ### Javascript Animation
-- I added a simple animation of a wheel spinning at the bottom of the webpage.
+- I added a simple animation of a wheel spinning at the bottom of the webpage. I used a variable angle which increases every animation frame to have the spinning effect of the object(wheel).
 ### Semantic HTML Tags
 - Audio (audio)-> I added audio of Never Gonna Give You Up by Rick Astley.
 - Anchor Element (a)-> I added a hyperlink to a Youtube video.
