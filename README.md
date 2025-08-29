@@ -15,3 +15,10 @@ This project shows ...
 ## Design Achievements
 - **Color palette**: 
 - **Google Fonts**: I used Dosis as the font for the primary copy text in my site.
+
+/* Color Theme Swatches in Hex */
+.Light-Blue-tan-dark-blue-and-green-1-hex { color: #CAAB9D; }
+.Light-Blue-tan-dark-blue-and-green-2-hex { color: #595A73; }
+.Light-Blue-tan-dark-blue-and-green-3-hex { color: #A8A9BF; }
+.Light-Blue-tan-dark-blue-and-green-4-hex { color: #768C6D; }
+.Light-Blue-tan-dark-blue-and-green-5-hex { color: #65735F; }
