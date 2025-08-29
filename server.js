@@ -13,6 +13,12 @@ const server = http.createServer( function( request,response ) {
     case '/mystyles.css':
       sendFile( response, 'mystyles.css' )
       break
+    case '/wpi.png':
+      sendFile( response, 'wpi.png' )
+      break
+    case '/wpipanorama.jpeg':
+      sendFile( response, 'wpipanorama.jpeg' )
+      break
     default:
       response.end( '404 Error: File Not Found' )
   }
