@@ -14,6 +14,9 @@ const server = http.createServer( function(request,response) {
             case './':
                 sendFile(response, 'index.html');
                 break
+            case './style_design.css':
+                sendFile(response, 'style_design.css');
+                break;
             default:
                 sendFile(response, url);
         }
@@ -32,7 +35,9 @@ server.listen( process.env.PORT || port )
 const sendFile = function( response, filename ) {
 
     console.log("Sending file: ", filename);
+
    fs.readFile( filename, function( err, content ) {
      response.end( content, 'utf-8' )
    })
+
 }
