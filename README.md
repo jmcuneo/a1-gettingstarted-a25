@@ -1,7 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
 ===
 Brandon Yeu
-Render link: 
+Render link: https://a1-brandonyeu.onrender.com
 
 This project shows basic foundational skills in HTML, CSS, and JavaScript. It was a good refresher for front end web development.
 
