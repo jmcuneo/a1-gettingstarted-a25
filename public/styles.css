@@ -1,18 +1,18 @@
-body{
+body {
     color: #F2F2F2;
-    background-color: #000000;
+    background-color: #0D0D0D;
     margin: 0;
     font-family: "Newsreader", sans-serif;
 }
 
-header{
+header {
     position: sticky;
     top: 0;
     padding: 1px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000;
+    background-color: #4A7348;
     color: #F2F2F2;
     font-size: 32px;
     font-family: "Poppins", sans-serif;
@@ -24,7 +24,6 @@ header{
     font-weight: 700;
     letter-spacing: 1px;
 }
-
 
 nav {
     display: flex;
@@ -51,7 +50,6 @@ nav {
     color: #5DA668;
 }
 
-
 .home h2 {
     font-size: 3rem;
     font-weight: 900;
@@ -66,44 +64,22 @@ nav {
     margin: 100px auto;
     text-align: center;
 }
+
 .about, .experience {
     max-width: 600px;
     margin: 100px auto;
     text-align: left;
-    align-items: center;
     font-size: 20px;
+    color: #878B8C;
 }
 
 .about h2, .experience h2 {
     text-align: left;
     font-size: 40px;
+    color: #F2F2F2;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #F2F2F2;
-    color: #0D0D0D;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 4px;
-}
-
-.btn:hover {
-    background-color: #5DA668;
-}
-
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding-top: 200px;
 }
-
-
-
-.Graphic-Design-1-hex { color: #878B8C; }
-.Graphic-Design-2-hex { color: #5DA668; }
-.Graphic-Design-3-hex { color: #4A7348; }
-.Graphic-Design-4-hex { color: #F2F2F2; }
-.Graphic-Design-5-hex { color: #0D0D0D; }
-
