@@ -3,26 +3,90 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const h2Element = document.getElementsByTagName("h2");
+        const colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+
+        let color_index = 0;
+
+        function change_color(){
+          for(const element of h2Element){
+            element.style.color = colors[color_index];
+          }
+          color_index = (color_index + 1) % colors.length;
+        }
+
+        setInterval(change_color, 1000);
+      });
+    </script>
+
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
+    <header>
+      <nav>
+        <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/OJrX3aNPsHM?si=bD-GwfVLznL1vx9_">good video (i swear)</a>
+      </nav>
+    </header>
+
+    <h1>Information about Ethan Carter</h1>
+    <hr color="black">
+    <h2>Educational Information</h2>
+    <h3>
+      WPI Class of 2026
+    </h3>
     <p>
+      Majors: Computer Science and IMGD
+    </p>
+    <div>
+      CS Courses:
+      <ul>
+        <li>Operating Systems</li>
+        <li>Software Engineering</li>
+        <li>Intro to AI</li>
+        <li>Database Systems 1</li>
+      </ul>
+    </div>
+    <p>
+      I play video games :&#41;
+    </p>
+    <aside>
+      <nav>
+        <a target="_blank" rel="noopener noreferrer" href="https://teamfighttactics.leagueoflegends.com/en-us">Play Teamfight Tactics today!</a>
+      </nav>
+    </aside>
+    <h2>Experience</h2>
+    <h3>
       Working experience
+    </h3>
+    <ul>
+      <li>App Development Internship for CypressSolutions</li>
+      <li>R&D Work for Crossroads Fellowship</li>
+    </ul>
+    <p>
+      Technology Experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML: some</li>
+      <li>CSS: some</li>
+      <li>Java: a lot</li>
+      <li>JavaScript: some</li>
+      <li>Python: a lot</li>
+      <li>Unit Testing: some</li>
+      <li>Refactoring Code: a lot</li>
     </ul>
+
+    <h3>Color Palette:</h3>
+    <img src="palette.png" alt="color palette">
+    <footer>
+      I'm a footer!
+    </footer>
   </body>
+  
 </html>
