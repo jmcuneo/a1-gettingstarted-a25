@@ -1,0 +1,65 @@
+body {
+    font-family: 'Happy Monkey';
+    background-color: #202733; 
+    color: white; 
+}
+
+h1 {
+    color: #4D83E8;
+    text-align: center;
+}
+
+h2 {
+    color: #5E80BE;
+    font-weight: bold; 
+}
+
+h3 {
+    padding-bottom: 0.5rem; 
+    border-bottom: 2px solid #575D69;
+}
+
+ul li {
+    background: #212B3D;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #212B3D;
+}
+
+th, td {
+    border: 2px solid #5F708F;
+    padding: 1rem;
+    text-align: center;
+}
+
+th {
+    background-color: #5E80BE;
+    color: white;
+}
+
+a {
+    color: #4D83E8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #5E80BE;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #4D83E8;
+    color: #212B3D;
+    border: none;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+

@@ -3,26 +3,122 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.getElementById("showBlondies");
+        const recipeDiv = document.getElementById("recipeImage");
+
+        btn.addEventListener("click", () => {
+          if (recipeDiv.style.display === "none") {
+            recipeDiv.style.display = "block";
+            requestAnimationFrame(() => {
+              recipeDiv.style.transition = "opacity 1s ease";
+              recipeDiv.style.opacity = 1;
+            });
+          }
+        });
+      });
+  </script>
+
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+
+    <header>
+      <h1>Information about Timothy Hutzley</h1>
+    </header>
     <p>
-      [Self introduction]
+      Hello! My name is Timothy Hutzley and I am a part of WPI's class of 2026!
     </p>
     <p>
-      [Major and other information]
+      I am a senior at WPI studying both <em>Computer Science</em> & <em>Data Science,</em> and I am a part of the Outing and Tea club here at WPI.
     </p>
     <p>
-      [Other things]
+      Outside of school I enjoy stereotypical computer science hobbies such as video games and working on my PC.
+      Aside from that, I find myself enjoying cooking and baking, especially for my friends as I enjoy seeing them enjoy my food.
+      I also enjoy rock climbing, which I've mostly done indoors. However, I am looking to climb more outdoors as I now have the
+      equipment and always enjoy a nice hike out to a spot in the middle of the woods.
     </p>
 
+    <a href="https://www.brownedbutterblondie.com/brown-butter-blondies/" target="_blank">Check out my favorite Browned Butter Blondies recipe here!</a>
+    <button id="showBlondies">Click me to see how they look!</button>
+    <div id="recipeImage" style="display:none; opacity:0; margin-top:15px;">
+      <img src="BrownButterBlondieRecipe.png" alt="Browned Butter Blondies" width="500">
+    </div>
+
+    
+
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h3>Working Experience</h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Truck Driver at Del's Lemonade</li>
+      <li>Baker at Honey Dew Donuts</li>
+      <li>Marketing Intern at T&R Insurance</li>
+      <li>Software Validation & AI Trainer at DataAnnotation Tech</li>
     </ul>
+
+    <h3>Previous Coursework Experience</h3>
+    <ul>
+      <li>CS 1101 - Introduction to Program Design</li>
+      <li>CS 2102 - Object-Oriented Design Concepts</li>
+      <li>CS 2303 - Systems Programming Concepts</li>
+      <li>CS 2011 - Introduction to Machine Organization and Assembly Language</li>
+      <li>CS 3043 - Social Implications of Information Processing</li>
+      <li>CS 2223 - Algorithms</li>
+      <li>CS 2022 - Discrete Mathematics</li>
+      <li>CS 3013 - Operating Systems</li>
+      <li>CS 3133 - Foundations of Computer Science</li>
+      <li>CS 3733 - Software Engineering</li>
+      <li>CS 3431 - Database Systems I</li>
+      <li>CS 4342 - Machine Learning</li>
+      <li>CS 4341 - Introduction to Artificial Intelligence</li>
+    </ul>
+
+
+    <h3>Experience with Technologies and Methods</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th>HTML</th>
+        <th>CSS</th>
+        <th>Java</th>
+        <th>JavaScript</th>
+        <th>Python</th>
+        <th>Unit Testing</th>
+        <th>Refactoring Code</th>
+      </tr>
+      <tr>
+        <th>None</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Some</th>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td></td>
+        <td></td>
+        <td>✔️</td>
+        <td>✔️</td>
+      </tr>
+      <tr>
+        <th>A lot</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
   </body>
 </html>
