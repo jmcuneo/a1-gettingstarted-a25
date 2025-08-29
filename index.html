@@ -3,26 +3,129 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <header class="page-header">
+      <h1>Information about Aanan Goyal</h1>
+    </header>
+    
+    <main class="content-wrapper">
+      <section class="intro-section">
+        <p class="greeting">
+          Hello! I'm Aanan Goyal, a senior Computer Science and Astrophysics student at Worcester Polytechnic Institute (WPI), class of 2026. 
+          I'm passionate about web-dev, space exploration and creating innovative software solutions 
+          that have a positive impact on people's lives.
+        </p>
+      </section>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+      <section class="academic-info">
+        <h2>Academic Background</h2>
+        <p>
+          <strong>Major:</strong> Computer Science<br>
+          <strong>Minor:</strong> Astrophysics<br>
+          <strong>Expected Graduation:</strong> May 2026
+        </p>
+        
+        <details class="course-details">
+          <summary>Previous CS Courses at WPI</summary>
+          <ul class="course-list">
+            <li>CS 1101 - Introduction to Program Design</li>
+            <li>CS 2102 - Object-Oriented Design Concepts</li>
+            <li>CS 2303 - Systems Programming Concepts</li>
+            <li>CS 2011 - Introduction to Machine Organization and Assembly Language</li>
+            <li>CS 2223 - Algorithms</li>
+            <li>CS 3043 - Social Implications</li>
+            <li>CS 3041 - Human Computer Interaction</li>
+            <li>CS 3431 - Database Systems 1</li>
+            <li>CS 3733 - Software Engineering</li>
+          </ul>
+        </details>
+      </section>
+
+      <section class="experience-section">
+        <h2>Technical Experience</h2>
+        
+        <table class="skills-matrix">
+          <thead>
+            <tr>
+              <th>Method/Technology</th>
+              <th>Experience Level</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td class="skill-some">Some</td>
+              <td>Built several course projects with semantic markup</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td class="skill-some">Some</td>
+              <td>Comfortable with flexbox, grid, and responsive design</td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td class="skill-lot">A lot</td>
+              <td>Primary language for most coursework and projects</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td class="skill-some">Some</td>
+              <td>Used for interactive web features and Node.js basics</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td class="skill-lot">A lot</td>
+              <td>Data analysis, machine learning, and automation scripts</td>
+            </tr>
+            <tr>
+              <td>Unit Testing</td>
+              <td class="skill-some">Some</td>
+              <td>JUnit for Java projects, pytest for Python</td>
+            </tr>
+            <tr>
+              <td>Refactoring Code</td>
+              <td class="skill-some">Some</td>
+              <td>Learned through code reviews and maintenance projects</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="work-experience">
+        <h2>Work Experience</h2>
+        <div class="job-entries">
+          <article class="job-entry">
+            <h3>Research Assiatnt</h3>
+            <p class="company-name">New Mexico State University</p>
+            <p class="job-duration">Summer 2025</p>
+            <p>Worked on CHASM, a digitized tool for NOAA coronal hole maps, labeling 1,446 maps and 4,411 coronal holes.</p>
+          </article>
+          
+          <article class="job-entry">
+            <h3>Quality Intern</h3>
+            <p class="company-name">Ascend Elements</p>
+            <p class="job-duration">Summer 2024</p>
+            <p>Automated document compliance for EHS, Quality, and R&D teams; audited and approved 1,000+ records.</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <p>
+          <em>Thanks for visiting my page! Feel free to explore the interactive elements.</em>
+          <br>
+          <small>Last updated: August 2025</small>
+        </p>
+      </footer>
+    </main>
+
+    <div class="floating-animation" id="floatingShape"></div>
+    <script src="animation.js"></script>
   </body>
 </html>

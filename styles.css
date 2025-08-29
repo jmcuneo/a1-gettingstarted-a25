@@ -1,0 +1,266 @@
+/* Color palette from Adobe Color - "Academic Excellence" theme */
+:root {
+    --primary-blue: #2B4C7E;
+    --accent-teal: #567D8D;
+    --warm-cream: #F5E6D3;
+    --rich-burgundy: #8B3A3A;
+    --soft-sage: #A4B494;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--primary-blue);
+    background: linear-gradient(135deg, var(--warm-cream) 0%, #ffffff 100%);
+    min-height: 100vh;
+  }
+  
+  .content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Header styling */
+  .page-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    background: var(--primary-blue);
+    color: white;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .page-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(45deg);
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  
+  @keyframes shimmer {
+    0%, 100% { transform: translateX(-100%) rotate(45deg); }
+    50% { transform: translateX(100%) rotate(45deg); }
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--rich-burgundy);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-teal);
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Section styling */
+  section {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(43, 76, 126, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(43, 76, 126, 0.15);
+  }
+  
+  .greeting {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--accent-teal);
+    text-align: center;
+    padding: 1rem;
+    background: rgba(86, 125, 141, 0.05);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-teal);
+  }
+  
+  /* Skills table styling */
+  .skills-matrix {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .skills-matrix th,
+  .skills-matrix td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(43, 76, 126, 0.1);
+  }
+  
+  .skills-matrix th {
+    background: var(--primary-blue);
+    color: white;
+    font-weight: 500;
+  }
+  
+  .skills-matrix tr:hover {
+    background: rgba(164, 180, 148, 0.1);
+  }
+  
+  .skill-none { color: var(--rich-burgundy); font-weight: 500; }
+  .skill-some { color: var(--accent-teal); font-weight: 500; }
+  .skill-lot { color: var(--soft-sage); font-weight: 500; }
+  
+  /* List styling */
+  .course-list {
+    list-style: none;
+    padding: 1rem 0;
+  }
+  
+  .course-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--primary-blue);
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .course-list li:hover {
+    background: rgba(164, 180, 148, 0.1);
+  }
+  
+  .course-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent-teal);
+    font-weight: bold;
+  }
+  
+  /* Details/Summary styling */
+  .course-details {
+    margin: 1rem 0;
+  }
+  
+  .course-details summary {
+    cursor: pointer;
+    padding: 0.75rem;
+    background: var(--soft-sage);
+    color: white;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .course-details summary:hover {
+    background: rgba(164, 180, 148, 0.8);
+  }
+  
+  .course-details[open] summary {
+    border-radius: 6px 6px 0 0;
+  }
+  
+  /* Work experience styling */
+  .job-entries {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .job-entry {
+    padding: 1.5rem;
+    background: rgba(245, 230, 211, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid var(--rich-burgundy);
+  }
+  
+  .company-name {
+    font-weight: 500;
+    color: var(--accent-teal);
+    margin: 0.25rem 0;
+  }
+  
+  .job-duration {
+    font-size: 0.9rem;
+    color: var(--rich-burgundy);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Footer styling */
+  .page-footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(43, 76, 126, 0.05);
+    color: var(--accent-teal);
+    border-top: 2px solid var(--soft-sage);
+  }
+  
+  /* Floating animation element */
+  .floating-animation {
+    position: fixed;
+    top: 20%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, var(--accent-teal), var(--soft-sage));
+    border-radius: 50%;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      padding: 1rem;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    section {
+      padding: 1.5rem;
+    }
+    
+    .skills-matrix {
+      font-size: 0.9rem;
+    }
+    
+    .skills-matrix th,
+    .skills-matrix td {
+      padding: 0.75rem 0.5rem;
+    }
+    
+    .floating-animation {
+      right: 2%;
+      width: 40px;
+      height: 40px;
+    }
+  }
