@@ -49,7 +49,7 @@ body{
 }
 
 .imageBoxDiv{
-    display: inline-block;
+    display: flex;
     background-color: rgba(131, 39, 232, 0.282);
     border: black 2px solid;
     border-radius: 15px;
@@ -58,8 +58,50 @@ body{
     margin-right: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.3); 
     font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
+.tableBoxDiv{
+    display: inline-block;
+    background-color: rgba(39, 72, 232, 0.282);
+    border: black 2px solid;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3); 
+    font-size: 18px;
+}
+.tableBoxDiv table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.tableBoxDiv th, 
+.tableBoxDiv td {
+  border: 1px solid #333;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.tableBoxDiv th {
+  background-color: rgba(39, 72, 232, 0.6);
+  color: white;
+  font-weight: bold;
+}
+
+.tableBoxDiv tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tableBoxDiv tr:hover {
+  background-color: rgba(39, 72, 232, 0.2);
+  transition: background 0.3s ease;
+}
 
 /*
     background-color: #2785E8;
@@ -89,4 +131,9 @@ body{
 #transitionFourth{
   opacity: 0;
   transition: opacity 2s ease-in-out; 
+}
+
+#transitionFifth{
+  opacity: 0;
+  transition: opacity 2.5s ease-in-out; 
 }
