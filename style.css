@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+body{
+    background: #010221;
+    color: #EDAA25;
+
+    margin-inline: auto;
+    padding: 0 1em;
+
+    max-width: 976px;
+}
+
+
+h1, h2, h3, p{
+    font-family: 'Syne', sans-serif;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 32px;
+}
+
+p{
+    font-weight: 400;
+}
+
+.ball{
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    background-color: #0A3737;
+
+    position:absolute;
+    top: 250px;
+    right: 250px;
+}
+
+.canvas{
+    width: 100%;
+}
