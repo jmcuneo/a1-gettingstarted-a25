@@ -4,9 +4,12 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="mystyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Information about Colin Lemire</h1>
+    <h1 class="asimovian-regular">Information about Colin Lemire</h1>
     <p>
       Hi! I am a junior at WPI interested in cybersecurity and video games.
     </p>
@@ -53,7 +56,7 @@
       </tr>
       <tr>
         <td>JavaScript</td>
-        <td>some</td>
+        <td>none</td>
       </tr>
       <tr>
         <td>Python</td>
@@ -74,9 +77,44 @@
 
     <p>The color palette used on this page is shown below</p>
     <img src="colorpalette.png" alt="Color Palette">
+    <br>
+    <img src="JoshMichaels.jpg" alt="Josh Michaels" id="box">
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const box = document.getElementById('box');
+        let x = 100;
+        let y = 100;
+        let dx = 2; // horizontal speed
+        let dy = 2; // vertical speed
+
+        function animate() {
+          x += dx;
+          y += dy;
+
+          box.style.left = x + 'px';
+          box.style.top = y + 'px';
+          
+          if (x > window.innerWidth - 50 || x < 0) {
+            dx *= -1;
+          }
+
+          if (y > window.innerHeight - 50 || y < 0) {
+            dy *= -1;
+          }
+
+          requestAnimationFrame(animate);
+        }
+
+        animate(); // Start the animation
+      });
+    </script>
+
+
 
     <footer>
-      <a href="mailto:clemire@wpi.edu">Contact me!</a>
+      <p>Page made by Colin James Lemire</p>
+      <p>I don't have anything personal to link, but you can find my Clash Royale profile below!</p>
+      <a href="https://royaleapi.com/player/Q890PPRC" target="_blank" class="asimovian-regular">My Clash Royale stats here </a>
     </footer>
   </body>
 </html>
