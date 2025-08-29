@@ -77,8 +77,9 @@
 
     <p>The color palette used on this page is shown below</p>
     <img src="colorpalette.png" alt="Color Palette">
+
+    <img src="JoshMichaels.png" alt="Josh Michaels" id="box">
     <br>
-    <img src="JoshMichaels.jpg" alt="Josh Michaels" id="box">
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const box = document.getElementById('box');
@@ -94,11 +95,11 @@
           box.style.left = x + 'px';
           box.style.top = y + 'px';
           
-          if (x > window.innerWidth - 50 || x < 0) {
+          if (x > window.innerWidth - 200 || x < 0) {
             dx *= -1;
           }
 
-          if (y > window.innerHeight - 50 || y < 0) {
+          if (y > window.innerHeight - 200 || y < 0) {
             dy *= -1;
           }
 
