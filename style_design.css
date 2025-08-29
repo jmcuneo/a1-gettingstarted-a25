@@ -33,7 +33,7 @@ referenced for  color building
 if I understand correctly, I am inserting some default qualities not mentioned by specific sections like h1, h2..
  */
 body {
-    font-family: 'Press Start 2P', serif; /*, Arial, sans-serif;*/
+    font-family: 'Press Start 2P', serif;
     font-size: 16px;
     background-color: var(--bg_color);
     color: var(--font_color);
@@ -41,6 +41,7 @@ body {
     padding: 5px;
     font-optical-sizing: auto;
 }
+
 
 /* if I understand correctly, i am effectively adding attributes to sections with these tags! */
 h1,h2 {
@@ -62,11 +63,13 @@ li {
     padding: 10px;
 }
 
-/*-- learned about doing picture framing here:
-     https://code2care.org/tutorial/creative-css-profile-picture-designs/
+/*
+    learned about doing picture framing here:
+    https://code2care.org/tutorial/creative-css-profile-picture-designs/
 */
 
 /* from what I understand,  the "." is an html class selector */
+
 .profile-picture.icon {
     width: 200px;
     height: 200px;
