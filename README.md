@@ -11,14 +11,12 @@ you'll need skills with these tools throughout the rest of the course.
 
 These instructions may be modified over time for purposes of clarification or to provide additional options. The requirements will NOT change. You can see any updates by looking at the commit history of this document in GitHub.
 
+**AI POLICY REMINDER:** You must adhere to the AI policy described in the course syllabus, including citations of any AI tools you used and how you used them.
+
 Assignment details
 ---
 
-This assignment requires that your website is both contained in a GitHub repository and hosted in Render. There are a few ways to do this:
-
-1. Fork this repo and clone it to your computer, make changes locally on your computer, push the repo onto GitHub, and then import your GitHub repo into Render.
-2. Fork this repo and then import it directly to Render, use the Render editor to make changes, and then export your repo from Render back to GitHub.
-3. Same as #1, but instead of importing from Github to Render you just upload the files (or copy/paste) them directly to Render.
+This assignment requires that your website is both contained in a GitHub repository and hosted in Render.
 
 ### Clone to computer, push to Github, import to Render (recommended)
 
