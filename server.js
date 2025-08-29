@@ -22,6 +22,10 @@ const server = http.createServer( function( request,response ) {
       response.setHeader('Content-Type', 'image/jpeg')
       sendFileRaw( response, 'nails.jpeg' )
       break
+    case '/colorpallette.png':
+      response.setHeader('Content-Type', 'image/png')
+      sendFileRaw( response, 'colorpallette.png' )
+      break
     case '/app.js':
       response.setHeader('Content-Type', 'application/javascript')
       sendFile( response, 'app.js' )
