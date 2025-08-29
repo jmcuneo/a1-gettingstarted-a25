@@ -1,0 +1,79 @@
+/* Custom color palette */
+:root {
+    --custom-yellow: #DBB52C;
+    --custom-blue: #2C3CDB;
+    --custom-indigo: #484D86;
+    --custom-gray: #2C2D33;
+    --custom-tan: #9C8946;
+    --custom-brown: #5C5640;
+}
+
+/* Border for the technology table */
+th, td, table {
+    border: 2px solid var(--custom-brown);
+    border-collapse: collapse;
+    background-color: var(--custom-tan);
+}
+
+/* Extra spacing for table elements */
+th, td {
+    padding: 5px;
+}
+
+/* Make sure the table elements in the first column (the technologies) stand out */
+td:first-child {
+    font-weight: bold;
+    color: var(--custom-blue);
+}
+
+/* Align table text */
+td {
+    text-align: center;
+}
+
+/* Set font as DM Sans and text color for all text */
+* {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--custom-gray);
+}
+
+#left {
+    padding-left: 8px;
+    float: left;
+    width: 45%;
+}
+
+#right {
+    padding-right: 8px;
+    float: right;
+    width: 45%;
+}
+
+#face {
+    width: 300px;
+}
+
+a {
+    color: var(--custom-blue)
+}
+
+footer {
+    background-color: var(--custom-brown);
+    clear: both;
+    color: white;
+}
+
+h1 {
+    color: var(--custom-blue)
+}
+
+h2 {
+    color: var(--custom-indigo)
+}
+
+button {
+    background-color: var(--custom-yellow)
+}
