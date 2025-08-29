@@ -3,26 +3,81 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+  <body class="roboto-flex-font">
+    <script>
+      alert("Ayush's webpage")
+      img1 = document.getElementById("img1")
+      img2 = document.getElementById("img2")
 
-    <h2>Experience</h2>
+      function enlarge(event) {
+        const img = event.target;
+        img.style.transform = "scale(1.5)";
+        img.style.transform = "transform 0.25 ease";
+      }
+
+      function reset(event) {
+        const img = event.target;
+        img.style.transform = "scale(1)";
+        img.style.transform = "transform 0.25 ease"
+      }
+    </script>
+    <header>Information about Ayush Kulkarni</header>
+    <h3>
+      Hi! I am a class of 2027 Computer Science student at WPI. I enjoy table tennis and robotics. I am a Peer Learning Assistant and tutor in the Academic Resource Center at WPI.
+    </h3>
+
+    <div class="layout">
+    <section class="divider">
+    <h2>Major</h2>
     <p>
-      Working experience
+      Computer Science
+      intersts: Web Development & Artificial Intelligence
     </p>
+    <a href="https://www.linkedin.com/in/ayush-kulkarni29/">My LinkedIn</a>
+  </section>
+
+    <section class="divider">
+    <h2>Previous Computer Science Courses</h2>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>1101</li>
+      <li>2011</li>
+      <li>2022</li>
+      <li>2102</li>
+      <li>2223</li>
+      <li>3013</li>
+      <li>3043</li>
+      <li>3133</li>
+      <li>3733</li>
     </ul>
+  </section>
+
+  <section class="divider">
+    <h2>Experience</h2>
+    <ul>
+      <li>HTML: Some</li>
+      <li>CSS: Some</li>
+      <li>Java: A lot</li>  
+      <li>JavaScript: Some</li>
+      <li>Python: Some</li>
+      <li>Unit Testing: A little</li>
+      <li>Refactoring Code: A little</li>
+    </ul>
+  </section>
+
+    <section class="divider">
+      <h2>Hobbies</h2>
+      <p>Table Tennis and Robotics</p>
+      <img src="tabletennis.jpeg" alt="Table Tennis" id="img1" onclick="enlarge(event)" onmouseout="reset(event)">
+      <img src="robotics.png" alt="Robotics" id="img2" onclick="enlarge(event)" onmouseout="reset(event)">
+    </section>
+
+    </div>
+
+    <footer>Made by Ayush Kulkarni for Professor Cuneo's CS4241 class</footer>
   </body>
 </html>
