@@ -1,35 +1,66 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
+    <title>CS4241 Assignment One</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap">
   </head>
-  <body>
+  <header>
     <h1>INFORMATION ABOUT JIMMY MARTELLA</h1>
-    <p>
-      Class of 2026
-    </p>
-    <p>
-      CS/IMGD Major
-    </p>
-
-    <h2>Experience:</h2>
+  </header>
+  <body>
+    <p>Class of 2026 | CS/IMGD Major | They/Them</p>
     <br>
     <br>
-    <h4>Classes:</h4>
+    <br>
+    
+    <h4>Relevant CS Class Experience:</h4>
     <ul>
       <li>Object-Oriented Programing</li>
       <li>Operating Systems</li>
       <li>Software Engineering</li>
     </ul>
-    <h4>Programming:</h4>
+    <h4>Relevant Programming Expereince:</h4>
     <ul>
       <li>Solid Experience: Java, Python, Unit Testing</li>
-      <li>Some Experience: JavaScript, HTML, CSS, Refactoring</li>
+      <li>Moderate Experience: JavaScript, CSS, HTML, Refactoring</li>
     </ul>
+    
+    <button onclick="animation()">Animation</button>
+    <br>
+    <div id="shower">
+      <div id="grower"></div>
+    </div>
+    <script>
+      function animation(){
+        const grower = document.getElementById("grower");
+        let width = 1;
+        const speed = 2;
+        
+        grow();
+        
+        function grow(){
+          if (width < 350){
+            width += speed;
+            grower.style.width = width + 'px';
+            requestAnimationFrame(grow);
+          } else {
+            shrink();
+          }
+        }
+
+        function shrink(){
+          if (width > 0){
+            width -= speed;
+            grower.style.width = width + 'px';
+            requestAnimationFrame(shrink);
+          }
+        }
+      }
+    </script>
   </body>
 </html>
+

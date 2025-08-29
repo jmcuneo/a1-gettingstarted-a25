@@ -122,7 +122,7 @@ This project shows ...
     5. 
 
 - **JavaScript Animation**:
-
+    I created a simple animation where a pink square covers a purple square then recedes back into itself.
 
 - **Semantic HTML Tags**:
     1. 
@@ -134,7 +134,7 @@ This project shows ...
 
 ## Design Achievements
 - **Adobe Colour Palette**:
-    I created a palette featuring five shades that centre around purple. A lavender shade for the backdrop of the site, a grape shade for text, a greyish-blue shade for text backgrounds, and a fuschia and light pink shade for [TBD].
+    I created a palette featuring five shades that centre around purple. A lavender shade for the backdrop of the site, a grape shade for text, a greyish-blue shade for text backgrounds, and a fuschia and light pink shades for the animation.
 
 - **Google Font**:
     I important the fonts Cinzel Decorative for header text and Cormorant Unicase for normal text.
