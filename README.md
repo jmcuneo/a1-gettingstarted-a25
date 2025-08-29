@@ -7,7 +7,7 @@ This project showcases my ability to structure an HTML document, style it with t
 - **CSS Styles**
   - :root used to define CSS variables
   - *, html, body styles added to combat browser defaults & add font
-  - .section class and @media styles added for responsive and colored styling
+  - section tag and @media styles added for responsive and colored styling
   - footer styles to center the footer
   - a styles so links match the color scheme
   - ul styles to change how bullets are rendered
@@ -16,11 +16,12 @@ This project showcases my ability to structure an HTML document, style it with t
   - Server code edited to support more files
   - Click handler included to spin the cat photo when clicked
 - **HTML Tags**
-  - `<br />` Break tag used to add spacing and break up text blocks.
-  - `<div>` A generic block container tag with minimal styling used to structure a page.
-  - `<a>` An inline tag used for creating clickable links.
-  - `<footer>` A block tag used for content at the end of the page, such as copyright.
-  - `<img />` An inline block tag used to render images on the page.
+  - `<a>` used for links throughout the page.
+  - `<h1>` and `<h2>` used for headings.
+  - `<section>` used for the individual rectangles that hold content on the page.
+  - `<header>` used for rectangular block at the top of the page that spans the full width.
+  - `<footer>` used for the text at the bottom of the page stating "Created by Brendan Leu for WPI CS 4241."
+  - `<figure>` used to show my cats and the caption telling you to click the image.
 
 ## Design Achievements
 - **Noto Sans**: I used Noto Sans from Google Fonts as the primary font for my website.
