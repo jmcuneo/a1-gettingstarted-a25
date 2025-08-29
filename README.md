@@ -115,7 +115,7 @@ This project shows ...
 - li: changes color on hover following color scheme generated on Adobe
 - body: changed body text to Roboto flex, a publicly available font from Google
 
-### JS Transitions
+### JS Animations
 - section: made text fade in when on screen and fade out when not in view
 
 ### Semantic HTML
