@@ -3,26 +3,64 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
+    <header class="name">
+       <h1>Nathaniel Schneider</h1>
+    </header>
+   
+    <section class="aboutMe">
+      <img src="./pic.jpg" alt="Picture of me" height="200" width="auto">
+      <p class="description">
+        Hi I'm Nate Schneider, I am currently a senior at WPI, I am from Rhode Island and I enjoy skateboarding, sailing and spending time with friends. I also really like to travel and explore new places.
+      </p>
+    </section>
+    
+    <p class="major">
+      Computer Science major w/ a minor in Datascience!
     </p>
-    <p>
-      [Major and other information]
+    <p class="majorDescription">* Click the text above for animation *</p>
+    <p class="languages">
+      I have experience with HTML, CSS, Java, JavaScript and Python and more!
     </p>
-    <p>
-      [Other things]
-    </p>
+    <section class="sectionTwo">
+      <h2>Experience</h2>
+      <p>
+        Working experience
+      </p>
+      <ul>
+        <li>Sailing Instructor</li>
+        <li>Dock Hand</li>
+        <li>Junior Digital Marketing Specialist</li>
+      </ul>
+    </section>
+    <footer>
+      <a class="email" href="mailto:nmschneider@wpi.edu">Contact Me!</a>
+      <p class="emailText">Copyright: Nate 2025</p>
+    </footer>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+  <script>
+        const major = document.querySelector(".major");
+        const name = document.querySelector(".name");
+        let toggled = false;
+        major.addEventListener('click', changeColor);
+        name.addEventListener('click', changeColor);
+        function changeColor() {
+          if (toggled) {
+            major.style.color = "black";
+            major.style.backgroundColor = "#00BFFF"
+            name.style.color = "black";
+            name.style.backgroundColor = "#00BFFF"
+          } else {
+            major.style.color = "white";
+            major.style.backgroundColor = "#004EBF";
+            name.style.color = "white";
+            name.style.backgroundColor = "#004EBF"
+          }
+          toggled = !toggled;
+        }
+    </script>
+
   </body>
 </html>
