@@ -1,28 +1,118 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
+    <title>CS4241 Assignment 1 - Ethan Knorring</title>
     <meta charset="utf-8">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+
+      body {
+        font-family: 'Roboto', sans-serif; 
+        margin: 0;
+        padding: 0;
+        background-color: #f5f3f4; 
+        color: #222;
+      }
+      header, footer {
+        background-color: #9a031e; 
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+      h1, h2 {
+        color: #5f0f40; 
+      }
+      a {
+        color: #0f4c5c;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        color: #fb8b24; 
+      }
+      table {
+        border-collapse: collapse;
+        margin: 1rem auto;
+        width: 60%;
+      }
+      table, th, td {
+        border: 1px solid #333;
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <header>
+      <h1>Information about Ethan Knorring</h1>
+      <nav>
+        <a href="#intro">Intro</a> |
+        <a href="#experience">Experience</a> |
+        <a href="#skills">Skills</a>
+      </nav>
+    </header>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <main>
+      <section id="intro">
+        <p>
+          My name is Ethan Knorring. I’m currently a student at WPI's Class of 2026. 
+          I enjoy building web applications and learning about cybersecurity.
+        </p>
+        <p>
+          I'm a Computer Science major who has previously taken courses including Algorithms, Operating Systems, Databases, and Systems Programming.
+        </p>
+        <p>
+          Payton Tolle enjoyer.
+        </p>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li>Intern at Global Partners 2024-2025</li>
+        </ul>
+        <figure>
+          <img src="https://www.wpi.edu/sites/default/files/inline-image/Offices/Marketing-Communications/WPI_Inst_Prim_FulClr.png" alt="WPI Seal" width="150">
+          <figcaption>WPI</figcaption>
+        </figure>
+      </section>
+
+      <section id="skills">
+        <h2>Technology Experience</h2>
+
+        <table>
+          <tr>
+            <th>Technology</th>
+            <th>Experience Level</th>
+          </tr>
+          <tr><td>HTML</td><td>Some</td></tr>
+          <tr><td>CSS</td><td>Some</td></tr>
+          <tr><td>Java</td><td>A lot</td></tr>
+          <tr><td>JavaScript</td><td>Some</td></tr>
+          <tr><td>Python</td><td>A lot</td></tr>
+          <tr><td>Unit Testing</td><td>Some</td></tr>
+          <tr><td>Refactoring</td><td>Some</td></tr>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Ethan Knorring | <a href="https://www.wpi.edu">Visit WPI</a></p>
+    </footer>
+
+
+    <script>
+
+      const header = document.querySelector('header');
+      const colors = ['#9a031e', '#0f4c5c', '#5f0f40', '#fb8b24'];
+      let i = 0;
+      setInterval(() => {
+        header.style.backgroundColor = colors[i % colors.length];
+        i++;
+      }, 2000);
+    </script>
   </body>
 </html>
