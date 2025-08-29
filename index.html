@@ -8,6 +8,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&display=swap" rel="stylesheet">
 
         <style>
+            :root {
+                --primary-color: #012e40;
+                --secondary-color: #024959;
+                --accent-color: #026773;
+                --text-color: #6cffff;
+                --background-color: #f2e3d5;
+            }
+
             .libertinus-keyboard-regular {
                 font-family: "Libertinus Keyboard", system-ui;
                 font-weight: 400;
@@ -16,11 +24,12 @@
 
             .profile_pic {
                 border-radius: 50%;
+                box-shadow: 0.3em 0em 0.3em rgb(100, 100, 100);
                 width: 12em;
                 height: 12em;
             }
 
-            h1, h2 {margin-right: auto;}
+            h1, h2 {margin-right: auto; color: var(--primary-color);}
             p {margin-left: 2%;}
             ul {list-style: none;}
             li:before {
@@ -51,16 +60,12 @@
             .flex_text_box > div {
                 margin-right: auto;
             }
-            .flex_text_box > li {
-                background-color: red;
-            }
-            
             .item {
                 flex-grow: 1;
                 margin: 5%;
             }
             .website_side_left_div, .website_side_right_div {
-                background-color: steelblue;
+                background-color: var(--secondary-color);
                 box-shadow: 0.3em 0em 0.3em rgb(100, 100, 100);
                 border-width: 0%;
                 width: 20vw;
@@ -70,11 +75,18 @@
             .website_side_right_div {
                 box-shadow: -0.3em 0em 0.3em rgb(100, 100, 100);
             }
+            .shaded_text_box_div {
+                color: var(--text-color)
+            }
+            .shaded_text_box_div > ul > li {
+                background-color: var(--accent-color);
+                border-radius: 10px;
+            }
 
         </style>
 
     </head>
-    <body>
+    <body style="background-color: var(--background-color)">
         <div class="flex_rows"> 
             <div class="website_side_left_div"></div>
             <div>
@@ -97,7 +109,7 @@
                    </div>
                    
                 </div>  
-                <div>
+                <div class="shaded_text_box_div">
                     <h2>Programming Experience</h2>
                     
                         <ul>
