@@ -17,6 +17,7 @@ Rules: I added rules including a .experience-section, .rcorners1, body, h1, h2, 
 
 **Added simple JavaScript animation**:
     - (html) used this link to learn about it:  https://www.w3schools.com/js/js_htmldom_animate.asp
+Animation Explanation:  
 - used a container that acts like a stage, and an emoji element <div id="emoji" class="emoji">🍂</div> inside it. The button calls myMove() when clicked.
 - (css) used overflow: hidden so emoji only shows up when button clicked
 - used position: absolute; so changing its top and left actually moves it
