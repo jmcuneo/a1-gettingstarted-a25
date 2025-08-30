@@ -1,10 +1,14 @@
-body {
-    background-color: #f1effa;
-    font-family: 'Roboto', sans-serif;
-    padding: 40px;
-    margin: 0;
-    line-height: 1.6;
-  }
+body { 
+  background-color: #f1effa;
+  font-family: "Hubballi", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 40px;
+  margin: 0;
+  line-height: 1.6; 
+  font-size: 1.2rem;
+}
 
   /* headings */
 h1 {
@@ -16,7 +20,6 @@ h1 {
 
 h2 {
   font-size: 2 rem;
-  margin-top: 40px;
   margin-bottom: 15px;
   border-bottom: 2px Solid #deb499;
   padding-bottom: 5px;
@@ -34,12 +37,12 @@ h3 {
 
 /* sections */
 section {
-  max-width: 800 px;
-  margin: 20px;
+  max-width: 800px;
+  margin: auto;
   background-color: #ffffff;
   padding: 25px 35px;
   border-radius: 12px;
-
+  box-shadow: 0 6px 14px 1px rgb(115, 115, 115);
 }
   
 /* paragraphs */

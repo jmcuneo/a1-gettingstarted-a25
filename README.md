@@ -136,7 +136,7 @@ Styled CSS page:
     --> added a line underneath the h2 and h3 headers with a light tan color to make the headers stand out
 - section
     --> created a container to use for readability purposes/set contrast between background and text
-    --> added a shadow too for aesthetic purposes 
+    --> added a box shadow too (referenced W3Schools)
 - list
     --> used a soft pink background
     --> created a border on the left of each list item
