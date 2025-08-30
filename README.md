@@ -1,7 +1,7 @@
-Christopher Yon
+Christopher Yon  
 https://a1-christopheryon.onrender.com/
 
-This project shows ...
+This project shows a clean, visually appealing static site featuring a description of me, a header with a title, a table describing my proficiency with programming technologies and techniques, a list of classes I've taken with links to their WPI course pages, an image that fades in, and a footer with a randomly chosen friendly message for each page load.
 
 ## Technical Achievements
 - **Styled page with CSS**:
