@@ -7,7 +7,16 @@ Notes:
 ****** Design Achievements: ******
 # ************************************
 Color palette:
+![alt text](color.jpeg)
 
+#4A2C2A
+#FFD9E8
+#DEB499 (for borders and lines)
+#F3A6B1
+#6A4C93
+#FFEEF5
+
+main color layout! used these colors and variations of these colors.
 
 Font: 
 - imported the "Hubballi" font from Google Fonts and applied it across the site
@@ -17,7 +26,7 @@ Font:
 # ************************************
 Styled CSS page (style.css):
 - body
-    --> set a light purple background color (#f1effa) and used the Roboto font from Google Fonts
+    --> set a light purple background color (#f1effa) and used the Hubballi font from Google Fonts
     --> added padding around everything to make it look cleaner and increased the line spacing a bit so it’s easier to read
     --> changed font
 - headings (h1, h2, h3)
@@ -43,6 +52,9 @@ Styled JavaScript page (script.js):
 *** Used w3schools to understand event listeners here
 
 Completed HTML tags:
-- Added a header
-- Added a footer
+- Added a HEADER
+- Added a FOOTER
 --> For these I added a gradient to make them distinct from the rest of the content
+- Added a LinkedIn LINK in the header
+- Replaced the list for the experiences section with a TABLE to streamline content
+- Added an IMAGE of the WPI logo in the footer

@@ -72,6 +72,21 @@ ul li {
   border-radius: 6px;
 }
 
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th {
+  background-color: #ffeff5;
+  border: 1px solid #deb499;
+  padding: 10px;
+  text-align: left;
+  color: #4a2c2a;
+}
+
 /* footer */
 footer {
   background: linear-gradient(to right, #ffd9e8, #e6d6ff);
