@@ -41,7 +41,7 @@ This project shows a clean, visually appealing static site featuring a descripti
   - Table
     - I organized my proficiency with each technology/technique into a table with one column for each level of proficiency. The levels of proficiency are table headers, and each technology/technique is in a table data tag.
   - Footer
-    - I included a fun greeting inside a footer that is randomly selected on each reload;.
+    - I included a fun greeting inside a footer that is randomly selected on each reload.
 
 ## Design Achievements
 - **Used a Color Palette created with color.adobe.com**: I created a color palette with color.adobe.com and implemented it across all the colors on the website. The header background, footer background, and links are light green (#85C8C8), the header and footer text is dark brown (#331402), and the body text is off-white (#EBF2F2).
