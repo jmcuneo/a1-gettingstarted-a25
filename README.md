@@ -115,4 +115,8 @@ Other tags used for `<img class="" src=""></img>`, `<link rel="" href="">`, `<a 
 - **5:** `<button></button>`=> This creates a button in visuals, but it does nothing on its own. It can be interacted with by specifying CSS for what should happen to styling when the cursor hovers over the button etc. The button can be wrapped in `<a></a>` to attach it to a hyperlink and make the button useful. 
 
 ## Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+### Color Pallette:
+<div style="display: flex-box; flex-direction: rows;"><div><img style="width: 25%; height: 25%;" src="img/AdobeColor-DeepTealSea.jpeg"></div><div><p>This is a test;</p></div></div>
+
+### Google Font Type:
+- **Used the Libertinus Keyboard Font from Google Fonts**: I used Libertinus Keyboard as the font for student name of the profile website.
