@@ -30,23 +30,37 @@
     <img id="moving-auv"
         src="https://www.boxfishrobotics.com/wp-content/uploads/2024/08/Boxfsih-AUV-4K-camera-head-left-600x450.png"
         width="100" height=auto
-        alt="moving-auv">
-    <style>
-      #moving-auv {
-        position: relative;
-        animation-name: auvPath;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
+        alt="moving-auv"
+        style="position: relative; left: 3%; top: 10px">
+    <script>
+      const auv = document.getElementById("moving-auv");
+
+      // Key Frames
+      const positions = [
+        { leftPct: 3, top: 10},
+        { leftPct: 20, top: 30},
+        { leftPct: 55, top: 15},
+        { leftPct: 92, top: 55},
+        { leftPct: 64, top: 24},
+        { leftPct: 36, top: 42},
+        { leftPct: 12, top: 22},
+        { leftPct: 3, top: 10}
+      ];
+
+      let index = 0;
+
+      function moveAUV() {
+        index = (index + 1) % positions.length;
+        const pos = positions[index];
+
+        // convert based on window size
+        auv.style.left = (window.innerWidth * pos.leftPct / 100) + "px";
+        auv.style.top = pos.top + "px";
       }
-      @keyframes auvPath {
-        0%  { left: 13px; top: 10px}
-        25% { left: 380px; top: 30px}
-        50% { left: 615px; top: 15px}
-        75% { left: 802px; top: 55px}
-        100%{ left: 13px; top: 10px}
-      }
-    </style>
+
+      setInterval(moveAUV, 1250)
+      
+    </script>
 
     <h3 style="color: #486445">CS Courses at WPI</h2>
     <ul>
