@@ -3,26 +3,116 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <header>
+      <h1>Information about Lucas Marble</h1>
+      <p>Spoiler Alert</p>
+    </header>
+    <h2>Background Information</h2>
     <p>
-      [Self introduction]
+      Hello, Hola, Bonjour, Guten Tag, and Hej
     </p>
     <p>
-      [Major and other information]
+      Computer Science Major at WPI, Senior Year, Class of 2026
     </p>
     <p>
-      [Other things]
+      Lives in Massachusetts. Owns two cats and one dog. Is way too interested in hurricanes.
     </p>
 
-    <h2>Experience</h2>
+    <a href="https://www.nhc.noaa.gov/data/tcr/">Current Hurricane Season</a>
+    <br><br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Erin_2025-08-16_1840Z.jpg/250px-Erin_2025-08-16_1840Z.jpg" alt="Hurricane Erin" type="image/jpg">
     <p>
-      Working experience
+      Hurricane Erin
+    </p>
+
+    <h3>Experience</h3>
+    <p>
+      Computer Science Experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Program Design</li>
+      <li>Object-Oriented</li>
+      <li>Algorithms</li>
+      <li>Systems Programming</li>
+      <li>Discrete Mathematics</li>
+      <li>Machine Organization</li>
+      <li>Social Implications</li>
+      <li>Software Engineering</li>
+      <li>Introduction to AI</li>
+      <li>Operating Systems</li>
+      <li>Foundations of Computer Science</li>
+      <li>Database Systems I</li>
     </ul>
+    <p>
+      Coding Experience
+    </p>
+    <table>
+      <tr>
+        <th>Code</th>
+        <th>Experience</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>Unit testing</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Refactoring code</td>
+        <td>Some</td>
+      </tr>
+    </table>
+
+    <p><button onclick="Infect()">Infect the Green with Cyan</button></p>
+
+    <div id ="container">
+      <div id ="animate"></div>
+    </div>
+
+    <script>
+    function Infect() {
+      let id = null;
+      const elem = document.getElementById("animate");   
+      clearInterval(id);
+      let width = 0;
+      let height = 0;
+      id = setInterval(frame, 5);
+      function frame() {
+        if (height >= 400) {
+          clearInterval(id);
+        } 
+        else {
+          width++;
+          height++;
+          elem.style.width = width + "px"; 
+          elem.style.height = height + "px"; 
+        }
+      }
+    }
+</script>
+
+    
   </body>
 </html>

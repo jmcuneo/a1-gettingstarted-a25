@@ -3,17 +3,24 @@ const http = require('http'),
       port = 3000
 
 const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
-    default:
-      response.end( '404 Error: File Not Found' )
+  const url = "." + request.url;
+
+  sendFile( response, 'index.html' )
+
+  if (fs.existsSync(url)) {
+    switch( request.url ) {
+      case '/':
+        sendFile( response, 'index.html' )
+        break
+      default:
+        sendFile(response, url);
+    }
+  }
+  else {
+    response.end("404: Error: File does not exist.");
   }
 })
+
 
 server.listen( process.env.PORT || port )
 
