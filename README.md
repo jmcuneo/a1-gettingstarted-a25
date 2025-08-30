@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git,
 
 <<<<<<< HEAD
 Theo Sawyers
-http://a1-joshuacuneo.Render.com
+https://a1-theosawyers.onrender.com
 =======
 *DUE: Friday, August29, 2025 by 11:59 PM*
 
