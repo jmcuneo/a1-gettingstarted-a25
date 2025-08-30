@@ -116,7 +116,21 @@ Other tags used for `<img class="" src=""></img>`, `<link rel="" href="">`, `<a 
 
 ## Design Achievements
 ### Color Pallette:
-<div style="display: flex-box; flex-direction: rows;"><div><img style="width: 25%; height: 25%;" src="img/AdobeColor-DeepTealSea.jpeg"></div><div><p>This is a test;</p></div></div>
+The color pallette used were for the following website characteristics of: **(1)** `--primary-color`, **(2)** `--secondary-color`, **(3)** `--accent-color`, **(4)** `--text-color`, and **(5)** `--background-color`. These colors are ordered in this same order, respectively, in the figure below:
+
+<img style="width: 25%; height: 25%;" src="img/AdobeColor-DeepTealSea.jpeg">
+
+These pallette colors were used in the CSS styling for formatting basic elements, such as main website body background color, to more complex elements, such as animating the student name on the page with JS with these colors. These pallette colors were created as style variables in CSS similar to how it is implemented below:
+
+```css
+:root {
+    --primary-color: #012e40;
+    --secondary-color: #024959;
+    --accent-color: #026773;
+    --text-color: #6cffff;
+    --background-color: #f2e3d5;
+}
+```
 
 ### Google Font Type:
 - **Used the Libertinus Keyboard Font from Google Fonts**: I used Libertinus Keyboard as the font for student name of the profile website.
