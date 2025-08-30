@@ -28,6 +28,7 @@ const server = http.createServer( function( request,response ) {
 })
 
 // This was a Chgatgpt way to do this that i tryed to see if link would atleast work, ive updated to a less intutive method but one that i came up with myself
+//
 // let filename = request.url === '/' ? 'index.html' : request.url.substring(1)
 //
 // fs.readFile(filename, (err, content) => {
