@@ -20,9 +20,19 @@ color: #41627a;
   border-radius: 10px
 }
 
+.curved-bubble3{
+    background-color: #8da1b0;
+    opacity: 0.8;
+    width: 650px;
+    border-radius: 10px
+}
+
 .clip-circle {
   clip-path: circle(65% at 40% 40%);
 }
+.clip-circle2 {
+  clip-path: circle(50%);
+}
 h3{
-color: #46341b;;
+color: #46341b;
 }
