@@ -13,7 +13,7 @@ body {
 
 section {
     align-items: center;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 .hidden {
@@ -66,21 +66,28 @@ li {
     padding: 12px 0;
     font-weight: 300;
     color: #cccccc;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
 li:hover {
     color: #CA02FA;
+    padding-left: 10px;
 }
 
 footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: fit-content;
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     font-size: 1em;
     color: #cccccc;
-
+    background-color: #111111;
     min-height: 1vh;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #CA02FA;
 }
 
 .footer-item {
