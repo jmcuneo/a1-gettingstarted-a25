@@ -14,10 +14,23 @@ Dark Green: 023612*/
 body {
     background-color: #010101;
     font-family: "PressStart2P";
+    
 }
 
-h1, h2, h3, h4 {
+h1 {
+    text-align: center;
     color: #025B18;
+    border-style: dotted;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+h2, h3{
+    color: #025B18;
+    border-style: dotted;
+}
+
+h4 {
+    color: #686868;
 }
 
 p {
@@ -28,6 +41,11 @@ p {
 ul {
     color: #1FC742;
     font-size: 16px;
+}
+
+.pulse{
+    transform: scale(1.2);
+    opacity: 0.7;
 }
 
 
