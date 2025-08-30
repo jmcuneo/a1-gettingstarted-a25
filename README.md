@@ -1,8 +1,6 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
 ===
 
-This project shows ...
-
 ## Technical Achievements
 **Styled page with CSS**:
 Rules: I added rules including a .experience-section, .rcorners1, body, h1, h2, .button, header, footer
