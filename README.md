@@ -8,7 +8,7 @@ Assignment details
 
 This assignment requires that your website is both contained in a GitHub repository and hosted in Render. There are a few ways to do this:
 
-<a href="https://a1-matthewpapesh-a25.onrender.com/" target="_blank"><h2 style="font: bold;">My Render Website Link</h2></a>
+[Render Website Link Here](https://a1-matthewpapesh-a25.onrender.com/)
 
 ## Technical Achievements
 ### 1.0 Styling With CSS:
