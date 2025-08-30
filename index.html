@@ -3,26 +3,107 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./mystyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
+  <body>
+    <header>
+      <h1>Information about Christine Ngo</h1>
+      <h3>CS 4241 Assignment A1</h3>
+    </header>
+
+    <p>
+      My name is Christine Ngo and I am in WPI's class of 2027.
+    </p>
+    <p>
+      I am majoring in Computer Science.
+    </p>
+    <img src="wpisign.png" alt="WPI sign" width="300" height="200">
+    <br>
     <h2>Experience</h2>
     <p>
-      Working experience
+      CS courses I've taken:
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Intro to Program Design</li>
+      <li>Object-Oriented Programming</li>
+      <li>Systems Programming Concepts</li>
+      <li>Intro to Machine Organization & Assembly Language</li>
+      <li>Operating Systems</li>
+      <li>Discrete Mathematics</li>
+      <li>Algorithms</li>
+      <li>Database Systems I</li>
+      <li>Software Engineering</li>
+      <li>Foundations of Computer Science</li>
     </ul>
+    <br>
+    <p>
+      Coding experience:
+    </p>
+    <table>
+      <tr>
+        <th>Technologies</th>
+        <th>Experience Level</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>a lot</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>a lot</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>a lot</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>some</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>some</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>some</td>
+      </tr>
+      <tr>
+        <td>Refactoring Code</td>
+        <td>some</td>
+      </tr>
+    </table>
+  <br>
+    <div id="container">
+      <div id="animate">
+        <script>
+          const element = document.getElementById("animate");
+          let pos = window.innerWidth;
+          let y = 0;
+
+          function frame() {
+            if (pos < -element.offsetWidth) {
+              pos = window.innerWidth;
+            } else {
+              pos -= 2;
+              element.style.left = pos + 'px';
+            }
+          }
+          setInterval(frame, 5);
+        </script>
+        <img src="cat.png" alt="cat" width="300" height="200">
+      </div>
+    </div>
+  <footer>
+    <a href="mailto:cnngo@wpi.edu">Email</a>
+    <a href="https://github.com/christinenngo">Github</a>
+    <p>
+      &copy; 2025 Christine Ngo
+    </p>
+  </footer>
   </body>
 </html>
