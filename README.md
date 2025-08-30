@@ -28,5 +28,5 @@ The goal of Assignment 1 for CS 4241: Webware was to deploy a website that shows
 ---
 
 ## Design Achievements
-1. **Used the Libertinus Sans font from Google Fonts**: I used this font as my main font for the whole page.
+1. **Libertinus Sans font from Google Fonts**: I used this font as my main font for the whole page.
 2. **Background Colors**: I used a cohesive color palette from the Adobe color picker (provided in the assignment). After playing around with the tool for a while I found it really easy to navigate and confirm a pink color palette.
