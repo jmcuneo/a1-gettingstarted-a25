@@ -45,23 +45,28 @@
             text-align: center;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
 
         body.light {
-            background-color: #E0CCA8;
-            color: #ADA493;
+            background-color: #ADA493;
+            color: #E0CCA8;
         }
 
-        body.light .colorbg1{background:#33250D }
-        body.light .colorbg2{background:#47371C }
-        body.light .colorbg3{background:#7A6B50 }
+      body.light .colorbg1{background:#33250D }
+      body.light .colorbg2{background:#47371C }
+      body.light .colorbg3{background:#7A6B50 }
+
+        #LightDarkModeChanger {
+          background-color: #027373;
+          position: fixed;
+          top: 100px;
+          right: 100px;
+          border: 15px solid #027373 ;
+               }
+
   </style>
   </head>
 
-<button id ="Light/Dark Mode Changer">Light/Dark Mode</button>
+<button id ="LightDarkModeChanger">Light/Dark Mode</button>
 
 
   <body>
@@ -99,17 +104,18 @@ Outside of academics, I am highly involved in ROTC and enjoy lifting, reading, a
     <br><a href="Resume.pdf">Link to my Resume</a></br>
 
     <img src="BSB.png" alt = "Bay State Battilion Image"
-     height="300">
+     width="250" height="300">
     <img src="US-ARMY-ROTC.svg.png" alt = "Us army rotc pacth"
-    height="300">
+    width="250" height="300">
     <img src="wpi-logo.webp" alt = "logo of wpi"
-     height="300">
+     width="500" height="300">
 
 
-  <script>
-      document.getElementById("Light/Dark Mode Changer").addEventListener("click", function(){})
-      document.body.appendChild( document.getElementById("Light/Dark Mode Changer") );
-  </script>
+    <script>
+            document.getElementById("LightDarkModeChanger").addEventListener("click", () => {
+            document.body.classList.toggle("light");}
+            )
+    </script>
 
   </body>
 </html>
