@@ -5,25 +5,10 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
 Assignment details
 ---
 
+
 This assignment requires that your website is both contained in a GitHub repository and hosted in Render. There are a few ways to do this:
 
-5. Modify the README file according to the specification below.
-7. Deploy your project to Render. You can do this by [importing the repo from GitHub](https://render.com/docs/github).
-    * Under "Publish Directory", you can just put "./" (without the quotation marks).
-8. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-
-Rubric
----
-For the Technical and Design achievements, make sure you thoroughly describe in your README what you did why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM. Remember that the success of Achievements hinges on how well you describe them in your README. Well formatted text, images, and concise and clear descriptions are helpful. You must include a Technical Achievements and Design Achievements section, even if none are attempted.
-
-*Technical Achievements*
-1. (5 points) Style your page using CSS. Each style rule you apply will get you 1 point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (5 points) Experiment with other *semantic* HTML tags (links, images, tables, header, footer, etc.). Each extra tag you use will get you 1 point for a maximum of 5 points. Be sure to describe the tags you use in your README.
-
-*Design Achievements*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website.
+<a href="https://a1-matthewpapesh-a25.onrender.com/" target="_blank"><h2 style="font: bold;">My Render Website Link</h2></a>
 
 ## Technical Achievements
 ### 1.0 Styling With CSS:
