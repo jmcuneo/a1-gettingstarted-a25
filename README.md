@@ -13,7 +13,7 @@ This project shows the basic information about Grace Mahoney, including an image
 - **Simple JavaScript animation**: Animated the image of the "moving-auv" to move across the screen and back. The script has a set of pixel positions, rotates through the positions and sets the image to the given location based on the size of the window.
 - **Other semantic HTML tags**: (1) <a> Added a link to my linked in page for more professional knowledge
 (2) <img> Added an image of myself and of my favorite dinosaur 
-(3) <table> Used a table to hold language and corresponding experience
+(3) <table> Used a table to hold technology/method and corresponding experience
 (4) <marquee> Used marquee to have an image scroll across the screen
 (5) <li> Listed all computer science courses taken at WPI
 (6) <script> Added a JavaScript animation
