@@ -1,5 +1,7 @@
 Colin Lemire
+https://a1-colinlemire-4.onrender.com/
 
+The CSS was not rendering for my website, which I believe is a problem you mentioned in class. I'm willing to do a live demo during office hours or by appointment if needed.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the li, a, img, footer,  and h1/h2 selectors.
