@@ -25,7 +25,7 @@ Rules:
 - the emoji then goes off the container view and the animation ends
 - **this animation was taken from the w3schools page to move something diagonally across the screen
 
-- **Experiemnted with HTML tags**:
+**Experiemnted with HTML tags**:
     - used this link to learn about different css/html tags:  https://www.w3schools.com/html/html_css.asp 
 Tags:
 1. Added link to my resume using the href tag
