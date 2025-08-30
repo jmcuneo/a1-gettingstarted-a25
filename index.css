@@ -20,11 +20,15 @@ footer {
 }
 
 time {
-    font-family: "Cormorant Unicase", serif;
-    font-weight: 300;
-    font-style: normal;
     font-size: 15px;
     align-self: left;
+    color: #8e44b9;
+}
+
+table, th, td {
+    border: 1px solid #8e44b9;
+    align-self: center;
+    color: #8e44b9;
 }
 
 h1 {
