@@ -1,5 +1,5 @@
 # Aanan Goyal - CS4241 Assignment 1
-**Website URL:** http://a1-alexchen.onrender.com
+**Website URL:** https://a1-aanangoyal-a25.onrender.com
 
 This project showcases a personal information website built with semantic HTML, modern CSS, and interactive JavaScript animations. The site provides comprehensive information about my academic background, technical skills, and work experience in an engaging and visually appealing format.
 
