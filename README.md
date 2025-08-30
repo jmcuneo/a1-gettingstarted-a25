@@ -129,7 +129,7 @@ This project shows ...
     2. Footer for an inspirational quote.
     3. A HREF for aformentioned inspirational quote.
     4. 
-    5. 
+    5. Time for the current time.
 
 
 ## Design Achievements

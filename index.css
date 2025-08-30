@@ -1,5 +1,9 @@
 
-#centered-paragraph {
+#left {
+    text-align: left;
+}
+
+#centered {
     text-align: center;
 }
 
@@ -15,6 +19,14 @@ footer {
     text-align: center;
 }
 
+time {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    align-self: left;
+}
+
 h1 {
     display: inline;
     font-family: "Cinzel Decorative", serif;
@@ -27,18 +39,6 @@ h1 {
     color: #AF63DB;
     background-color: #C4BFE6;
 }
-
-/* h2 {
-    display: inline;
-    font-family: "Cinzel Decorative", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    padding-left: 1%;
-    padding-right: 1%;
-    color: #AF63DB;
-    background-color: #C4BFE6;
-} */
 
 h4 {
     display: inline;
@@ -100,5 +100,4 @@ button {
   width: 1px;
   height: 350px;
   background-color: #FFB7ED;
-  left: 0px;
 }

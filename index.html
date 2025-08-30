@@ -9,8 +9,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap">
   </head>
   <header>
+    <div id="left"><time><span id="current-time"></span></time></div>
+    <script>
+      function updateTime(){
+        const time = document.getElementById('current-time');
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        time.textContent = timeString;
+      }
+      updateTime();
+      setInterval(updateTime, 1000); 
+    </script>
+    
     <h1>INFORMATION ABOUT JIMMY MARTELLA</h1>
-    <div id="centered-paragraph"><p>Class of 2026 | CS/IMGD Major | They/Them</p></div>
+    <div id="centered"><p>Class of 2026 | CS/IMGD Major | They/Them</p></div>
     <br>
     <br>
   </header>
