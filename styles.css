@@ -1,0 +1,28 @@
+body{
+    background-color: #b4d7F0;
+    font-family: "Karla", sans-serif;
+}
+
+p{
+color: #41627a;
+}
+.curved-bubble{
+  background-color: #f0d7b4;
+  opacity: 0.8;
+  width: 520px;
+  border-radius: 10px
+}
+
+.curved-bubble2{
+  background-color: #9b896f;
+  opacity: 0.8;
+  width: 520px;
+  border-radius: 10px
+}
+
+.clip-circle {
+  clip-path: circle(65% at 40% 40%);
+}
+h3{
+color: #46341b;;
+}
