@@ -3,7 +3,7 @@ Assignment One - Hello World: Basic Deployment w/ Git, GitHub, Render
 *DUE: Friday, August 29, 2025 by 11:59 PM*
 
 Jimmy Martella
-http://a1-jimmymartella.Render.com
+https://a1-jimmymartella.onrender.com/
 
 ## Technical Achievements
 - **Styled page with CSS**:
