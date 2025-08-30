@@ -1,28 +1,86 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<header id="animate">
+  <h1>Meet Isabel Cruz Rivera</h1>
+</header>
+
+<body>
+  <p>
+    Hi! My name is Isabel and I am a current senior! I am BS/MS student pursuing both my bachelor's and master's in CS. I am also hoping to get a minor in German. In my free time, I love to knit and run.
+
+    For a little fun, click my name and see what happens.
+  </p>
+
+  <section>
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+    <div class="experience">
+      <div class="content">
+        <h3>Courses</h3>
+        <ul>
+          <li>Operating Systems</li>
+          <li>Computer Networks</li>
+          <li>Algorithms</li>
+          <li>Machine Learning</li>
+          <li>Artifical Intelligence</li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <h3>Work Experience</h3>
+        <ul>
+          <li>Banco Popular de Puerto Rico</li>
+          <li>Dell Technologies</li>
+          <li>Connections Program Ambassador here on campus!</li>
+          <li><a href="https://www.linkedin.com/in/isabel-cruz-rivera-7107171b2/">Learn more on my LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About Me!</h2>
+    <div class="images">
+      <figure>
+        <img src="images/cr.JPG" alt="Isabel in Costa Rica" style="width:400px;height:500px;">
+        <figcaption>I went on IQP to Monteverde, Costa Rica!</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/frosty.JPG" alt="Isabel after her half marathon" style="width:400px;height:500px;">
+        <figcaption>I love to run - here I am after my first half-marathon in December.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/germany.JPG" alt="Isabel in Germany" style="width:400px;height:500px;">
+        <figcaption>My freshman year, I studied in Germany for 5 months.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/pr.JPG" alt="The beach in Puerto Rico" style="width:400px;height:500px;">
+        <figcaption>I spent this last summer working in Puerto Rico.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <script>
+    const header = document.getElementById("animate");
+
+    header.addEventListener("click", () => {
+      header.classList.toggle("flip");
+    });
+
+  </script>
+</body>
+
 </html>
