@@ -4,7 +4,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+**Styled page with CSS**: Added rules for the p, li, and a selectors...
 Rules:
 1. Implemented box shadows to create a shadow on my expereince boxes
     - used this link to learn about it:  https://www.w3schools.com/css/css3_shadows_box.asp
@@ -15,7 +15,7 @@ Rules:
 4. Added rounded corners to my boxes using .rcorners to have my lists be in these boxes with customized padding, border radius, and display
 5. Added a layout container with custom background color, height, width, and overflow: hidden
 
-- **Added simple JavaScript animation**:
+**Added simple JavaScript animation**:
     - (html) used this link to learn about it:  https://www.w3schools.com/js/js_htmldom_animate.asp
 - used a container <div id="container"> that acts like a stage, and an emoji element <div id="emoji" class="emoji">🍂</div> inside it. The button calls myMove() when clicked.
 - (css) used overflow: hidden so emoji only shows up when button clicked
@@ -35,5 +35,9 @@ Tags:
 5. Used the exisitng list and added a button feature
 
 ## Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Montserrat as the font for the primary copy text in my site.
+**Used the Roboto Font from Google Fonts**: I used Montserrat as the font for the primary copy text in my site.
     - link to font:  https://fonts.google.com/specimen/Montserrat 
+
+
+**AI Usage**
+I used Chat GPT to explain concepts used in this assignment, but did not have it write any code for me.  AI specifically aided me in understanding how CSS / HTML tags work, the general format of the document, and helped me debug when my image was not showing up on my webpage.
