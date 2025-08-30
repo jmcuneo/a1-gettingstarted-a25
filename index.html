@@ -1,28 +1,133 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CS4241 Assignment 1</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Information about Aishwarya Silam</h1>
+    </header>
+
+    <div class="columns">
+      <div class="textbox">
+        <section> 
+          <h2>My Life at WPI</h2>
+            <div class = "center-text">
+              <a href = "https://github.com/AishuuuS" class="myGit"> Github </a>
+            </div>
+            <p> Class of 2026 </p>
+            <p> Computer Science & Data Science </p>
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQHNOVdnwY78zQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1676522110868?e=1759363200&v=beta&t=CNPpKKxEvXD6A_wBzOt95tFe3bC-_mWgDMnqmtKHGWM" alt="Aishwarya's Headshot" class="headshotImg">
+        </section>
+
+        <section>
+          <h2> Previous Classes </h2>
+            <ul>
+              <li> Software Engineering </li>
+              <li> Mobile & Ubiquitous Computing </li>
+              <li> Social Implications of Information Processing </li>
+              <li> Database Systems </li>
+              <li> Computer Networks </li>
+              <li> and many more... </li>
+            </ul>
+
+          <h2> Clubs </h2>
+            <ul>
+              <li> Rangeela </li>
+              <li> WiCS </li>
+              <li> SASA </li>
+            </ul>
+        </section>
+    
+        <section>
+          <h2>Experience</h2>
+          <table>
+            <tr>
+              <th> Skill </th>
+              <th> Experience </th>
+            </tr>
+
+            <tr>
+              <td> HTML</td>
+              <td> a lot </td>
+            </tr>
+
+            <tr>
+              <td> CSS</td>
+              <td> a lot </td>
+            </tr>
+
+            <tr> 
+              <td> Java</td>
+              <td> a lot </td>
+            </tr>
+
+            <tr>
+              <td> JavaScript</td>
+              <td> some </td>
+            </tr>
+
+            <tr>
+              <td> Python</td>
+              <td> a lot </td>
+            </tr>
+          
+            <tr>
+              <td> Unit Testing</td>
+              <td> some </td>
+            </tr>
+        
+            <tr>
+              <td> Refactoring Code</td>
+              <td> some </td>
+            </tr>
+          </table>
+
+          <h2>Working Experience</h2>
+          <ul>
+            <li>Kumon</li>
+            <li>WPI</li>
+            <li>Lavner Education</li>
+          </ul>
+        </section>
+
+        <h1>Javascript Animation</h1>
+        <div id="myAnimation">
+          <div id="myBox"></div>
+        </div>
+
+        <script>
+          function miniBox() {
+            const box = document.getElementById("myBox");
+            let pos = 0;
+            let direction = 1;
+
+            setInterval(() => {
+              pos += direction;
+
+              //bounce back
+              if (pos >= 450 || pos <= 0) {
+                direction *= -1;
+              }
+
+              box.style.left = pos + "px";
+            }, 5);
+          }
+
+          window.onload = miniBox;
+        </script>
+      </div>
+    </div>
+
+    <footer>
+      Aishwarya Silam - All Rights Reserved ©
+    </footer>
+
   </body>
 </html>
+
