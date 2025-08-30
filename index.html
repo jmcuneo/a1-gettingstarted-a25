@@ -119,63 +119,32 @@
   
 
     <!-- JavaScript animation button -->
-    <p><button class="button button1" onclick="myMove()">Click to see my favorite things about fall through emojis!</button></p> 
+    <p><button class="button button1" onclick="myMove()">Click to see a leaf falling (bc fall is coming up!)</button></p> 
     <div id ="container">
-      <span class="emoji">🍂</span>
-      <span class="emoji">🍁</span>
-      <span class="emoji">🍂</span>
-      <span class="emoji">🍁</span>
-      <span class="emoji">🎃</span>
-      <span class="emoji">☕️</span>
-      <span class="emoji">🥧</span>
-      <span class="emoji">🍂</span>
-      <span class="emoji">🍂</span>
-      <span class="emoji">🍁</span>
-      <span class="emoji">🍁</span>
-      <span class="emoji">🎃</span>
-      <span class="emoji">☕️</span>
-      <span class="emoji">🌰</span>
-      <span class="emoji">🥧</span>
-      <span class="emoji">🍂</span>
-      <span class="emoji">🍪</span>
+        <!-- <div id ="emoji"></div> -->
+      <div id="emoji" class="emoji">🍂</div>
     </div>
 
-    <script>
+   <script>
     function myMove() {
-      const box = document.getElementById("container");
-      const items = document.querySelectorAll(".emoji");
-
-      // show amojies when the button is pressed
-      items.forEach(el => el.style.display = "block");
-
-      const boxWidth = box.offsetWidth;
-      const boxHeight = box.offsetHeight;
-
-      // give each emoji its own position + velocity
-      const states = Array.from(items).map(() => ({
-        x: Math.random() * (boxWidth - 30),
-        y: Math.random() * (boxHeight - 30),
-        dx: (Math.random() < 0.5 ? 1 : -1), // horizontal speed
-        dy: (Math.random() < 0.5 ? 1 : -1)  // vertical speed
-      }));
-
+      let id = null;
+      const elem = document.getElementById("emoji");   
+      elem.style.display = "block";  /* make visitble */
+      let pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 5);
       function frame() {
-        states.forEach((s, i) => {
-          s.x += s.dx;
-          s.y += s.dy;
-
-          // bounce off walls
-          if (s.x <= 0 || s.x >= boxWidth - 30) s.dx *= -1;
-          if (s.y <= 0 || s.y >= boxHeight - 30) s.dy *= -1;
-
-          items[i].style.left = s.x + "px";
-          items[i].style.top  = s.y + "px";
-        });
-        requestAnimationFrame(frame);
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++; 
+          elem.style.top = pos + "px"; 
+          elem.style.left = pos + "px"; 
+        }
       }
-      requestAnimationFrame(frame);
     }
     </script>
+
 
     <footer>
       <p>🕺 2025 Kyra Brown — WPI</p>
