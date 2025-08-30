@@ -1,28 +1,53 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+<html
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
+  <body>
+  <h1 id="main-title">About Theo Sawyers</h1>
+    <h2>
+      Bio
+    </h2>
+  <h3>Nationality</h3>
+  <p>British</p>
+  <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Flag of the United Kingdom" style="height:40px;margin-right:10px;vertical-align:middle;">
+  <p>Jamaican</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg" alt="Flag of Jamaica" style="height:40px;vertical-align:middle;">
+  <h3>Education</h3>
+  <p>CS major</p>
+  <p> Business Minor</p>
+  <h3>Campus Involvement</h3>
+  <p>Varsity Wrestler</p>
+  <aside style="margin-left:24px; color:#6565E6; font-style:italic; font-size:0.98em;">Favorite Move: Guillotine</aside>
+  <p> Zeta Psi Secratary</p>
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>KPMG Tech Advisory Intern</li>
+      <li>WPI Research</li>
+      <li>Boston Commons Swan Boat Driver</li>
     </ul>
+    <footer style="margin-top:32px; text-align:center; color:#888; font-size:1rem;">
+      WPI Class of 2026
+    </footer>
+    <script>
+      const title = document.getElementById('main-title');
+      if (title) {
+        title.animate(
+          [
+            { transform: 'scale(1)' },
+            { transform: 'scale(1.15)' },
+            { transform: 'scale(1)' }
+          ],
+          {
+            duration: 1000,
+            iterations: 2
+          }
+        );
+      }
+    </script>
   </body>
 </html>
